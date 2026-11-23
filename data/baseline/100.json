@@ -1,0 +1,133 @@
+{
+  "id": 100,
+  "name": "Grain",
+  "category": "AI, Research and Media-native",
+  "description": "Grain public API reads and manages meeting recordings, highlights and uploads, with webhooks and an official MCP server.",
+  "auth": [
+    "Bearer token",
+    "OAuth2"
+  ],
+  "auth_notes": "Personal and Workspace Access Tokens are sent as Authorization Bearer tokens; OAuth2 is required for integrations distributed to other Grain users.",
+  "self_serve": "free_tier",
+  "gate_detail": "Personal access tokens are available on every plan including Free. Workspace tokens for server-side workspace-wide access need an admin on Business or Enterprise. No sandbox stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Read and manage recordings, highlights, tags and sharing, upload external recordings, download video and transcripts in several formats, and receive webhooks when recordings are processed.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Official Grain MCP server connects Claude and ChatGPT to meeting data using OAuth, or a personal access token for developers; URL not shown.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Workspace-wide access requires an admin on a Business or Enterprise plan, but personal tokens and OAuth2 are self-serve.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://developers.grain.com/",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "A Personal Access Token (PAT) authenticates requests as you, with the same access you have",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.grain.com/authentication.html",
+      "supports": [
+        "auth"
+      ],
+      "quote": "To authenticate API calls, the client must add the following header:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://support.grain.com/en/articles/15507288-grain-api",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Not for personal API access, which is available on every plan, including Free.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://support.grain.com/en/articles/15507288-grain-api",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Requires admin access to generate and is available on Business and Enterprise plans.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://support.grain.com/en/articles/15507288-grain-api",
+      "supports": [
+        "api"
+      ],
+      "quote": "register webhooks to receive a payload whenever a new recording is processed in your workspace",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.grain.com/mcp/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Official Grain MCP Server: Quick Start Guide",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "REST style is not explicitly labeled, only implied by HTTP endpoints.",
+    "MCP server URL is not shown in the sources.",
+    "No sandbox environment is described."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Grain API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Grain API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    },
+    {
+      "query": "Grain MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.grain.com/",
+      "from": "lead"
+    },
+    {
+      "url": "https://developers.grain.com/mcp/faq.html",
+      "from": "lead"
+    },
+    {
+      "url": "https://developers.grain.com/authentication.html",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.grain.com/mcp/",
+      "from": "search"
+    },
+    {
+      "url": "https://support.grain.com/en/articles/14811968-grain-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://support.grain.com/en/articles/15507288-grain-api",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

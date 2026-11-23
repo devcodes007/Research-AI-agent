@@ -1,0 +1,143 @@
+{
+  "id": 73,
+  "name": "Linear",
+  "category": "Productivity and Project Management",
+  "description": "Linear GraphQL API and TypeScript SDK for issues, projects and agents, with OAuth and webhooks.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "OAuth 2.0 with PKCE and user or app actor modes. Personal API keys are not covered by the sources.",
+  "self_serve": "free_tier",
+  "gate_detail": "Linear has a free plan plus paid plans; OAuth applications are created by workspace admins, and creating a dedicated workspace for the OAuth app is recommended. Free-plan API limits are not stated.",
+  "api_styles": [
+    "GraphQL",
+    "SDK"
+  ],
+  "api_scope": "GraphQL API with pagination, filtering, webhooks, attachments and customers, plus a TypeScript SDK and agent interaction docs.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.linear.app/mcp",
+  "mcp_notes": "Linear hosts a remote MCP server for reading and changing issues, projects and documents.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "None stated; OAuth apps are managed by workspace admins.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://linear.app/developers/oauth-2-0-authentication",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Linear supports OAuth2 authentication, which is recommended if you’re building applications to integrate with Linear.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://linear.app/docs/billing-and-plans",
+      "supports": [
+        "access"
+      ],
+      "quote": "We offer a free plan and different paid plans to suit your needs.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://linear.app/developers",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "[Webhooks](/developers/webhooks.md)",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://linear.app/developers",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "connect to the Linear MCP server at https://mcp.linear.app/mcp to read and change issues, projects, and documents.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://linear.app/developers",
+      "supports": [
+        "api"
+      ],
+      "quote": "- [Getting started](/developers/sdk.md)",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Personal API key support is not shown in the sources.",
+    "Source S3 is a third-party Linear Canal product, not Linear.",
+    "No sandbox described; free-plan API access not explicitly stated.",
+    "No independent second pass completed for this app.",
+    "Composio's toolkit lists auth ['API key', 'OAuth2']; our research lists ['OAuth2']. Review flag only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Linear API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Linear API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Linear MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://linear.app/developers",
+      "from": "hint"
+    },
+    {
+      "url": "https://linear.app/developers/oauth-2-0-authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://linear-canal.com/docs/auth",
+      "from": "search"
+    },
+    {
+      "url": "https://linear.app/docs/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://linear.app/developers",
+      "from": "search"
+    },
+    {
+      "url": "https://linear.app/docs/billing-and-plans",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "composio_catalog_auth_partial"
+  ],
+  "catalog": {
+    "toolkit": "linear",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "tools_count": 47,
+    "auth_agreement": "partial"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "id": 21,
+  "name": "Slack",
+  "category": "Communications and Messaging",
+  "description": "Slack Web API, Events API and related APIs for building apps in Slack workspaces.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "Apps authenticate via OAuth 2.0 and obtain user, bot or app tokens governed by scopes; token rotation is supported.",
+  "self_serve": "approval",
+  "gate_detail": "Tokens come from OAuth with scopes set in app settings. Commercial distribution requires a separate agreement, typically Marketplace submission or a partner agreement; internal-only apps are not stated to need review. Free signup details not stated.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "Web API HTTP methods, Events API (HTTP or Socket Mode), plus Admin, SCIM and Audit Logs APIs for specific use cases.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "Sources show no Slack-published MCP server; the apis.io MCP listed is a third-party catalog.",
+  "verdict": "conditional",
+  "blocker": "approval_review",
+  "blocker_detail": "Commercially distributed apps need Marketplace agreement or partner agreement; workspace admin approval to install is not stated.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.slack.dev/authentication/",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Before your app can access Slack data or interact with Slack workspaces, it must go through an authentication process.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.slack.dev/authentication/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "OAuth 2.0 : Learn how to use OAuth 2.0 to securely authenticate users and request access tokens.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/terms/api",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "For most Applications, obtaining a separate agreement that authorises Commercial Distribution simply means submitting to our Marketplace and agreeing to the Marketplace Agreement",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.slack.dev/apis/",
+      "supports": [
+        "api"
+      ],
+      "quote": "The Web API supplies a collection of HTTP methods that underpin the majority of Slack app functionality.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.slack.dev/apis/",
+      "supports": [
+        "api"
+      ],
+      "quote": "Subscribe to the events you want from a range of possibilities.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources do not state how a developer first obtains credentials or whether a free workspace suffices.",
+    "SDK and CLI styles are only hinted at in the API terms.",
+    "Sandbox availability not stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Slack API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Slack API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Slack MCP server official",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No resul",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://slack.com/intl/en-in/terms-of-service/slack-developer-program",
+      "from": "search"
+    },
+    {
+      "url": "https://slack.com/intl/en-in/terms/api",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.slack.dev/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.slack.dev/apis/",
+      "from": "search"
+    },
+    {
+      "url": "https://apis.io/apis/slack/slack-authentication-api/",
+      "from": "search"
+    },
+    {
+      "url": "https://apis.io/apis/slack/slack-auth-api/",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

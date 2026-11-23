@@ -1,0 +1,169 @@
+{
+  "id": 70,
+  "name": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Sentry offers a web API for managing organizations, teams and exporting error-monitoring data.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Docs have an Authentication page and a tutorial on creating a Sentry authentication token; the retrieved text does not show the credential mechanism.",
+  "self_serve": "unknown",
+  "gate_detail": "Provided text shows an authentication-token tutorial but not plan requirements or approval steps. Account signup exists at sentry.io/signup, but its terms for API tokens are not stated.",
+  "api_styles": [
+    "Other"
+  ],
+  "api_scope": "Web API (v0) to manage account-level resources like organizations and teams, and manage and export data; reference covers many resource groups including events, projects, releases, SCIM.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Only MCP monitoring (tracing MCP implementations) is shown; no Sentry-published MCP server is described in the sources.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "Sources truncate the authentication page, so credential type and access requirements are not established.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://docs.sentry.io/api/",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "The Sentry web API is used to access the Sentry platform programmatically.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.sentry.io/api/",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Tutorial: Create a Sentry Authentication Token",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.sentry.io/api/",
+      "supports": [
+        "api",
+        "verdict"
+      ],
+      "quote": "The current version of the Sentry's web API is considered v0 .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.sentry.io/product/mcp-servers/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Sentry's MCP (Model Context Protocol) monitoring tools help you understand what's happening in your MCP implementations.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.sentry.io/api/",
+      "supports": [
+        "access"
+      ],
+      "quote": "You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.sentry.io/product/partnership-platform/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Set up the necessary API credentials and configurations",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.sentry.io/product/mcp-servers/getting-started/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Sentry MCP Monitoring helps you track and debug Model Context Protocol (MCP) implementations using our supported SDKs and integrations.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Auth mechanism (token type, OAuth) is not stated in retrieved text.",
+    "Plan or approval requirements for API access are not stated.",
+    "API style is not labeled REST.",
+    "Webhooks, sandbox and any official MCP server not established."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Sentry API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Sentry API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'duckduckgo: error sending request for url (https://html.duckduckgo.com/",
+      "backend": "ddg"
+    },
+    {
+      "query": "Sentry MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.sentry.io/api/",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.sentry.io/api/auth/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.sentry.io/product/mcp-servers/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.sentry.io/product/mcp-servers/getting-started/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.sentry.io/api/",
+      "from": "search"
+    },
+    {
+      "url": "https://sentryauth.xyz/docs",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": "sentry",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2"
+    ],
+    "tools_count": 210,
+    "auth_agreement": "inconclusive"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "adjudicated",
+    "agreed": [
+      "auth",
+      "self_serve",
+      "verdict"
+    ],
+    "disputed": {
+      "mcp_status": {
+        "pass_A": "unknown",
+        "pass_B": "not_found",
+        "final": "unknown",
+        "resolved_by": "adjudication",
+        "resolved": true,
+        "changed_from_pass_A": false,
+        "reason": "Sources describe monitoring of users' MCP servers, not a Sentry-provided MCP server; neither existence nor absence is established."
+      }
+    },
+    "rule_fixes": []
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": 50,
+  "name": "fanbasis",
+  "category": "Ecommerce",
+  "description": "FanBasis (now Commas) is a creator and enterprise payments platform with a REST API, SDKs and webhooks.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "API keys are issued during integration setup per the enterprise page; the exact outbound header or scheme is not documented in the sources.",
+  "self_serve": "sales",
+  "gate_detail": "Enterprise API onboarding goes through a kickoff call with a dedicated implementation engineer that sets up API keys, webhooks and sandbox testing. No public self-serve key creation is shown.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Payment orchestration, BNPL, subscriptions and multi-rail payouts via REST API with Node, Python, PHP and Ruby SDKs and a Postman collection.",
+  "webhooks": "yes",
+  "sandbox": "yes",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Commas lists an MCP beta to run the platform from an AI assistant; no server URL is given.",
+  "verdict": "needs_outreach",
+  "blocker": "sales_partnership",
+  "blocker_detail": "API access appears to be provisioned through a sales-led enterprise onboarding with a kickoff call rather than self-serve signup.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://api-sandbox.commas.net/enterprises",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "API keys, webhooks, sandbox testing",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api-sandbox.commas.net/enterprises",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Meet your dedicated implementation engineer",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api-sandbox.commas.net/enterprises",
+      "supports": [
+        "api"
+      ],
+      "quote": "SDKs for Node, Python, PHP, Ruby — idiomatic libraries maintained by our engineering team.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api-sandbox.commas.net/enterprises",
+      "supports": [
+        "api"
+      ],
+      "quote": "Full sandbox environment — simulated processors, all BNPL providers, and payout rails for testing.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://commas.com/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://commas.com/fanbasis-is-now-commas",
+      "supports": [
+        "description"
+      ],
+      "quote": "FanBasis officially became Commas on July 14, 2026.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Public API documentation is not in the sources, so the auth scheme is not confirmed.",
+    "Whether a self-serve developer path exists is not established.",
+    "S2 (X API) and S4 (Fanvue) concern other products and were not used.",
+    "Product was renamed from FanBasis to Commas on July 14, 2026."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "fanbasis API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "fanbasis API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "fanbasis MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.fanbasis.com/auth/setup/signup",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.x.com/x-api/getting-started/getting-access",
+      "from": "search"
+    },
+    {
+      "url": "https://api-sandbox.commas.net/enterprises",
+      "from": "search"
+    },
+    {
+      "url": "https://legal.fanvue.com/api-policy",
+      "from": "search"
+    },
+    {
+      "url": "https://commas.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://commas.com/fanbasis-is-now-commas",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

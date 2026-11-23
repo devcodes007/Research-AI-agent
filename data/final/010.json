@@ -1,0 +1,194 @@
+{
+  "id": 10,
+  "name": "DealCloud",
+  "category": "CRM and Sales",
+  "description": "DealCloud (Intapp) is a deal-management CRM with API docs, SDKs and an MCP section.",
+  "auth": [
+    "API key",
+    "Other"
+  ],
+  "auth_notes": "Doc navigation lists API Keys, Obtaining an API Key and an Authorization Token page; the exact scheme for outbound calls is not described in the retrieved text.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources show only navigation headings (Obtaining an API Key, User Groups and Permissions); who can obtain keys and on which plan is not stated.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Documented areas include schema, data, users, files, history, publications, backups, relationship intelligence, plus Python, C# and REST client SDKs.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Docs include an MCP section with a Default MCP Server and Custom MCP Servers; no URL given.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "Sources contain only navigation text; credential access conditions and plan requirements are not established.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "Obtaining an API Key",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "supports": [
+        "access"
+      ],
+      "quote": "User Groups and Permissions",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Authorization Token",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "Intapp REST Client",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Default MCP Server",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Authorization Token Pagination Rate Limits",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "Dealcloud Developer Documentation",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "Real-Time Events from DealCloud",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Custom MCP Servers",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "Python SDK v1.X",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Only sidebar navigation was captured, no body text on auth or access.",
+    "Whether API keys are customer-admin issued or need Intapp approval is unknown.",
+    "Webhooks (Publications polling vs webhooks) and sandbox are unclear.",
+    "MCP URL and whether it is vendor-hosted are not stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "DealCloud API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "DealCloud API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "DealCloud MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+      "from": "search"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs",
+      "from": "search"
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ],
+  "catalog": {
+    "toolkit": null,
+    "match": "none",
+    "schemes": [],
+    "tools_count": 0,
+    "auth_agreement": "no_toolkit"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "agreed",
+    "agreed": [
+      "auth",
+      "self_serve",
+      "mcp_status",
+      "verdict"
+    ],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

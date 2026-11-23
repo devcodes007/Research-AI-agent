@@ -1,0 +1,150 @@
+{
+  "id": 64,
+  "name": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Cloudflare API for managing accounts, zones, tokens and other Cloudflare services, with SDKs and Terraform provider.",
+  "auth": [
+    "API key",
+    "Other"
+  ],
+  "auth_notes": "API tokens (recommended) created by the developer; legacy Global API key plus account email also supported. Token format and permission groups are configurable.",
+  "self_serve": "instant",
+  "gate_detail": "Developers create an API token themselves; no plan requirement is stated for token creation. Some endpoints (e.g. Organizations read/update/delete) need a Global API key. No sandbox stated.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "Other"
+  ],
+  "api_scope": "REST API with account, token, audit log and billing endpoints plus TypeScript, Python and Go libraries and a Terraform provider.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Cloudflare runs managed remote MCP servers with OAuth, including a main API MCP server covering the full API; main server URL not stated.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No payment or approval gate stated; some endpoints require the legacy Global API key.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Create an API token to grant access to the API to perform actions.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "You can also authenticate with API keys , but these keys have several limitations that make them less secure than API tokens.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.cloudflare.com/api/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "reading, updating, or deleting an Organization requires a Global API key and your registered email address.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "the Cloudflare API MCP server already covers the full Cloudflare API.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.cloudflare.com/api/",
+      "supports": [
+        "api"
+      ],
+      "quote": "pip install cloudflare",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan requirements for creating API tokens are not stated.",
+    "URL of the main Cloudflare API MCP server is not given in the sources.",
+    "Webhook support inferred from notification and stream webhook sections in the API listing.",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Cloudflare API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Cloudflare API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    },
+    {
+      "query": "Cloudflare MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.cloudflare.com/api/",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.cloudflare.com/api/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+      "from": "search"
+    },
+    {
+      "url": "https://cloudflare.apidocumentation.com/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ],
+  "catalog": {
+    "toolkit": "cloudflare",
+    "match": "slug",
+    "schemes": [
+      "API_KEY"
+    ],
+    "tools_count": 171,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

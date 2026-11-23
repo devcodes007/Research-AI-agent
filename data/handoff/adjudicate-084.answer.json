@@ -1,0 +1,1 @@
+{"auth":{"value":"API key","source":"S6","quote":"API keys authenticate the usage-tracking service.","reason":"Source states API keys authenticate; S1 also shows pg_live_ keys sent as Bearer. Candidate API key is supported over Other."}}

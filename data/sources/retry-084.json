@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Paygent Connect API pricing which plan includes API access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Paygent Connect API authentication generate access token developer settings",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Paygent Connect API access approval review partner requirements",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.withpaygent.com/documentation/introduction/pricing-models",
+   "requested_url": "https://docs.withpaygent.com/documentation/introduction/pricing-models",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.withpaygent.com/cli/commands/authentication",
+   "requested_url": "https://docs.withpaygent.com/cli/commands/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.paygent.to/reference/api-reference/",
+   "requested_url": "https://docs.paygent.to/reference/api-reference/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.paygent.to/introduction/plans-and-usage-events/",
+   "requested_url": "https://docs.paygent.to/introduction/plans-and-usage-events/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.withpaygent.com/documentation/introduction/plans",
+   "requested_url": "https://docs.withpaygent.com/documentation/introduction/plans",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.withpaygent.com/cli/commands/api-keys",
+   "requested_url": "https://docs.withpaygent.com/cli/commands/api-keys",
+   "from": "search"
+  }
+ ]
+}

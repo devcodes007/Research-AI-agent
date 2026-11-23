@@ -1,0 +1,117 @@
+{
+  "id": 2,
+  "name": "HubSpot",
+  "category": "CRM and Sales",
+  "description": "HubSpot CRM platform with OAuth and private app token APIs plus remote MCP server.",
+  "auth": [
+    "OAuth2",
+    "Bearer token"
+  ],
+  "auth_notes": "OAuth access tokens for public/multi-customer apps; private app access tokens, both sent in Authorization header as Bearer.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources do not state plan requirements for creating private apps or OAuth apps. The MCP server requires the HubSpot account admin to connect first via a user-level app. Free tools exist per homepage.",
+  "api_styles": [
+    "REST",
+    "CLI"
+  ],
+  "api_scope": "CRM and other HubSpot APIs on api.hubapi.com via OAuth or private app tokens; remote MCP server covers CRM records, activities, content, campaigns.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "HubSpot offers a remote MCP server and a local CLI-based developer MCP server; endpoint URL not given in excerpts.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "MCP requires account admin to connect first; some MCP features need Professional or Enterprise subscriptions. API plan gating not established.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Learn more about using OAuth or private access tokens to make authenticated API requests to HubSpot.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.hubspot.com/ai-tools/mcp",
+      "supports": [
+        "access",
+        "mcp"
+      ],
+      "quote": "The admin of the HubSpot account needs to connect first, to allow other users in the account to connect thereafter.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.hubspot.com/ai-tools/mcp",
+      "supports": [
+        "mcp",
+        "description"
+      ],
+      "quote": "HubSpot offers two distinct MCP (Model Context Protocol) servers",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+      "supports": [
+        "api",
+        "mcp"
+      ],
+      "quote": "Behind the scenes, the HubSpot MCP server is based on the CRM search API",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan needed to create private apps or developer accounts not stated",
+    "Webhooks and sandbox not covered in excerpts",
+    "Remote MCP URL not stated",
+    "Whether legacy vs new developer platform auth differs in access requirements"
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "HubSpot API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "HubSpot API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    },
+    {
+      "query": "HubSpot MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.hubspot.com/",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.hubspot.com/ai-tools/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "unknown_access_but_confident_verdict"
+  ]
+}

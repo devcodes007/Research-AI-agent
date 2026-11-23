@@ -1,0 +1,77 @@
+{
+ "searches": [
+  {
+   "query": "Slack API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Slack API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Slack MCP server official",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No resul",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://api.slack.com/tokens",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://api.slack.com/developer-program/join",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://api.slack.com/developer-program",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://slack.com/intl/en-in/terms-of-service/slack-developer-program",
+   "requested_url": "https://slack.com/terms-of-service/slack-developer-program",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://slack.com/intl/en-in/terms/api",
+   "requested_url": "https://slack.com/terms/api",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.slack.dev/authentication/",
+   "requested_url": "https://docs.slack.dev/authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.slack.dev/apis/",
+   "requested_url": "https://docs.slack.dev/apis/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://apis.io/apis/slack/slack-authentication-api/",
+   "requested_url": "https://apis.io/apis/slack/slack-authentication-api/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://apis.io/apis/slack/slack-auth-api/",
+   "requested_url": "https://apis.apis.io/apis/slack/slack-auth-api/",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "searches": [
+  {
+   "query": "QuickBooks API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "QuickBooks API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "QuickBooks MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://developer.intuit.com",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.developer.intuit.com/s/question/0D54R000076iY7USAU/in-how-to-authorize-quickbooks-api-using-client-id-and-client-secret-keys-and-get-the-access-token-without-loggin-into-the-quickbooks-app",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.developer.intuit.com/s/question/0D5TR00001M7S950AF/is-there-any-mcp-available-for-quickbooks-online",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.developer.intuit.com/s/article/How-to-integrate-with-QuickBooks-API",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/partner-faq",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.developer.intuit.com/s/article/API-classification-for-the-Intuit-App-Partner-Program",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.developer.intuit.com/s/article/platform-service-fees",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
+   "requested_url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://apis.io/security/quickbooks/quickbooks-authentication/",
+   "requested_url": "https://apis.io/security/quickbooks/quickbooks-authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+   "requested_url": "https://www.apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://apis.io/plans/quickbooks/quickbooks-plans-pricing/",
+   "requested_url": "https://apis.io/plans/quickbooks/quickbooks-plans-pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+   "requested_url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://satvasolutions.com/blog/quickbooks-online-api-guide.md",
+   "requested_url": "https://satvasolutions.com/blog/quickbooks-online-api-guide",
+   "from": "search"
+  }
+ ]
+}

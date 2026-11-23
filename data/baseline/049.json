@@ -1,0 +1,122 @@
+{
+  "id": 49,
+  "name": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "description": "Amazon's Selling Partner API lets sellers and developers integrate with Amazon selling programmatically.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Applications are registered in the Solution Provider Portal with roles; private apps self-authorize in draft status. Outbound credential type is not stated in the sources.",
+  "self_serve": "approval",
+  "gate_detail": "Requires a Professional Selling Account, a Solution Provider Portal account, and a data access request qualifying for specific roles after policy and security review. Private apps self-authorize; sandbox endpoints exist.",
+  "api_styles": [
+    "Other"
+  ],
+  "api_scope": "Endpoints grouped under roles; use cases include inventory automation, product research, feedback management and keyword optimization for Amazon stores. API style is not stated in the sources.",
+  "webhooks": "unknown",
+  "sandbox": "yes",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "The MCP sources cover AWS Partner Central, a different product, so nothing is established for SP-API.",
+  "verdict": "needs_outreach",
+  "blocker": "approval_review",
+  "blocker_detail": "Developers must request data access and qualify for roles; only Professional Selling Accounts are eligible.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Only Professional Selling Accounts can register to develop or integrate with Selling Partner API. Individual accounts are not eligible.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "you must request and qualify for a particular role to access the operations and resources grouped under that role.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "You can self-authorize your application in draft status; there is no need to publish a private application.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+      "supports": [
+        "api"
+      ],
+      "quote": "we recommend using Postman and making a call to one of our sandbox endpoints.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+      "supports": [
+        "description"
+      ],
+      "quote": "Amazon Sellers can use SP-API to set up private integrations and build solutions exclusively for their Amazon store",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Outbound authentication mechanism is not stated in the sources.",
+    "API style and webhook or notification support are not stated.",
+    "Sources S3 to S5 describe AWS Partner Central, not SP-API, and were not used."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Amazon Selling Partner API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Amazon Selling Partner API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Amazon Selling Partner MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer-docs.amazon/sp-api",
+      "from": "hint"
+    },
+    {
+      "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/partner-central/latest/developer-guide/setup-authentication.html",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/partner-central/latest/developer-guide/mcp-getting-started.html",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/partner-central/latest/developer-guide/partner-central-mcp-server.html",
+      "from": "search"
+    },
+    {
+      "url": "https://developer-docs.amazon/sp-api/",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

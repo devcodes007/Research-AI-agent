@@ -1,0 +1,130 @@
+{
+  "id": 42,
+  "name": "WooCommerce",
+  "category": "Ecommerce",
+  "description": "WooCommerce store REST API integrated with WordPress REST API for store data.",
+  "auth": [
+    "Basic",
+    "API key",
+    "Other"
+  ],
+  "auth_notes": "Consumer key/secret generated per store, used as Basic auth username and password; OAuth 1.0a and a /wc-auth/v1/authorize key-delivery flow also exist.",
+  "self_serve": "instant",
+  "gate_detail": "API is per self-hosted store; the store admin enables the REST API and generates keys. No vendor approval or payment stated. Sandbox not described.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "CRUD over store data in JSON including coupons, customers, orders, products, taxes and webhooks, with bulk endpoints.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "No MCP server appears in the provided sources.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Needs store admin access to the specific WooCommerce install; no vendor gate.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Pre-generated keys can be used to authenticate use of the REST API endpoints.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "The username when authenticating is your consumer key",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "The password when authenticating is your consumer secret",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html?javascript",
+      "supports": [
+        "access"
+      ],
+      "quote": "the REST API must be enabled under WooCommerce > Settings",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html?javascript",
+      "supports": [
+        "api"
+      ],
+      "quote": "v3 fixes the OAuth implementation to be compliant with the Oauth 1.0a specs",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html?javascript",
+      "supports": [
+        "api"
+      ],
+      "quote": "Create a Webhook",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Each store is separately hosted; access depends on that store's admin.",
+    "Sandbox not described.",
+    "MCP absence is inferred from silence in sources."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "WooCommerce API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "WooCommerce API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "WooCommerce MCP server official",
+      "error": "all search engines returned nothing: ['brave: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results fou",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "from": "hint"
+    },
+    {
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+      "from": "search"
+    },
+    {
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "from": "search"
+    },
+    {
+      "url": "https://woocommerce.com/document/api-documentation/",
+      "from": "search"
+    },
+    {
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html?javascript",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

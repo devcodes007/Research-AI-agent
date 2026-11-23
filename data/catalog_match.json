@@ -1,0 +1,1092 @@
+{
+ "1": {
+  "app": "Salesforce",
+  "toolkit": "salesforce",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "S2S_OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 556,
+  "name": "Salesforce"
+ },
+ "2": {
+  "app": "HubSpot",
+  "toolkit": "hubspot",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 354,
+  "name": "HubSpot"
+ },
+ "3": {
+  "app": "Pipedrive",
+  "toolkit": "pipedrive",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 404,
+  "name": "Pipedrive"
+ },
+ "4": {
+  "app": "Attio",
+  "toolkit": "attio",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 105,
+  "name": "Attio"
+ },
+ "5": {
+  "app": "Twenty",
+  "toolkit": "twenty",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 23,
+  "name": "Twenty"
+ },
+ "6": {
+  "app": "Podio",
+  "toolkit": "podio",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 143,
+  "name": "Podio"
+ },
+ "7": {
+  "app": "Zoho CRM",
+  "toolkit": "zoho",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 115,
+  "name": "Zoho"
+ },
+ "8": {
+  "app": "Close",
+  "toolkit": "close",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 75,
+  "name": "Close"
+ },
+ "9": {
+  "app": "Copper",
+  "toolkit": "copper",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 65,
+  "name": "Copper"
+ },
+ "10": {
+  "app": "DealCloud",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "11": {
+  "app": "Zendesk",
+  "toolkit": "zendesk",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 483,
+  "name": "Zendesk"
+ },
+ "12": {
+  "app": "Intercom",
+  "toolkit": "intercom",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 138,
+  "name": "Intercom"
+ },
+ "13": {
+  "app": "Freshdesk",
+  "toolkit": "freshdesk",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 184,
+  "name": "Freshdesk"
+ },
+ "14": {
+  "app": "Front",
+  "toolkit": "front",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 180,
+  "name": "Front"
+ },
+ "15": {
+  "app": "Pylon",
+  "toolkit": "pylon_mcp",
+  "how": "url",
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ],
+  "no_auth": false,
+  "tools_count": 12,
+  "name": "Pylon MCP"
+ },
+ "16": {
+  "app": "LiveAgent",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "17": {
+  "app": "Plain",
+  "toolkit": "plain",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 119,
+  "name": "Plain"
+ },
+ "18": {
+  "app": "Help Scout",
+  "toolkit": "help_scout",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 129,
+  "name": "Help Scout"
+ },
+ "19": {
+  "app": "Gorgias",
+  "toolkit": "gorgias",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 51,
+  "name": "Gorgias"
+ },
+ "20": {
+  "app": "Gladly",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "21": {
+  "app": "Slack",
+  "toolkit": "slack",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 165,
+  "name": "Slack"
+ },
+ "22": {
+  "app": "Twilio",
+  "toolkit": "twilio",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY",
+   "BASIC",
+   "S2S_OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 452,
+  "name": "Twilio"
+ },
+ "23": {
+  "app": "Zoho Cliq",
+  "toolkit": "zoho_cliq",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 162,
+  "name": "Zoho Cliq"
+ },
+ "24": {
+  "app": "Lark (Larksuite)",
+  "toolkit": "lark",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 451,
+  "name": "Lark"
+ },
+ "25": {
+  "app": "Pumble",
+  "toolkit": "pumble",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 9,
+  "name": "Pumble"
+ },
+ "26": {
+  "app": "Discord",
+  "toolkit": "discord",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 23,
+  "name": "Discord"
+ },
+ "27": {
+  "app": "Telegram",
+  "toolkit": "telegram",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 18,
+  "name": "Telegram"
+ },
+ "28": {
+  "app": "WhatsApp Business",
+  "toolkit": "whatsapp",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 127,
+  "name": "WhatsApp"
+ },
+ "29": {
+  "app": "Aircall",
+  "toolkit": "aircall",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "BASIC"
+  ],
+  "no_auth": false,
+  "tools_count": 48,
+  "name": "Aircall"
+ },
+ "30": {
+  "app": "Vonage",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "31": {
+  "app": "Google Ads",
+  "toolkit": "googleads",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 78,
+  "name": "Google Ads"
+ },
+ "32": {
+  "app": "Meta Ads",
+  "toolkit": "metaads",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 99,
+  "name": "Meta Ads"
+ },
+ "33": {
+  "app": "LinkedIn Ads",
+  "toolkit": "linkedin_ads",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 28,
+  "name": "Linkedin Ads"
+ },
+ "34": {
+  "app": "GoHighLevel",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "35": {
+  "app": "Mailchimp",
+  "toolkit": "mailchimp",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 275,
+  "name": "Mailchimp"
+ },
+ "36": {
+  "app": "Klaviyo",
+  "toolkit": "klaviyo",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 233,
+  "name": "Klaviyo"
+ },
+ "37": {
+  "app": "systeme.io",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "38": {
+  "app": "Pinterest",
+  "toolkit": "pinterest",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 27,
+  "name": "Pinterest"
+ },
+ "39": {
+  "app": "Threads (Meta)",
+  "toolkit": "threads",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 24,
+  "name": "Threads"
+ },
+ "40": {
+  "app": "SendGrid",
+  "toolkit": "sendgrid",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 359,
+  "name": "SendGrid"
+ },
+ "41": {
+  "app": "Shopify",
+  "toolkit": "shopify",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "S2S_OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 386,
+  "name": "Shopify"
+ },
+ "42": {
+  "app": "WooCommerce",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "43": {
+  "app": "BigCommerce",
+  "toolkit": "bigcommerce",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 532,
+  "name": "BigCommerce"
+ },
+ "44": {
+  "app": "Salesforce Commerce Cloud",
+  "toolkit": "salesforce",
+  "how": "url",
+  "auth_schemes": [
+   "OAUTH2",
+   "S2S_OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 556,
+  "name": "Salesforce"
+ },
+ "45": {
+  "app": "Magento (Adobe Commerce)",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "46": {
+  "app": "Squarespace",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "47": {
+  "app": "Ecwid",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "48": {
+  "app": "Gumroad",
+  "toolkit": "gumroad",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 13,
+  "name": "Gumroad"
+ },
+ "49": {
+  "app": "Amazon Selling Partner",
+  "toolkit": "amazon",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 0,
+  "name": "Amazon"
+ },
+ "50": {
+  "app": "fanbasis",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "51": {
+  "app": "DataForSEO",
+  "toolkit": "dataforseo",
+  "how": "slug",
+  "auth_schemes": [
+   "BASIC"
+  ],
+  "no_auth": false,
+  "tools_count": 354,
+  "name": "DataForSEO"
+ },
+ "52": {
+  "app": "SE Ranking",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "53": {
+  "app": "Ahrefs",
+  "toolkit": "ahrefs",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 46,
+  "name": "Ahrefs"
+ },
+ "54": {
+  "app": "MrScraper",
+  "toolkit": "mrscraper",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 11,
+  "name": "MrScraper"
+ },
+ "55": {
+  "app": "Apify",
+  "toolkit": "apify",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 184,
+  "name": "Apify"
+ },
+ "56": {
+  "app": "Firecrawl",
+  "toolkit": "firecrawl",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 245,
+  "name": "Firecrawl"
+ },
+ "57": {
+  "app": "Bright Data",
+  "toolkit": "brightdata",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 167,
+  "name": "Bright Data"
+ },
+ "58": {
+  "app": "Sherlock",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "59": {
+  "app": "Waterfall.io",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "60": {
+  "app": "Clay",
+  "toolkit": "clay",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 15,
+  "name": "Clay"
+ },
+ "61": {
+  "app": "GitHub",
+  "toolkit": "github",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 883,
+  "name": "GitHub"
+ },
+ "62": {
+  "app": "Vercel",
+  "toolkit": "vercel",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 399,
+  "name": "Vercel"
+ },
+ "63": {
+  "app": "Netlify",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "64": {
+  "app": "Cloudflare",
+  "toolkit": "cloudflare",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 171,
+  "name": "Cloudflare"
+ },
+ "65": {
+  "app": "Supabase",
+  "toolkit": "supabase",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 230,
+  "name": "Supabase"
+ },
+ "66": {
+  "app": "Neo4j",
+  "toolkit": "neo4j",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "BASIC",
+   "API_KEY",
+   "S2S_OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 21,
+  "name": "Neo4J"
+ },
+ "67": {
+  "app": "Snowflake",
+  "toolkit": "snowflake",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 16,
+  "name": "Snowflake"
+ },
+ "68": {
+  "app": "MongoDB Atlas",
+  "toolkit": "mongodb",
+  "how": "slug",
+  "auth_schemes": [
+   "S2S_OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 496,
+  "name": "MongoDB"
+ },
+ "69": {
+  "app": "Datadog",
+  "toolkit": "datadog",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY",
+   "BEARER_TOKEN"
+  ],
+  "no_auth": false,
+  "tools_count": 255,
+  "name": "Datadog"
+ },
+ "70": {
+  "app": "Sentry",
+  "toolkit": "sentry",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 210,
+  "name": "Sentry"
+ },
+ "71": {
+  "app": "Notion",
+  "toolkit": "notion",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 59,
+  "name": "Notion"
+ },
+ "72": {
+  "app": "Airtable",
+  "toolkit": "airtable",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 26,
+  "name": "Airtable"
+ },
+ "73": {
+  "app": "Linear",
+  "toolkit": "linear",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 47,
+  "name": "Linear"
+ },
+ "74": {
+  "app": "Jira",
+  "toolkit": "jira",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "S2S_OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 166,
+  "name": "Jira"
+ },
+ "75": {
+  "app": "Asana",
+  "toolkit": "asana",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 247,
+  "name": "Asana"
+ },
+ "76": {
+  "app": "Monday.com",
+  "toolkit": "monday",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 122,
+  "name": "Monday"
+ },
+ "77": {
+  "app": "ClickUp",
+  "toolkit": "clickup",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 163,
+  "name": "ClickUp"
+ },
+ "78": {
+  "app": "Coda",
+  "toolkit": "coda",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 109,
+  "name": "Coda"
+ },
+ "79": {
+  "app": "Smartsheet",
+  "toolkit": "smartsheet",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "BEARER_TOKEN"
+  ],
+  "no_auth": false,
+  "tools_count": 180,
+  "name": "Smartsheet"
+ },
+ "80": {
+  "app": "Harvest",
+  "toolkit": "harvest",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 60,
+  "name": "Harvest"
+ },
+ "81": {
+  "app": "Stripe",
+  "toolkit": "stripe",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 428,
+  "name": "Stripe"
+ },
+ "82": {
+  "app": "Plaid",
+  "toolkit": "plaid",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 70,
+  "name": "Plaid"
+ },
+ "83": {
+  "app": "Binance",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "84": {
+  "app": "Paygent Connect",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "85": {
+  "app": "iPayX",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "86": {
+  "app": "QuickBooks",
+  "toolkit": "quickbooks",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 119,
+  "name": "QuickBooks"
+ },
+ "87": {
+  "app": "Xero",
+  "toolkit": "xero",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 109,
+  "name": "Xero"
+ },
+ "88": {
+  "app": "Brex",
+  "toolkit": "brex",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 84,
+  "name": "Brex"
+ },
+ "89": {
+  "app": "Ramp",
+  "toolkit": "ramp",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 186,
+  "name": "Ramp"
+ },
+ "90": {
+  "app": "PitchBook",
+  "toolkit": "pitchbook",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 130,
+  "name": "PitchBook"
+ },
+ "91": {
+  "app": "NotebookLM",
+  "toolkit": "notebook_lm",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "tools_count": 11,
+  "name": "NotebookLM"
+ },
+ "92": {
+  "app": "Otter AI",
+  "toolkit": "otter_ai_mcp",
+  "how": "url",
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ],
+  "no_auth": false,
+  "tools_count": 3,
+  "name": "Otter.ai MCP"
+ },
+ "93": {
+  "app": "Fathom",
+  "toolkit": "fathom",
+  "how": "slug",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 10,
+  "name": "Fathom"
+ },
+ "94": {
+  "app": "Consensus",
+  "toolkit": "consensus",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 1,
+  "name": "Consensus"
+ },
+ "95": {
+  "app": "Reducto",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "96": {
+  "app": "Devin",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "97": {
+  "app": "higgsfield",
+  "toolkit": "higgsfield",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 13,
+  "name": "Higgsfield"
+ },
+ "98": {
+  "app": "Mermaid CLI",
+  "toolkit": null,
+  "how": "none",
+  "auth_schemes": [],
+  "no_auth": null,
+  "tools_count": 0,
+  "name": null
+ },
+ "99": {
+  "app": "YouTube Transcript",
+  "toolkit": "youtube_transcript",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 9,
+  "name": "YouTube Transcript"
+ },
+ "100": {
+  "app": "Grain",
+  "toolkit": "grain",
+  "how": "slug",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "no_auth": false,
+  "tools_count": 17,
+  "name": "Grain"
+ }
+}

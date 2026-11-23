@@ -1,0 +1,108 @@
+{
+  "id": 89,
+  "name": "Ramp",
+  "category": "Finance and Fintech",
+  "description": "Ramp is a finance and spend-management platform with a documented developer API at docs.ramp.com.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Fetched pages are JavaScript shells with no documentation content, so the auth scheme is not stated in any source.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources do not describe how to obtain credentials, any plan requirement, approval, or sandbox. Only page shells and pointers to llms.txt and OpenAPI files were retrieved.",
+  "api_styles": [
+    "Other"
+  ],
+  "api_scope": "Sources only reveal that a Ramp Developer API v1 with an API reference and an OpenAPI spec exists; endpoint coverage is not shown.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "No source mentions an MCP server; the retrieved pages contain no substantive content.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "All six sources are JavaScript shells without documentation content, so auth and access cannot be established.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://docs.ramp.com",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "/openapi/developer-api.json (OpenAPI spec)",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ramp.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "/llms-api.txt (API reference),",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/getting-started",
+      "supports": [
+        "api"
+      ],
+      "quote": "If you run into any issues while helping developers with the Ramp API",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "No source states the authentication method; auth set to Other with low confidence.",
+    "No source states how developers obtain credentials or any approval, plan, or sales gate.",
+    "Webhooks, sandbox, and MCP availability are not covered by any source.",
+    "Re-fetch the /llms-guides/*.txt and /llms-api.txt files to resolve."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Ramp developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Ramp API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Ramp model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.ramp.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/getting-started",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/api/authorization",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/overview",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "ungrounded:auth",
+    "ungrounded:access"
+  ]
+}

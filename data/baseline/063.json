@@ -1,0 +1,124 @@
+{
+  "id": 63,
+  "name": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Netlify REST API for managing sites, atomic deploys, forms, DNS and snippets.",
+  "auth": [
+    "OAuth2",
+    "Bearer token"
+  ],
+  "auth_notes": "Personal access tokens sent as Authorization: Bearer; OAuth2 required for public integrations, using an application client key and secret.",
+  "self_serve": "instant",
+  "gate_detail": "Developers generate a personal access token in Applications settings, or register an OAuth application in user settings. No plan restriction on API access is stated; SSO teams need explicit token grant. No sandbox stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "REST API at api.netlify.com/api/v1 to manage atomic deploys, form submissions, JavaScript snippets, DNS and sites.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "No source mentions an MCP server for Netlify.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No payment or approval gate stated; SAML SSO teams require granting token access at creation.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Netlify uses OAuth2 for authentication",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Go to Applications > Personal access tokens .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "To authenticate API requests, include the token in the authorization header:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "If you’re making a public integration with Netlify for others to enjoy, you must use OAuth2.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan requirements for API use are not explicitly stated.",
+    "Webhooks, sandbox and MCP are not covered by the sources.",
+    "The full OAuth2 grant details were truncated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Netlify API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Netlify API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Netlify MCP server official",
+      "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", \"auto: RequestError: RequestError('error sending request for url (https:",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/identity/overview/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/identity/plans-and-pricing/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.netlify.com/blog/api-authentication-methods.md",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

@@ -1,0 +1,126 @@
+{
+  "id": 48,
+  "name": "Gumroad",
+  "category": "Ecommerce",
+  "description": "Gumroad is a creator commerce platform with a REST API for products, sales, subscribers and licenses.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "OAuth 2.0 access tokens in the Authorization header; owners can generate a personal access token from an application they create in settings.",
+  "self_serve": "instant",
+  "gate_detail": "Create an application in Gumroad settings and generate an access token; no plan, scope selection or approval queue is described. No sandbox stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "REST API for products, variants, offer codes, custom fields, sales, subscribers, license keys, resource subscriptions (webhooks) and the authenticated user account.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "Directory listings record no MCP server for Gumroad.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No payment or approval gate is described for generating an access token.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://gumkit.app/blog/gumroad-api-access-token/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "there is no plan to pick, no scope checklist, no approval queue",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://gumkit.app/blog/gumroad-api-access-token/",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "On the Edit application page, click Generate access token .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://apis.io/providers/gumroad/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Authentication uses OAuth 2.0 access tokens passed in the Authorization header.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://rollout.com/integration-guides/gumroad/api-essentials",
+      "supports": [
+        "api"
+      ],
+      "quote": "Gumroad's API is RESTful and returns JSON for all requests.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://apis.io/providers/gumroad/",
+      "supports": [
+        "api"
+      ],
+      "quote": "resource subscriptions (webhooks)",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://apitracker.io/a/gumroad",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "MCP servers Not recorded",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "All sources are third-party; no first-party Gumroad documentation is included.",
+    "Sandbox availability is not described.",
+    "MCP absence is based on directory listings only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Gumroad API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    },
+    {
+      "query": "Gumroad API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Gumroad MCP server official",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.transmitsecurity.com/guides/automated-workflows/integrations/builtin/credentials/gumroad",
+      "from": "search"
+    },
+    {
+      "url": "https://gumkit.app/blog/gumroad-api-access-token/",
+      "from": "search"
+    },
+    {
+      "url": "https://apitracker.io/a/gumroad",
+      "from": "search"
+    },
+    {
+      "url": "https://rollout.com/integration-guides/gumroad/api-essentials",
+      "from": "search"
+    },
+    {
+      "url": "https://apis.io/providers/gumroad/",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

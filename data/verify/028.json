@@ -1,0 +1,131 @@
+{
+  "id": 28,
+  "name": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "description": "Meta's WhatsApp Business Platform Cloud API for sending and receiving messages and managing accounts.",
+  "auth": [
+    "Bearer token"
+  ],
+  "auth_notes": "Access tokens sent as Bearer in the Authorization header; system user tokens, or Business Integration System User tokens when acting for clients.",
+  "self_serve": "approval",
+  "gate_detail": "Developers can generate a temporary test token via a Meta app. Production use for other businesses' accounts needs App Review with Advanced access, plus partner onboarding for Tech Providers.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Cloud API for messaging and calling, Business Management API for account assets, Marketing Messages API, Groups API and Embedded Signup onboarding.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Meta runs official remote MCP servers including a WhatsApp Business Tools MCP; its URL is not visible in the sources.",
+  "verdict": "needs_outreach",
+  "blocker": "approval_review",
+  "blocker_detail": "App Review for Advanced access permissions is required to access WABAs not owned by your business.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "\"Authorization\": \"Bearer <ACCESS_TOKEN>\",",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Click **Generate access token** to generate a temporary access token to send a test message.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/get-started-for-solution-partners/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "your app must go through [App Review](https://developers.facebook.com/docs/app-review)",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+      "supports": [
+        "api"
+      ],
+      "quote": "You will need to set up a webhook endpoint in order to receive notifications about message statuses",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/mcp/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Meta runs official remote Model Context Protocol (MCP) servers",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/meta-business-agent/get-api-key/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "every call needs a system user access token.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "WhatsApp Business Tools MCP URL is cut off in the source.",
+    "REST style is inferred from HTTP calls, not labeled.",
+    "No dedicated sandbox is described beyond a temporary test token."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "WhatsApp Business developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "WhatsApp Business API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "WhatsApp Business model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/mcp/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/meta-business-agent/get-api-key/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/overview/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/get-started-for-solution-partners/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "DataForSEO API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "DataForSEO API credentials pricing plan required developer access",
+   "results": 8,
+   "backend": "ddg"
+  },
+  {
+   "query": "DataForSEO MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.dataforseo.com/v3/",
+   "requested_url": "https://docs.dataforseo.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.dataforseo.com/v3/auth/",
+   "requested_url": "https://docs.dataforseo.com/v3/auth/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.dataforseo.com/v3/",
+   "requested_url": "https://docs.dataforseo.com/v3/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+   "requested_url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+   "requested_url": "https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://dataforseo.com/update/pricing-update-in-dataforseo-apis",
+   "requested_url": "https://dataforseo.com/update/pricing-update-in-dataforseo-apis",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+  "id": 72,
+  "name": "Airtable",
+  "category": "Productivity and Project Management",
+  "description": "Airtable Web API for reading and writing bases, tables and records, with webhooks and MCP.",
+  "auth": [
+    "OAuth2",
+    "API key"
+  ],
+  "auth_notes": "Personal access tokens and OAuth access tokens, both sent in an Authorization Bearer header; legacy API keys are deprecated.",
+  "self_serve": "free_tier",
+  "gate_detail": "Personal access tokens are available on all plan types and are created by users themselves; OAuth integrations are registered at /create/oauth. Enterprise admins can limit token lifetime or allowlist MCP integrations.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Web API for bases and records with scopes and per-base access, plus webhooks and an MCP server for AI tools.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Airtable documents its own MCP server in developer docs and support; setup uses OAuth or personal access tokens. No URL given.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Enterprise admin policies may restrict token lifetime or third-party integrations.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://airtable.com/developers/web/api/authentication.md",
+      "supports": [
+        "auth"
+      ],
+      "quote": "We currently support using personal access tokens and OAuth access tokens during the authentication process.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://airtable.com/developers/web/api/authentication.md",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Airtable's API uses token-based authentication",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+      "supports": [
+        "access"
+      ],
+      "quote": "All plan types. Certain features are only available to Enterprise Scale or Business plan customers.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://airtable.com/developers/web/api/authentication.md",
+      "supports": [
+        "access"
+      ],
+      "quote": "They can be created and managed at [/create/tokens]",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://community.airtable.com/announcements-6/new-beta-new-api-authentication-methods-endpoints-and-public-api-docs-1442",
+      "supports": [
+        "api"
+      ],
+      "quote": "The new webhooks feature looks really powerful.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Using the Airtable MCP server",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Webhooks evidence comes from a 2022 community thread.",
+    "No MCP URL or sandbox stated in the sources.",
+    "REST/SDK style labels inferred from Web API description.",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Airtable API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Airtable API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Airtable MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://airtable.com/developers/agents",
+      "from": "hint"
+    },
+    {
+      "url": "https://airtable.com/developers/web/api/authentication.md",
+      "from": "search"
+    },
+    {
+      "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+      "from": "search"
+    },
+    {
+      "url": "https://community.airtable.com/announcements-6/new-beta-new-api-authentication-methods-endpoints-and-public-api-docs-1442",
+      "from": "search"
+    },
+    {
+      "url": "https://community.airtable.com/development-apis-11/airtable-api-key-deprecation-replacing-api-key-with-personal-access-token-4202",
+      "from": "search"
+    },
+    {
+      "url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ],
+  "catalog": {
+    "toolkit": "airtable",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "tools_count": 26,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

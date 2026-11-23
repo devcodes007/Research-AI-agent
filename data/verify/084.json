@@ -1,0 +1,106 @@
+{
+  "id": 84,
+  "name": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "description": "Unclear: supplied sources cover a different Paygent (LLM cost tracking), not NMI-powered Paygent Connect.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Sources document auth only for unrelated Paygent products (Bearer pg_live key; paygent-api-key header). Nothing establishes auth for NMI-powered Paygent Connect.",
+  "self_serve": "unknown",
+  "gate_detail": "No source describes how to obtain credentials for Paygent Connect (NMI-powered). Unrelated Paygent LLM-cost products let developers mint keys via API or dashboard, but that is not the target product.",
+  "api_styles": [
+    "None"
+  ],
+  "api_scope": "No evidence about a Paygent Connect API; the sources describe REST APIs of different, unrelated Paygent products.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "No source mentions an MCP server for Paygent Connect.",
+  "verdict": "unclear",
+  "blocker": "ambiguous_product",
+  "blocker_detail": "All sources describe other products named Paygent (LLM spend control and AI billing), not the NMI-powered Paygent Connect payments product.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://docs.paygent.to/",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "Paygent is an SDK — for Python and TypeScript — that tracks per-user LLM costs and enforces spending limits before calls reach OpenAI or Anthropic.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "Usage tracking alone does not invoice customers. Create an order to start automatic billing:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.withpaygent.com/cli/commands/api-keys",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "API keys authenticate the usage-tracking service. Managing them requires a signed-in session.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources are all for different Paygent products, none for NMI-powered Paygent Connect.",
+    "Auth, access, webhooks, sandbox and MCP for the target product are unknown.",
+    "No quote genuinely supports auth or access for the target app, so none is tagged as such."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Paygent Connect developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Paygent Connect API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Paygent Connect model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.paygent.to/getting-started/quickstart",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.paygent.to/reference/api-reference/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.withpaygent.com/cli/commands/api-keys",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.withpaygent.com/api-reference/customers-api",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.paygent.to/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "ungrounded:auth",
+    "ungrounded:access"
+  ]
+}

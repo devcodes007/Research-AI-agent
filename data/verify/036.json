@@ -1,0 +1,121 @@
+{
+  "id": 36,
+  "name": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Klaviyo marketing platform with an API, SDKs and a remote MCP server for building integrations.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "Sources document an OAuth authorization-code flow with PKCE, client ID, redirect URI and scopes. No source describes API key or private-key credentials.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources show OAuth apps can be installed by customers without being listed. They do not state signup cost, plan requirements or how credentials are issued. Listing in the app marketplace needs review and 5 active installs.",
+  "api_styles": [
+    "SDK",
+    "Other"
+  ],
+  "api_scope": "Developer site references an API with an OpenAPI spec, SDKs, and resources such as custom objects; REST is not explicitly labeled in the sources.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.klaviyo.com/mcp",
+  "mcp_notes": "Vendor-published remote MCP server on developers.klaviyo.com docs; local server option also mentioned.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "Credential acquisition path and plan requirements are not stated in the sources; only OAuth app setup is shown.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.klaviyo.com/en",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "Create apps and integrations with Klaviyo's API, SDKs and MCP server that help businesses grow.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Learn how to set up OAuth for your Klaviyo integration.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+      "supports": [
+        "access"
+      ],
+      "quote": "Your app does not have to be listed to share and use your installation URL with customers.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Add the remote server at `https://mcp.klaviyo.com/mcp` to your MCP client.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/application_objects_for_app_partners",
+      "supports": [
+        "access"
+      ],
+      "quote": "Build and test your application objects in a **staging or development account** before they can be reviewed and promoted to production.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "No source states whether a free account can create OAuth apps or API keys.",
+    "API key auth is not mentioned in the sources.",
+    "Webhooks and sandbox are not covered."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Klaviyo developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Klaviyo API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Klaviyo model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.klaviyo.com/en",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2025-04-15/docs/klaviyo_mcp_server",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/application_objects_for_app_partners",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

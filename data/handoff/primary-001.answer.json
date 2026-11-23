@@ -1,0 +1,69 @@
+{
+ "description": "Salesforce CRM platform with REST API, OAuth-based access, and hosted MCP servers for AI agents.",
+ "auth": [
+  "OAuth2"
+ ],
+ "auth_notes": "REST API needs an OAuth 2.0 access token via an external client app or connected app; new connected apps restricted as of Spring '26.",
+ "self_serve": "unknown",
+ "gate_detail": "REST access needs a Salesforce org (Developer Edition org or dev sandbox used in quick start) plus an authorized app. Hosted MCP is intended only for Flex Credits customers. Whether a free org suffices is not stated.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_scope": "REST API for Salesforce resources; hosted MCP servers expose SObject CRUD, Apex actions, Flows, Data 360 and Tableau.",
+ "webhooks": "unknown",
+ "sandbox": "yes",
+ "mcp_status": "official",
+ "mcp_url": null,
+ "mcp_notes": "Hosted MCP Servers documented by Salesforce; admin setup in org, per-user OAuth 2.0 with PKCE; no endpoint URL given.",
+ "verdict": "conditional",
+ "blocker": "admin_or_enterprise_only",
+ "blocker_detail": "Needs an org, admin-configured external client app, and Flex Credits for hosted MCP; account-plan requirement for REST not established.",
+ "confidence": "medium",
+ "evidence": [
+  {
+   "source": "S3",
+   "supports": [
+    "auth",
+    "api"
+   ],
+   "quote": "use either an external client app or a connected app and an OAuth 2.0 authorization flow."
+  },
+  {
+   "source": "S2",
+   "supports": [
+    "access",
+    "auth"
+   ],
+   "quote": "To successfully send requests, REST API requires an access token obtained by authentication."
+  },
+  {
+   "source": "S2",
+   "supports": [
+    "access"
+   ],
+   "quote": "Log in to your Developer org with Salesforce CLI."
+  },
+  {
+   "source": "S5",
+   "supports": [
+    "mcp",
+    "access"
+   ],
+   "quote": "Salesforce Hosted MCP Servers are intended only for customers with Flex Credits and you may be billed for server usage."
+  },
+  {
+   "source": "S5",
+   "supports": [
+    "mcp",
+    "description"
+   ],
+   "quote": "Salesforce Hosted MCP Servers give AI agents a secure, governed way to interact with Salesforce data and automation."
+  }
+ ],
+ "uncertainties": [
+  "Whether a free Developer Edition org is sufficient for production use is not stated",
+  "Webhook/event support not covered by sources",
+  "Hosted MCP server URL not given",
+  "S4 docs MCP server is internal-only, not the product MCP"
+ ]
+}

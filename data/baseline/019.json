@@ -1,0 +1,122 @@
+{
+  "id": 19,
+  "name": "Gorgias",
+  "category": "Support and Helpdesk",
+  "description": "Ecommerce-focused helpdesk with a REST API for tickets and account data.",
+  "auth": [
+    "Basic",
+    "OAuth2"
+  ],
+  "auth_notes": "Private apps use an API key sent via HTTP Basic (email as username, key as password). Public apps must use OAuth2.",
+  "self_serve": "paid_plan",
+  "gate_detail": "API keys are available on all Helpdesk plans, created by the account owner or admins in Settings > REST API. Plans are paid (Starter $40/mo) with a no-credit-card free trial; public apps also need Developer Portal partnership and app review.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "REST API to read and write helpdesk data programmatically; account-scoped, acting with the permissions of the key holder's user.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "No Gorgias-published MCP server appears in the provided sources.",
+  "verdict": "conditional",
+  "blocker": "paid_plan",
+  "blocker_detail": "Requires a Gorgias helpdesk account on a paid plan or trial and an admin to create the key; public apps need review.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "To authenticate API requests, Gorgias uses HTTP Basic Authentication with three pieces of information: your base API URL, your email address, and an API key.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+      "supports": [
+        "access"
+      ],
+      "quote": "The account owner and admins can access the API credentials and create API keys",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "supports": [
+        "auth"
+      ],
+      "quote": "If you plan to build a public app you have to use OAuth2.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.gorgias.com/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Sign up for our Developer Portal to start our partnership. This step is required only if you plan to build a Public app.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.gorgias.com/pricing",
+      "supports": [
+        "access"
+      ],
+      "quote": "Start free trial No credit card required",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Webhook and sandbox support are not stated in the sources.",
+    "Whether trial accounts can generate production API keys is not stated.",
+    "Pricing page is truncated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Gorgias API documentation authentication",
+      "error": "all search engines returned nothing: [\"yahoo: DNSError: DNSError('error sending request for url (https://search.yahoo.com/sear\", \"yahoo: DNSError: DNSError('error sending request for url (https://sear",
+      "backend": "ddg"
+    },
+    {
+      "query": "Gorgias API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Gorgias MCP server official",
+      "error": "all search engines returned nothing: ['yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.gorgias.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+      "from": "search"
+    },
+    {
+      "url": "https://www.gorgias.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.digitalgenius.com/docs/gorgias-get-credentials",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Intercom developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Intercom API access request approval partner program",
+   "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  },
+  {
+   "query": "Intercom model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "requested_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+   "requested_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.intercom.com/help/en/articles/6615543-setting-up-data-connectors-authentication",
+   "requested_url": "https://www.intercom.com/help/en/articles/6615543-setting-up-data-connectors-authentication",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developers.intercom.com/docs/guides/mcp",
+   "requested_url": "https://developers.intercom.com/docs/guides/mcp",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps",
+   "requested_url": "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+   "requested_url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+   "from": "search"
+  }
+ ]
+}

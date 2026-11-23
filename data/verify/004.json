@@ -1,0 +1,130 @@
+{
+  "id": 4,
+  "name": "Attio",
+  "category": "CRM and Sales",
+  "description": "Attio is a CRM with a REST API, App SDK and MCP server for developers.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Workspace admins generate scoped access tokens (API keys) in Workspace settings; tokens do not expire. MCP server uses OAuth login instead.",
+  "self_serve": "free_tier",
+  "gate_detail": "API keys are available on all plans, but only workspace admins can create them. No paid plan or review is stated. No sandbox is described.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "REST API plus App SDK documented, with a webhook reference and endpoint reference pages; scoped tokens read, create or update workspace data.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.attio.com/mcp",
+  "mcp_notes": "Official Attio MCP hosted on attio.com; OAuth login with an Attio account, available on all plans.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Token creation requires a workspace admin, but no payment, review or partnership gate is stated.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "API keys allow you to connect external tools and services to your workspace with secure, scoped access.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+      "supports": [
+        "access"
+      ],
+      "quote": "In order to generate an API key for your workspace, you must be an admin.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Available on all plans.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Tokens do not expire, but can be deleted at any time.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://attio.com/platform/developers",
+      "supports": [
+        "api"
+      ],
+      "quote": "Connect your GTM stack with the REST API, App SDK, or Attio MCP.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.attio.com/mcp/overview",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Add https://mcp.attio.com/mcp as a remote MCP server and complete the OAuth authentication when prompted.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "REST authentication guide text is truncated in the sources, so Bearer header usage is not confirmed.",
+    "Webhook support inferred only from a 'Webhook reference' section tag.",
+    "No sandbox described."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Attio developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Attio API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Attio model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.attio.com/rest-api/guides/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.attio.com/mcp/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://attio.com/help/reference/attio-ai/attio-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.attio.com/rest-api/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://attio.com/platform/developers",
+      "from": "search"
+    },
+    {
+      "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

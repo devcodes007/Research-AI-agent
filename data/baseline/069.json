@@ -1,0 +1,126 @@
+{
+  "id": 69,
+  "name": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Datadog observability platform with an HTTP REST API covering monitors, logs, metrics, dashboards and more.",
+  "auth": [
+    "API key",
+    "OAuth2",
+    "Other"
+  ],
+  "auth_notes": "API key via DD-API-KEY header, plus Application key (DD-APPLICATION-KEY) for some endpoints; Personal Access Tokens and customer-managed OAuth clients are also offered.",
+  "self_serve": "unknown",
+  "gate_detail": "Keys are created within a Datadog organization and require user permissions; sources shown do not state whether a free plan or trial suffices to obtain them.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Described as a way to access the Datadog platform programmatically, with many resource groups and official client libraries for Java, Python, Ruby, Go, TypeScript and Rust.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Datadog MCP Server documented by Datadog, with an official Claude connector; OAuth login flow; URL not stated in sources.",
+  "verdict": "conditional",
+  "blocker": "other",
+  "blocker_detail": "Requires a Datadog organization and keys with sufficient permissions; plan or trial requirements are not established by the sources.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.datadoghq.com/api",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "The Datadog API is an HTTP REST API.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.datadoghq.com/api",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Authenticate to the API with an API key using the header DD-API-KEY .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.datadoghq.com/account_management/api-app-keys.md",
+      "supports": [
+        "access"
+      ],
+      "quote": "API keys are unique to your organization.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.datadoghq.com/account_management/personal-access-tokens.md",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Personal Access Tokens (PATs) are a credential type that authenticates Datadog API calls.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.datadoghq.com/mcp_server/setup.md",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Install the [Datadog Connector](https://claude.ai/directory/connectors/datadog) from the Claude Connectors Directory.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources do not state whether a free plan or trial can create API keys.",
+    "Webhook delivery and sandbox support are not established.",
+    "MCP server endpoint URL is not stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Datadog API documentation authentication",
+      "error": "all search engines returned nothing: ['bing: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'bing: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    },
+    {
+      "query": "Datadog API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Datadog MCP server official",
+      "results": 8,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.datadoghq.com/api",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.datadoghq.com/account_management/personal-access-tokens.md",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.datadoghq.com/mcp_server.md",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.datadoghq.com/mcp_server/setup.md",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.datadoghq.com/account_management/api-app-keys.md",
+      "from": "search"
+    },
+    {
+      "url": "https://www.datadoghq.com/blog/datadog-api-authentication/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "unknown_access_but_confident_verdict"
+  ]
+}

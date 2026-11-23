@@ -1,0 +1,14 @@
+{
+ "self_serve": {
+  "value": "instant",
+  "source": "S5",
+  "quote": "Head to the API Access section of your User Settings and genera",
+  "reason": "Users generate their own API key in settings; docs say anyone can start building, with no sales gate or plan requirement."
+ },
+ "verdict": {
+  "value": "build_now",
+  "source": "S6",
+  "quote": "Anyone can browse the API docs and start building!",
+  "reason": "Public API with self-created user-level keys, documented quickstart and SDKs; no approval or sales step."
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "description": "Open-source CRM Twenty with workspace-generated REST and GraphQL APIs, OAuth and MCP.",
+ "auth": [
+  "OAuth2",
+  "API key"
+ ],
+ "auth_notes": "OAuth 2.0 (authorization code with PKCE, client credentials); workspace-scoped tokens from Settings sent as Bearer header.",
+ "self_serve": "unknown",
+ "gate_detail": "Tokens are generated in a workspace's Settings, and the product can be self-hosted. Plan requirements for the hosted API are not established in excerpts; pricing page was truncated.",
+ "api_styles": [
+  "REST",
+  "GraphQL",
+  "SDK"
+ ],
+ "api_scope": "Per-workspace REST and GraphQL APIs generated from the workspace schema; OpenAPI doc; twenty-sdk for apps; MCP endpoint.",
+ "webhooks": "unknown",
+ "sandbox": "unknown",
+ "mcp_status": "official",
+ "mcp_url": "https://api.twenty.com/mcp",
+ "mcp_notes": "Configured from Settings, AI, MCP in a workspace; supports OAuth or API key header auth.",
+ "verdict": "conditional",
+ "blocker": "other",
+ "blocker_detail": "Needs a Twenty workspace with token created in Settings; plan or hosting requirement for API access not established.",
+ "confidence": "medium",
+ "evidence": [
+  {
+   "source": "S2",
+   "supports": [
+    "auth",
+    "api"
+   ],
+   "quote": "Authorization code flow with PKCE and client credentials for server-to-server access."
+  },
+  {
+   "source": "S5",
+   "supports": [
+    "auth",
+    "access"
+   ],
+   "quote": "Tokens can be generated in Settings → Playground and are workspace-scoped."
+  },
+  {
+   "source": "S4",
+   "supports": [
+    "api",
+    "access"
+   ],
+   "quote": "REST and GraphQL APIs generated from your workspace schema."
+  },
+  {
+   "source": "S5",
+   "supports": [
+    "mcp"
+   ],
+   "quote": "https://api.twenty.com/mcp"
+  }
+ ],
+ "uncertainties": [
+  "Pricing plan gating for API access not visible",
+  "Webhook support and sandbox not covered",
+  "Whether hosted free plan exists not stated"
+ ]
+}

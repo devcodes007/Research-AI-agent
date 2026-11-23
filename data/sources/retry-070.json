@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Sentry API pricing which plan includes API access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Sentry API authentication generate access token developer settings",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Sentry API access approval review partner requirements",
+   "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.sentry.io/api/",
+   "requested_url": "https://docs.sentry.io/api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.sentry.io/pricing/",
+   "requested_url": "https://docs.sentry.io/pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.sentry.io/pricing/legacy-pricing/",
+   "requested_url": "https://docs.sentry.io/pricing/legacy-pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.sentry.io/api/auth/",
+   "requested_url": "https://docs.sentry.io/api/auth/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.sentry.io/account/auth-tokens/",
+   "requested_url": "https://docs.sentry.io/account/auth-tokens/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://portal.sentryinteractive.com/docs/cloud-api/authentication/",
+   "requested_url": "https://portal.sentryinteractive.com/docs/cloud-api/authentication/",
+   "from": "search"
+  }
+ ]
+}

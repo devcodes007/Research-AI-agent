@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Help Scout API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Help Scout API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Help Scout MCP server official",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No resul",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+   "requested_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.helpscout.com/pricing/",
+   "requested_url": "https://www.helpscout.com/pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developer.helpscout.com/docs-api/",
+   "requested_url": "https://developer.helpscout.com/docs-api/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.helpscout.com/article/1141-docs-api",
+   "requested_url": "https://docs.helpscout.com/article/1141-docs-api",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.helpscout.com/",
+   "requested_url": "https://docs.helpscout.com/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developer.helpscout.com/",
+   "requested_url": "https://developer.helpscout.com/",
+   "from": "search"
+  }
+ ]
+}

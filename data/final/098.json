@@ -1,0 +1,175 @@
+{
+  "id": 98,
+  "name": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "description": "Mermaid CLI is a local command-line tool that renders Mermaid diagrams, not a hosted API.",
+  "auth": [
+    "None/local"
+  ],
+  "auth_notes": "No credentials are involved; the tool runs locally via npm or Docker. The MERMAID reef-data API in the sources is an unrelated product.",
+  "self_serve": "instant",
+  "gate_detail": "Install and run locally with no account or credentials. There is no hosted first-party API to obtain credentials for.",
+  "api_styles": [
+    "CLI",
+    "SDK"
+  ],
+  "api_scope": "Local diagram rendering through the mmdc command line and a Node.js API that is not covered by semver; no hosted endpoints.",
+  "webhooks": "no",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "A Mermaid MCP server exists at mermaid.ai for the hosted Mermaid product, but sources do not tie it to the mermaid-cli repository.",
+  "verdict": "unclear",
+  "blocker": "local_tool_not_hosted_api",
+  "blocker_detail": "The hinted product is a local CLI and Node.js library, so there is no hosted first-party API to integrate against.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "supports": [
+        "description",
+        "auth",
+        "access"
+      ],
+      "quote": "Command line tool for the Mermaid library",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "supports": [
+        "api"
+      ],
+      "quote": "It's possible to call mermaid-cli via a Node.JS API.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "supports": [
+        "api",
+        "verdict"
+      ],
+      "quote": "the NodeJS API is not covered by semver",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md?plain=1",
+      "supports": [
+        "api"
+      ],
+      "quote": "docker run [...] --workdir=/home/mermaidcli minlag/mermaid-cli [...]",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mermaid.ai/products/mermaid-api",
+      "supports": [
+        "api"
+      ],
+      "quote": "Mermaid API is a hosted service that runs Mermaid for you",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mermaid.ai/products/mermaid-api",
+      "supports": [
+        "access"
+      ],
+      "quote": "Any Mermaid account works, including a free one",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mermaid.ai/products/mermaid-api",
+      "supports": [
+        "auth"
+      ],
+      "quote": "-H \"Authorization: Bearer $MERMAID_API_KEY\"",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources are truncated and show no explicit credential model for the CLI.",
+    "The mermaid.ai MCP server may belong to a separate hosted product.",
+    "Webhooks are not mentioned; answered no because it is a local tool."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Mermaid CLI API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Mermaid CLI API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", \"auto: ConnectError: ConnectError('error sending request for url (https:",
+      "backend": "ddg"
+    },
+    {
+      "query": "Mermaid CLI MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md?plain=1",
+      "from": "lead"
+    },
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "from": "hint"
+    },
+    {
+      "url": "https://mermaid-api.readthedocs.io/en/latest/authentication.html",
+      "from": "search"
+    },
+    {
+      "url": "https://mermaid.ai/docs/ai/mcp-server",
+      "from": "search"
+    },
+    {
+      "url": "https://mermaid.ai/docs/ai/mcp-apps-server",
+      "from": "search"
+    },
+    {
+      "url": "https://mermaid-api.readthedocs.io/en/latest/getting_started.html",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": null,
+    "match": "none",
+    "schemes": [],
+    "tools_count": 0,
+    "auth_agreement": "no_toolkit"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "adjudicated",
+    "agreed": [
+      "auth",
+      "verdict"
+    ],
+    "disputed": {
+      "self_serve": {
+        "pass_A": "instant",
+        "pass_B": "unknown",
+        "final": "instant",
+        "resolved_by": "adjudication",
+        "resolved": true,
+        "changed_from_pass_A": false,
+        "reason": "Open-source CLI and Node API are installable directly via npm or docker with no account, key or approval."
+      },
+      "mcp_status": {
+        "pass_A": "unknown",
+        "pass_B": "not_found",
+        "final": "unknown",
+        "resolved_by": "adjudication",
+        "resolved": true,
+        "changed_from_pass_A": false,
+        "reason": "Sources never mention MCP either way, so neither an official server nor its absence is established."
+      }
+    },
+    "rule_fixes": []
+  }
+}

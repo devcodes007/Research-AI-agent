@@ -1,0 +1,123 @@
+{
+  "id": 79,
+  "name": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "description": "Smartsheet is a work-management platform with a REST API and SDKs for sheets and workspaces.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "Personal access tokens (API keys) sent as Bearer in the Authorization header; OAuth integrations also referenced in a Smartsheet blog post.",
+  "self_serve": "paid_plan",
+  "gate_detail": "Generating an API access token requires a Business, Enterprise or Advanced Work Management plan. No free tier or sandbox is described in the sources.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "REST operations over sheets and workspaces, browsable and callable in the docs site, with official Python, Java, C# and JavaScript SDKs.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "No MCP server is mentioned in the provided sources.",
+  "verdict": "conditional",
+  "blocker": "paid_plan",
+  "blocker_detail": "Token generation is limited to Business, Enterprise or Advanced Work Management plans.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Each API request requires passing in an access token as the `Bearer` value in your authorization header.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "**Required plan:** Business, Enterprise, or Advanced Work Management",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "Generate an API access token in the Smartsheet UI.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+      "supports": [
+        "api"
+      ],
+      "quote": "Use the API natively in a language supported by the Smartsheet SDKs:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.smartsheet.com/content-center/managing-work/it-management/api-smartsheet-integration",
+      "supports": [
+        "api"
+      ],
+      "quote": "The Smartsheet API is a standard REST API.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Webhooks and sandbox are not covered by the sources.",
+    "No MCP information in sources.",
+    "OAuth support is inferred from a blog checklist, not the auth guide."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Smartsheet API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Smartsheet API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Smartsheet MCP server official",
+      "error": "all search engines returned nothing: ['brave: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'auto: error sending request for url (https://html.duckduckgo.com/html/) > ope",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/resource_management/getting-started/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://www.smartsheet.com/content-center/managing-work/it-management/authentication-mastery-smartsheet-api",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+      "from": "search"
+    },
+    {
+      "url": "https://help.smartsheet.com/learning-track/system-admin-governance-and-security/api-token-management",
+      "from": "search"
+    },
+    {
+      "url": "https://www.smartsheet.com/content-center/managing-work/it-management/api-smartsheet-integration",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

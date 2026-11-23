@@ -1,0 +1,121 @@
+{
+  "id": 30,
+  "name": "Vonage",
+  "category": "Communications and Messaging",
+  "description": "Vonage offers communications APIs for messaging, voice, video, verification and network features.",
+  "auth": [
+    "JWT"
+  ],
+  "auth_notes": "Sources state JWT authentication is available; other outbound credential types are not described. Credentials come from the Vonage API Dashboard.",
+  "self_serve": "instant",
+  "gate_detail": "Developers create a free account and get first API credentials from the dashboard. Pricing and any paid usage requirements are not described in the sources; no sandbox stated.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Video, Voice, Messaging (including RCS and WhatsApp), Verify, Number Insight, Fraud Defender, network features and an Account API, with client and server SDKs.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources do not mention an MCP server.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment gate stated in the sources; pricing is not detailed.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developer.vonage.com/en/home",
+      "supports": [
+        "auth"
+      ],
+      "quote": "JWT authentication available",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.vonage.com/en/home",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Create a free account now!",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.vonage.com/en/dashboard/overview",
+      "supports": [
+        "access"
+      ],
+      "quote": "New to the Dashboard? Start here to learn the basics, navigate the interface, and get your first API credentials.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.vonage.com/en/home",
+      "supports": [
+        "api"
+      ],
+      "quote": "Video REST API",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.vonage.com/en/home",
+      "supports": [
+        "api"
+      ],
+      "quote": "Signed Callbacks",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.vonage.com/en/home",
+      "supports": [
+        "description"
+      ],
+      "quote": "Vonage Messaging APIs are easy to set up and allow you to engage your customers via a diverse assortment of messaging channels.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Auth is only stated as JWT availability; API key or Basic auth not described.",
+    "Pricing and paid requirements not shown.",
+    "No sandbox or MCP information in sources."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Vonage API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No resul",
+      "backend": "ddg"
+    },
+    {
+      "query": "Vonage API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Vonage MCP server official",
+      "error": "all search engines returned nothing: ['bing: No results found.', 'bing: No results found.', 'bing: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.vonage.com/en/home",
+      "from": "hint"
+    },
+    {
+      "url": "https://developer.vonage.com/en/home",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.vonage.com/en/dashboard/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://docs-vcc.atlassian.net/wiki/spaces/DP/pages/1125646628/Configuring+API+credentials",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

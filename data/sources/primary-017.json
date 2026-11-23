@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Plain API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Plain API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Plain MCP server official",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.plain.com/docs/graphql/authentication",
+   "requested_url": "https://www.plain.com/docs/graphql/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.plain.com/docs/graphql/introduction",
+   "requested_url": "https://www.plain.com/docs/graphql/introduction",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.plainid.io/apidocs/authentication",
+   "requested_url": "https://docs.plainid.io/apidocs/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.plainid.io/apidocs/authentication-mgmt-apis",
+   "requested_url": "https://docs.plainid.io/apidocs/authentication-mgmt-apis",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://plainframework.com/docs/plain-api/plain/api/README.md",
+   "requested_url": "https://plainframework.com/docs/plain-api/plain/api/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.plane.com/reference/authentication",
+   "requested_url": "https://docs.plane.com/reference/authentication",
+   "from": "search"
+  }
+ ]
+}

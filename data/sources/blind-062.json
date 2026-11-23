@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Vercel developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Vercel API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Vercel model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://vercel.com/docs/rest-api",
+   "requested_url": "https://vercel.com/docs/rest-api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://vercel.com/docs/accounts/access-tokens#use-a-scoped-token-with-the-api",
+   "requested_url": "https://vercel.com/kb/guide/how-do-i-use-a-vercel-api-access-token",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://vercel.com/docs/rest-api/getting-started",
+   "requested_url": "https://vercel.com/docs/rest-api/getting-started",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+   "requested_url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://community.vercel.com/t/request-access-to-sign-in-with-vercel-api-permissions-read-only-logs-observability/49936",
+   "requested_url": "https://community.vercel.com/t/request-access-to-sign-in-with-vercel-api-permissions-read-only-logs-observability/49936",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+   "requested_url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+   "from": "search"
+  }
+ ]
+}

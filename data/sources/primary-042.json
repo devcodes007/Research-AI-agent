@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "WooCommerce API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "WooCommerce API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "WooCommerce MCP server official",
+   "error": "all search engines returned nothing: ['brave: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results fou",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+   "requested_url": "https://woocommerce.com/document/woocommerce-rest-api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+   "requested_url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+   "requested_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+   "requested_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://woocommerce.com/document/api-documentation/",
+   "requested_url": "https://woocommerce.com/document/api-documentation/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html?javascript",
+   "requested_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html?javascript",
+   "from": "search"
+  }
+ ]
+}

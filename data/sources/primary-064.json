@@ -1,0 +1,65 @@
+{
+ "searches": [
+  {
+   "query": "Cloudflare API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Cloudflare API credentials pricing plan required developer access",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  },
+  {
+   "query": "Cloudflare MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://community.cloudflare.com/t/api-authentication/499602",
+   "status": 403,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.cloudflare.com/api/",
+   "requested_url": "https://developers.cloudflare.com/api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/",
+   "requested_url": "https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developers.cloudflare.com/api/",
+   "requested_url": "https://developers.cloudflare.com/api/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+   "requested_url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+   "requested_url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://cloudflare.apidocumentation.com/",
+   "requested_url": "https://cloudflare.apidocumentation.com/",
+   "from": "search"
+  }
+ ]
+}

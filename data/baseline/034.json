@@ -1,0 +1,133 @@
+{
+  "id": 34,
+  "name": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "GoHighLevel (HighLevel) is a CRM and marketing platform with a v3 API and an MCP server.",
+  "auth": [
+    "OAuth2",
+    "Other"
+  ],
+  "auth_notes": "Private Integration Token for internal single-sub-account use; OAuth 2.0 (authorization_code, refresh_token, client_credentials) for public integrations; tokens sent as Bearer.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources describe the two auth types but not how to obtain a token, plan requirements or approvals. The OAuth page mentions a client_id and client_secret provided for your integration. No sandbox stated.",
+  "api_styles": [
+    "Other"
+  ],
+  "api_scope": "v3 API covering CRM resources such as contacts, conversations, opportunities, calendars and payments, with sub-account and company level access via OAuth tokens.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "HighLevel MCP Server (also called LeadConnector MCP) connects via OAuth and exposes four tools; documented by HighLevel.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "Credential acquisition path, plan requirements and any app review are not stated in the sources.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc/index.html",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "HighLevel currently supports two types of authorization:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc/index.html",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Your use case involves accessing our API endpoints for internal purposes.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc/index.html",
+      "supports": [
+        "api"
+      ],
+      "quote": "Your integration requires features like webhooks and custom modules.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/get-access-token/index.html",
+      "supports": [
+        "auth"
+      ],
+      "quote": "The OAuth2 grant type — authorization_code, refresh_token, or client_credentials",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/get-access-token/index.html",
+      "supports": [
+        "access"
+      ],
+      "quote": "The ID provided by CRM for your integration",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Sign in with your HighLevel login, connect your sub-account, and",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "How a developer obtains a Private Integration Token or OAuth app credentials, and any plan or review requirement, is not stated.",
+    "REST style not explicitly labeled.",
+    "No sandbox described.",
+    "MCP endpoint URL not given in the sources."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "GoHighLevel API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "GoHighLevel API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "GoHighLevel MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc/index.html",
+      "from": "search"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/get-access-token/index.html",
+      "from": "search"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+      "from": "search"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+      "from": "search"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005855-how-to-use-the-mcp-server-within-ask-ai",
+      "from": "search"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp.md",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

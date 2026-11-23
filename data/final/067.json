@@ -1,0 +1,142 @@
+{
+  "id": 67,
+  "name": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Snowflake data platform with REST APIs, SQL API and drivers for managing and querying data.",
+  "auth": [
+    "OAuth2",
+    "JWT",
+    "Other"
+  ],
+  "auth_notes": "REST APIs accept key-pair JWT, OAuth tokens or programmatic access tokens, sent in an Authorization Bearer header.",
+  "self_serve": "trial",
+  "gate_detail": "Sources only show a Getting a Trial Account path; a Snowflake account is needed for any credentials. Whether a permanent free plan exists is not stated. No sandbox described.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI",
+    "Other"
+  ],
+  "api_scope": "Snowflake REST APIs (e.g. databases under /api/v2), a SQL API, a Catalog SDK, plus connectors, drivers and the Snowflake CLI.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources do not mention an MCP server.",
+  "verdict": "conditional",
+  "blocker": "other",
+  "blocker_detail": "Requires a Snowflake account; sources only describe a trial, and token or key-pair setup needs account-side configuration.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "When you send a request, the request must include authentication information using either of the following:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Authorization: Bearer JWT",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.snowflake.cn/en/user-guide/programmatic-access-tokens",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "You can use a programmatic access token to authenticate to the following Snowflake endpoints:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Getting a Trial Account",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "supports": [
+        "api"
+      ],
+      "quote": "curl --location ' https://myorganization-myaccount.snowflakecomputing.com/api/v2/databases ' \\",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "No source states whether a free plan beyond the trial exists.",
+    "Webhooks, sandbox and MCP are not covered by the sources.",
+    "Source excerpts are truncated.",
+    "No independent second pass completed for this app.",
+    "Composio's toolkit lists auth ['OAuth2']; our research lists ['OAuth2', 'JWT', 'Other']. Review flag only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Snowflake API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: No results found.', \"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", 'duckduckgo: No results found.', 'duckduckgo:",
+      "backend": "ddg"
+    },
+    {
+      "query": "Snowflake API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Snowflake MCP server official",
+      "error": "all search engines returned nothing: ['duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', \"bing: ConnectError: ConnectError('error sending request for url (htt",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.snowflake.com/en/",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/user-guide/api-authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.snowflake.cn/en/developer-guide/external-network-access/secret-api-reference",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.snowflake.cn/en/user-guide/programmatic-access-tokens",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "composio_catalog_auth_partial"
+  ],
+  "catalog": {
+    "toolkit": "snowflake",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2"
+    ],
+    "tools_count": 16,
+    "auth_agreement": "partial"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

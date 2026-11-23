@@ -1,0 +1,95 @@
+{
+ "searches": [
+  {
+   "query": "SE Ranking API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "SE Ranking API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "SE Ranking MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://seranking.com/api",
+   "status": 404,
+   "thin": false,
+   "error": null
+  },
+  {
+   "url": "https://help.seranking.com/hc/en-us/articles/21487397355420-API-pricing",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.seranking.com/hc/en-us/p/mcp-walkthrough",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.seranking.com/hc/en-us/categories/21700778374300-API",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.seranking.com/hc/en-us/sections/21701343953180-API",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.seranking.com/hc/en-us/articles/21487397355420-API-credit-costs",
+   "status": 403,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://seranking.com/api/data/getting-started/",
+   "requested_url": "https://seranking.com/api/data/getting-started/",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://seranking.com/api-pricing.html",
+   "requested_url": "https://seranking.com/api-pricing.html",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://seranking.com/api/integrations/mcp/",
+   "requested_url": "https://seranking.com/api/integrations/mcp/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://seranking.com/api/how-to-get-api/",
+   "requested_url": "https://seranking.com/api/how-to-get-api/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://seranking.com/api.html",
+   "requested_url": "https://seranking.com/api.html",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://seranking.com/mcp.html",
+   "requested_url": "https://seranking.com/mcp.html",
+   "from": "search"
+  }
+ ]
+}

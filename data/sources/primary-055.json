@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Apify API documentation authentication",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  },
+  {
+   "query": "Apify API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Apify MCP server official",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.apify.com",
+   "requested_url": "https://docs.apify.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.apify.com/account/subscriptions",
+   "requested_url": "https://docs.apify.com/account/subscriptions",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.apify.com/actors/running/permissions",
+   "requested_url": "https://docs.apify.com/actors/running/permissions",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://apify.com/pricing",
+   "requested_url": "https://apify.com/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://apify.com/pricing/creator-plan",
+   "requested_url": "https://apify.com/pricing/creator-plan",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://apis.io/plans/apify/apify-plans-pricing/",
+   "requested_url": "https://apis.io/plans/apify/apify-plans-pricing/",
+   "from": "search"
+  }
+ ]
+}

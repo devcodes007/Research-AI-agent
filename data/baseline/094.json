@@ -1,0 +1,124 @@
+{
+  "id": 94,
+  "name": "Consensus",
+  "category": "AI, Research and Media-native",
+  "description": "Consensus offers an API for peer-reviewed research search and cited analysis.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Consensus API key sent in an x-api-key header per the OpenAPI; the same key is sent as a Bearer header for MCP.",
+  "self_serve": "sales",
+  "gate_detail": "Public page shows a Create API key button, but an aggregator says enterprise/API access must be requested via a request-access flow. Access path is conflicting, so the stronger prerequisite is assumed.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Quick search of papers returning metadata and full-text excerpts, plus an asynchronous Threads endpoint for cited research-agent answers with grounding quotes.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Consensus publishes connector setup for Claude, ChatGPT, Copilot, Perplexity, Gemini and generic MCP clients; no URL stated.",
+  "verdict": "needs_outreach",
+  "blocker": "sales_partnership",
+  "blocker_detail": "Third-party listing says enterprise access provides the API key; the Consensus page itself only shows a Create API key button.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://consensus.app/home/api/",
+      "supports": [
+        "access",
+        "api"
+      ],
+      "quote": "Create API key",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://consensus.app/home/api/",
+      "supports": [
+        "description"
+      ],
+      "quote": "Bring up-to-date, peer-reviewed citations into your workflows.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://integrations.sh/consensus.app/consensus-api/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "the OpenAPI for the REST API defines an x-api-key header security scheme.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://integrations.sh/consensus.app/consensus-api/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Request enterprise/API access from Build with the Consensus API using the Request access flow.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://consensus.app/home/mcp/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Search, synthesize, and build research outputs with cited papers, right inside the AI assistant you already use.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "S1 suggests self-serve key creation while S4 says enterprise access is needed.",
+    "Sources S5 and S6 describe a different product (Consensus sales demo platform) and were ignored.",
+    "MCP server URL, webhooks and sandbox are not stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Consensus API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Consensus API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Consensus MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://consensus.app/home/api/",
+      "from": "search"
+    },
+    {
+      "url": "https://consensus.app/pricing/team/",
+      "from": "search"
+    },
+    {
+      "url": "https://consensus.app/home/mcp/",
+      "from": "search"
+    },
+    {
+      "url": "https://integrations.sh/consensus.app/consensus-api/",
+      "from": "search"
+    },
+    {
+      "url": "https://support.goconsensus.com/authenticating-with-the-consensus-api-using-oauth-2.0",
+      "from": "search"
+    },
+    {
+      "url": "https://support.goconsensus.com/how-to-access-your-api-credentials",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

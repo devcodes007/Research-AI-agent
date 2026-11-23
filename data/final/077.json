@@ -1,0 +1,148 @@
+{
+  "id": 77,
+  "name": "ClickUp",
+  "category": "Productivity and Project Management",
+  "description": "ClickUp is a work-management platform with a public API, webhooks, OAuth and an MCP server.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "Personal API token (pk_ prefix) sent in the Authorization header for personal use; OAuth2 authorization code flow for apps used by others.",
+  "self_serve": "free_tier",
+  "gate_detail": "Public API is available on all plans, and a personal token is generated in account settings. Creating OAuth apps needs a Workspace owner or admin. Some user and guest endpoints are Enterprise-only. No sandbox stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Public API covering Workspace data, with an API spec, OAuth, webhooks and an MCP server; some endpoints and parameters are limited by plan.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.clickup.com/mcp",
+  "mcp_notes": "ClickUp-hosted MCP server documented on developer.clickup.com; feedback board labels it first-party and official, completed.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Enterprise plan needed only for user and guest management endpoints; OAuth app creation requires a Workspace owner or admin.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Authenticate to the ClickUp API using a personal token or OAuth.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "supports": [
+        "access"
+      ],
+      "quote": "Under API Token , click Generate or Regenerate .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/apis-available-by-plan",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Our Public API is available on all ClickUp Plans .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Only Workspace owners or admins can create OAuth apps.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.clickup.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "Trigger workflows from ClickUp events.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "\"serverUrl\": \"https://mcp.clickup.com/mcp\"",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "REST style is inferred from the v2 endpoint paths and spec, not labeled outright.",
+    "No sandbox environment is described.",
+    "Rate limits are not covered in the sources.",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "ClickUp API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "ClickUp API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "ClickUp MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.clickup.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+      "from": "search"
+    },
+    {
+      "url": "https://feedback.clickup.com/public-api/p/clickup-mcp-server-first-party-and-official",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/apis-available-by-plan",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": "clickup",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "tools_count": 163,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

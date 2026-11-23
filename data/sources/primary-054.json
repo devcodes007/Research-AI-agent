@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "MrScraper API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "MrScraper API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "MrScraper MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+   "requested_url": "https://docs.mrscraper.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.mrscraper.com/docs/api/authentication",
+   "requested_url": "https://docs.mrscraper.com/docs/api/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+   "requested_url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.mrscraper.com/docs/getting-started/scraper-api",
+   "requested_url": "https://docs.mrscraper.com/docs/getting-started/scraper-api",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token",
+   "requested_url": "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+   "requested_url": "https://docs.mrscraper.com/docs/getting-started/billing",
+   "from": "search"
+  }
+ ]
+}

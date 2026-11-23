@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "YouTube Transcript developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "YouTube Transcript API access request approval partner program",
+   "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  },
+  {
+   "query": "YouTube Transcript model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://transcriptapi.com/docs/api/",
+   "requested_url": "https://transcriptapi.com/docs/api/",
+   "from": "lead"
+  },
+  {
+   "id": "S2",
+   "url": "https://transcriptapi.com/docs/mcp/",
+   "requested_url": "https://transcriptapi.com/docs/mcp/",
+   "from": "lead"
+  },
+  {
+   "id": "S3",
+   "url": "https://transcriptapi.com/docs/getting-started/",
+   "requested_url": "https://transcriptapi.com/docs/getting-started/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://transcriptapi.com/blog/youtube-transcript-api-complete-developer-guide",
+   "requested_url": "https://transcriptapi.com/blog/youtube-transcript-api-complete-developer-guide",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://gettranscript.app/blog/youtube-transcript-api-guide",
+   "requested_url": "https://gettranscript.app/blog/youtube-transcript-api-guide",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://www.youtubetranscript.dev/api-docs",
+   "requested_url": "https://www.youtubetranscript.dev/api-docs",
+   "from": "search"
+  }
+ ]
+}

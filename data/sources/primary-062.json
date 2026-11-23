@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Vercel API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Vercel API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Vercel MCP server official",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No resul",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://vercel.com/docs/rest-api",
+   "requested_url": "https://vercel.com/docs/rest-api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://vercel.com/docs/security/access-control",
+   "requested_url": "https://vercel.com/docs/security/access-control",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://vercel.com/docs/accounts/access-tokens",
+   "requested_url": "https://vercel.com/docs/accounts/access-tokens",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://community.vercel.com/t/granting-an-app-read-only-access-to-the-vercel-api/41250",
+   "requested_url": "https://community.vercel.com/t/granting-an-app-read-only-access-to-the-vercel-api/41250",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://vercel.com/docs/cli/api",
+   "requested_url": "https://vercel.com/docs/cli/api",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://blog.vercel.com/docs/integrations/create-integration/marketplace-api/reference/vercel",
+   "requested_url": "https://blog.vercel.com/docs/integrations/create-integration/marketplace-api/reference/vercel",
+   "from": "search"
+  }
+ ]
+}

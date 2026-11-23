@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "NotebookLM API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "NotebookLM API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "NotebookLM MCP server official",
+   "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "requested_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "from": "lead"
+  },
+  {
+   "id": "S2",
+   "url": "https://cloud.google.com/ai/gemini",
+   "requested_url": "https://cloud.google.com/gemini",
+   "from": "hint"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+   "requested_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://github.com/HenriqueCosta05/notebooklm-ts-api/blob/main/docs/authentication.md",
+   "requested_url": "https://github.com/HenriqueCosta05/notebooklm-ts-api/blob/main/docs/authentication.md",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://github.com/jiawei-jwt/notebooklm/blob/main/docs/AUTHENTICATION.md",
+   "requested_url": "https://github.com/jiawei-jwt/notebooklm/blob/main/docs/AUTHENTICATION.md",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://goldie.agency/notebooklm-api-pricing/",
+   "requested_url": "https://goldie.agency/notebooklm-api-pricing/",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "searches": [
+  {
+   "query": "Lark (Larksuite) API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Lark (Larksuite) API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Lark (Larksuite) MCP server official",
+   "error": "all search engines returned nothing: ['brave: No results found.', 'brave: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results fou",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://open.larksuite.com",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/common-capabilities/sso/api/obtain-oauth-code",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token-development-guide",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/overview",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/?lang=en-US",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open-sg.larksuite.com/document/server-docs/getting-started/terminology",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.larksuite.com/hc/en-US/category/7054521564330459141-developer-documentation",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open-sg.larksuite.com/api-explorer?from=op_doc",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open-sg.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/get-user-access-token",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open-sg.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/refresh-user-access-token",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://base.larksuite.com/pricing",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://deepwiki.com/larksuite/lark-project-template/4.3-authentication-and-api",
+   "status": 429,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.larksuite.com/en_us/plans",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.larksuite.com/hc/en-US/articles/497171699982-overview-of-lark-plans",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.larksh.com/platform/authentication",
+   "requested_url": "https://docs.larksh.com/platform/authentication",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": 96,
+  "name": "Devin",
+  "category": "AI, Research and Media-native",
+  "description": "Devin is an AI software engineering agent with a v3 REST API and an official hosted MCP server.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Service user API keys (cog_ prefix) sent in the Authorization header; personal access tokens work the same way. Legacy v1/v2 keys are deprecated.",
+  "self_serve": "unknown",
+  "gate_detail": "Keys are created in Settings > Devin API by provisioning a service user with an RBAC role. Sources do not say which plan or role is needed. Enterprise PATs are disabled by default and may need admin approval.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "v3 organization endpoints for sessions, attachments, knowledge notes and playbooks; enterprise endpoints for cross-org management, analytics, audit logs and billing.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.devin.ai/mcp",
+  "mcp_notes": "Official Devin MCP server over Streamable HTTP; authenticated with a PAT or service user key.",
+  "verdict": "conditional",
+  "blocker": "other",
+  "blocker_detail": "Credentials come from admin-managed service users with RBAC roles; plan requirements are not stated, and enterprise PATs need a policy or approval.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Copy the API key — the key starts with cog_ and is shown only once, right after provisioning",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Use the key in the Authorization header of every API request",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "supports": [
+        "access"
+      ],
+      "quote": "Assign a role that controls which endpoints the service user can access.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/personal-access-tokens",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Approval required Members submit a PAT request; an enterprise admin must approve it before the token can be created",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+      "supports": [
+        "access"
+      ],
+      "quote": "Requires Devin account",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "URL: https://mcp.devin.ai/mcp",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources do not state whether a free plan or a paid plan is needed to provision service users.",
+    "Webhooks and sandbox are not mentioned in the provided excerpts.",
+    "REST is inferred from curl examples against api.devin.ai/v3 endpoints."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Devin developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Devin API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Devin model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "from": "lead"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/personal-access-tokens",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/common-flows",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "unknown_access_but_confident_verdict"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": 85,
+  "name": "iPayX",
+  "category": "Finance and Fintech",
+  "description": "iPayX is an FX forensic audit service with a REST API, webhooks and an MCP server.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "API keys prefixed ipx_live_ sent in the Authorization Bearer header; webhooks are HMAC-SHA256 signed (inbound only).",
+  "self_serve": "paid_plan",
+  "gate_detail": "Dashboard signup issues a production API key, but pricing lists API plans from $99/mo; free tier is 3 lifetime audits. Unclear whether free users get API keys. No sandbox stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "REST endpoints for live mid-market rates, FX audits and batch document audits, plus audit.completed webhooks and an MCP server.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.ipayx.ai/mcp",
+  "mcp_notes": "Vendor-hosted MCP server at mcp.ipayx.ai; listed on the official MCP Registry and Glama.",
+  "verdict": "conditional",
+  "blocker": "paid_plan",
+  "blocker_detail": "Production API use depends on a paid plan; free tier is only 3 lifetime audits.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://www.ipayx.ai/docs/api",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "-H \"Authorization: Bearer ipx_live_YOUR_KEY\"",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.ipayx.ai/developers",
+      "supports": [
+        "access"
+      ],
+      "quote": "Access your dashboard and generate your production API key.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.ipayx.ai/pricing",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "One-time forensic FX reports from $297. API plans from $99/mo with up to 50,000 audits per month.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.ipayx.ai/docs/api",
+      "supports": [
+        "api"
+      ],
+      "quote": "Subscribe to `audit.completed` events to power Zapier triggers, n8n workflows, or your own Slack alerts.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.ipayx.ai/developers",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "`https://mcp.ipayx.ai/mcp`",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.ipayx.ai/docs/api",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Listed on the official MCP Registry and Glama",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Whether the 3-audit free tier includes API keys is not stated.",
+    "Sandbox is not described.",
+    "Pricing sources are partly inconsistent (API plans from $99/mo vs credit packs).",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "iPayX API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "iPayX API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "iPayX MCP server official",
+      "error": "all search engines returned nothing: ['bing: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'bing: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.ipayx.ai/docs",
+      "from": "hint"
+    },
+    {
+      "url": "https://www.ipayx.ai/docs/api",
+      "from": "search"
+    },
+    {
+      "url": "https://www.ipayx.ai/developers",
+      "from": "search"
+    },
+    {
+      "url": "https://www.ipayx.ai/api-terms",
+      "from": "search"
+    },
+    {
+      "url": "https://www.ipayx.ai/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.google.com/program/plans-and-pricing",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": null,
+    "match": "none",
+    "schemes": [],
+    "tools_count": 0,
+    "auth_agreement": "no_toolkit"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

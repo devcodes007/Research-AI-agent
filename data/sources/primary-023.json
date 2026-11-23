@@ -1,0 +1,95 @@
+{
+ "searches": [
+  {
+   "query": "Zoho Cliq API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Zoho Cliq API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Zoho Cliq MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://help.zoho.com/portal/en/community/topic/generating-an-oauth-2-token-for-cliq",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.zoho.com/portal/en-gb/community/topic/cliq-5-0-pricing-update?page=1",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.zoho.com/portal/en/kb/mcp/getting-started/articles/zoho-mcp-help-documentation",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.zoho.com/portal/en/kb/zoho-cliq/cliq-7-0/user-guides/articles/setting-up-the-zoho-cliq-mcp-server",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.zoho.com/portal/en/kb/zoho-cliq/integrations/articles/hrms-sync-with-zoho-cliq",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://apidocs.cliq.com/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.zoho.com/cliq/",
+   "requested_url": "https://zoho.com/cliq",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+   "requested_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+   "requested_url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+   "requested_url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.zoho.com/cliq/mcp-server.html",
+   "requested_url": "https://www.zoho.com/cliq/mcp-server.html",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://apis.io/security/zoho-cliq/zoho-cliq-authentication/",
+   "requested_url": "https://apis.io/security/zoho-cliq/zoho-cliq-authentication/",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Intercom API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Intercom API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Intercom MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "requested_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.intercom.com/help/en/articles/6615543-setting-up-data-connectors-authentication",
+   "requested_url": "https://www.intercom.com/help/en/articles/6615543-setting-up-data-connectors-authentication",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.intercom.com/help/en/articles/10589769-authenticating-users-in-the-messenger-with-json-web-tokens-jwts",
+   "requested_url": "https://www.intercom.com/help/en/articles/10589769-authenticating-users-in-the-messenger-with-json-web-tokens-jwts",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.intercom.com/help/en/collections/3866057-plans-pricing",
+   "requested_url": "https://www.intercom.com/help/en/collections/3866057-plans-pricing",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developers.intercom.com/docs/guides/mcp",
+   "requested_url": "https://developers.intercom.com/docs/guides/mcp",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+   "requested_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+   "from": "search"
+  }
+ ]
+}

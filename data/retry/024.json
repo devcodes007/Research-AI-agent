@@ -1,0 +1,87 @@
+{
+  "id": 24,
+  "name": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "description": "Lark is an all-in-one collaboration platform with messaging, video meetings, storage and automation.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Sources do not state how outbound API calls are authenticated.",
+  "self_serve": "unknown",
+  "gate_detail": "Only a third-party pricing blog is provided; it mentions custom integrations and API support on the Enterprise plan but does not describe how a developer obtains credentials.",
+  "api_styles": [
+    "None"
+  ],
+  "api_scope": "Sources only mention custom integrations and API support in passing; no API surface is described.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources say nothing about an MCP server.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "No first-party developer documentation in sources; blog hints API support is tied to the Enterprise plan.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://www.chanty.com/blog/lark-pricing/",
+      "supports": [
+        "description"
+      ],
+      "quote": "Lark presents itself as an all-in-one collaboration platform",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.chanty.com/blog/lark-pricing/",
+      "supports": [
+        "api"
+      ],
+      "quote": "custom integrations and API support",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.chanty.com/blog/lark-pricing/",
+      "supports": [
+        "description"
+      ],
+      "quote": "Lark introduces AnyCross, a no-code platform to streamline workflow automation across systems.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "No source states API authentication method.",
+    "No source states how developers get credentials or any plan requirement; the blog's Enterprise API support mention is not an access statement.",
+    "Source is a third-party blog, not first-party docs for open.larksuite.com.",
+    "Webhook triggers mentioned belong to AnyCross, not shown to be the Lark API."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "retry",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Lark (Larksuite) API pricing which plan includes API access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Lark (Larksuite) API authentication generate access token developer settings",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Lark (Larksuite) API access approval review partner requirements",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.chanty.com/blog/lark-pricing/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "ungrounded:auth",
+    "ungrounded:access"
+  ]
+}

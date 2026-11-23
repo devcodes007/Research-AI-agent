@@ -1,0 +1,134 @@
+{
+  "id": 44,
+  "name": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "description": "Salesforce Commerce Cloud offers B2C and B2B commerce platforms with headless APIs, SDKs and CLI.",
+  "auth": [
+    "OAuth2",
+    "JWT"
+  ],
+  "auth_notes": "SCAPI uses JWT access tokens as Bearer headers; Shopper APIs via SLAS (OAuth 2.1), Admin APIs via Account Manager API client.",
+  "self_serve": "unknown",
+  "gate_detail": "Requires a B2C Commerce instance and an Account Manager API client. Demo sandbox and on-demand sandbox exist. API is at no extra cost for B2C Commerce customers.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "SCAPI Shopper and Admin RESTful APIs, legacy OCAPI, Custom APIs, Node.js and React SDKs and a Commerce Cloud CLI.",
+  "webhooks": "unknown",
+  "sandbox": "yes",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources show a Salesforce MCP blog but no Commerce Cloud-specific server.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Needs a licensed B2C Commerce instance and Account Manager admin to create API clients.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Both the Admin and Shopper APIs are authorized using an access token in the form of a JSON Web Token (JWT).",
+      "quote_match": "fuzzy"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Create an API client in Account Manager",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+      "supports": [
+        "api",
+        "access"
+      ],
+      "quote": "For B2C Commerce customers, the API is available at no extra cost.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+      "supports": [
+        "access"
+      ],
+      "quote": "If you don't have a B2C Commerce instance, try the demo sandbox used in the example above.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+      "supports": [
+        "api"
+      ],
+      "quote": "The B2C Commerce API (SCAPI) is a set of RESTful APIs for building storefronts, merchant tools, and integrations on the B2C Commerce platform.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+      "supports": [
+        "api"
+      ],
+      "quote": "Use a headless API to build custom apps.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Licensing cost of a B2C instance not stated.",
+    "Webhooks only mentioned for Point of Sale.",
+    "No Commerce Cloud MCP server found in sources."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Salesforce Commerce Cloud API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Salesforce Commerce Cloud API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Salesforce Commerce Cloud MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+      "from": "hint"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/custom-api-authentication.html",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "unknown_access_but_confident_verdict"
+  ]
+}

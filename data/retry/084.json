@@ -1,0 +1,105 @@
+{
+  "id": 84,
+  "name": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "description": "Unclear: sources cover a different Paygent (AI agent billing), not NMI-powered Paygent Connect.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "No source describes Paygent Connect (NMI-powered). The sources describe an unrelated Paygent AI-billing product.",
+  "self_serve": "unknown",
+  "gate_detail": "No source describes access to the NMI-powered Paygent Connect API; evidence concerns a different product.",
+  "api_styles": [
+    "None"
+  ],
+  "api_scope": "Not established for Paygent Connect; sources describe an unrelated AI usage-billing REST API.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources say nothing about an MCP server for Paygent Connect.",
+  "verdict": "unclear",
+  "blocker": "ambiguous_product",
+  "blocker_detail": "All sources document a different Paygent product (AI agent usage billing), not the NMI-powered Paygent Connect.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://docs.paygent.to/reference/api-reference/",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "The Paygent backend exposes a small REST API.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.withpaygent.com/documentation/introduction/pricing-models",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "Paygent supports multiple pricing models to fit any business.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.withpaygent.com/cli/commands/api-keys",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "API keys authenticate the usage-tracking service.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "None of the sources mention NMI or Paygent Connect; evidence is for a different product and was not used for auth or access.",
+    "Auth, access, webhooks, sandbox and MCP for the intended product are unknown."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "retry",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Paygent Connect API pricing which plan includes API access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Paygent Connect API authentication generate access token developer settings",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Paygent Connect API access approval review partner requirements",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.withpaygent.com/documentation/introduction/pricing-models",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.withpaygent.com/cli/commands/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.paygent.to/reference/api-reference/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.paygent.to/introduction/plans-and-usage-events/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.withpaygent.com/documentation/introduction/plans",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.withpaygent.com/cli/commands/api-keys",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "ungrounded:auth",
+    "ungrounded:access"
+  ]
+}

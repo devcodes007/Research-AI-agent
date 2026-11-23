@@ -1,0 +1,194 @@
+{
+  "id": 99,
+  "name": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "description": "TranscriptAPI provides REST endpoints for YouTube transcripts, search, channel and playlist data, plus an MCP server.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "API key from the dashboard, sent in the Authorization header as a Bearer value on every request; the ChatGPT MCP route uses OAuth.",
+  "self_serve": "unknown",
+  "gate_detail": "Keys come from the account dashboard without any stated approval. Most endpoints consume credits per call, while info and latest-videos endpoints are free; free signup credits and plan prices are not stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Transcript extraction, video info and metadata, YouTube search, channel videos, posts and sections, and playlist videos, with a Swagger UI for interactive testing.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "MCP documentation is published on transcriptapi.com with tools for transcripts, search, channels and playlists; server URL is not shown in the sources.",
+  "verdict": "conditional",
+  "blocker": "other",
+  "blocker_detail": "Calls consume credits, and whether a free allowance exists or payment is needed first is not established in the sources.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "The API uses Bearer token authentication. Include your API key in the Authorization header of every request:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Don’t have an API key yet? Get one from your dashboard .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "supports": [
+        "api"
+      ],
+      "quote": "Try our Swagger UI where you can make live requests right in your browser.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Use TranscriptAPI to fetch transcripts, search YouTube, browse channels, and list playlists",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "supports": [
+        "mcp",
+        "auth"
+      ],
+      "quote": "Step-by-step guide to connect TranscriptAPI with ChatGPT using OAuth",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Include your API key in the Authorization header of every request",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Don't have an API key yet? Get one from your dashboard",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/getting-started/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Sign up for an API key",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Costs 1 credit per page.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "The YouTube Transcript API provides a simple and reliable way to extract transcripts from YouTube videos programmatically.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "all from within your AI assistant via Model Context Protocol (MCP)",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Credit pricing and any free allowance are not stated for transcriptapi.com.",
+    "Webhook support is not mentioned for transcriptapi.com; other sources describe different vendors.",
+    "MCP server URL is not shown."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "YouTube Transcript API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "YouTube Transcript API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    },
+    {
+      "query": "YouTube Transcript MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "from": "lead"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "from": "lead"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/",
+      "from": "search"
+    },
+    {
+      "url": "https://yttranscript.ai/api-docs",
+      "from": "search"
+    },
+    {
+      "url": "https://www.youtubetranscript.dev/api-docs",
+      "from": "search"
+    },
+    {
+      "url": "https://getyoutubetranscript.com/docs",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "unknown_access_but_confident_verdict"
+  ],
+  "catalog": {
+    "toolkit": "youtube_transcript",
+    "match": "slug",
+    "schemes": [
+      "API_KEY"
+    ],
+    "tools_count": 9,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "agreed",
+    "agreed": [
+      "auth",
+      "self_serve",
+      "mcp_status",
+      "verdict"
+    ],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

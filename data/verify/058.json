@@ -1,0 +1,116 @@
+{
+  "id": 58,
+  "name": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "description": "Sherlock (sherlock-project) is a local username-search OSINT command-line tool, not a hosted API.",
+  "auth": [
+    "None/local"
+  ],
+  "auth_notes": "The CLI runs locally; sources show no outbound API credentials for the GitHub Sherlock project.",
+  "self_serve": "unknown",
+  "gate_detail": "Nothing to sign up for: the tool is installed locally via pipx. No hosted first-party API is described. Other Sherlock products in the sources (Ansys, Synopsys, Sherlocks.ai) are different products.",
+  "api_styles": [
+    "CLI"
+  ],
+  "api_scope": "Local username enumeration across many social platforms via the CLI; no hosted developer API is documented in the sources.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "community",
+  "mcp_url": null,
+  "mcp_notes": "Third-party sherlock-mcp wraps the local Sherlock CLI; no vendor-published MCP server shown.",
+  "verdict": "unclear",
+  "blocker": "local_tool_not_hosted_api",
+  "blocker_detail": "Sherlock is a local CLI OSINT tool; the MCP server found is a third-party wrapper, and other Sherlock-named products are different vendors.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://github.com/Burnsedia/sherlock-mcp",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "FastMCP server integration for the Sherlock OSINT tool",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/Burnsedia/sherlock-mcp",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Sherlock CLI tool installed: pipx install sherlock-project",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/Burnsedia/sherlock-mcp",
+      "supports": [
+        "auth",
+        "mcp"
+      ],
+      "quote": "This starts the MCP server with stdio transport, ready for MCP clients.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.sherlocks.ai/docs/partner-api",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "Sherlocks Partner API",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "The S1 GitHub page text is largely navigation; the sources say little directly about the project.",
+    "Other Sherlock products (Ansys, Synopsys, Sherlocks.ai) are different vendors and were excluded.",
+    "No outbound auth statement for the CLI is directly given."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Sherlock developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Sherlock API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Sherlock model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "from": "hint"
+    },
+    {
+      "url": "https://help.sherlock.sh/en/articles/15898909-manage-members-and-identity-access",
+      "from": "search"
+    },
+    {
+      "url": "https://sherlock.docs.pyansys.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.sherlocks.ai/docs/partner-api",
+      "from": "search"
+    },
+    {
+      "url": "https://github.com/Burnsedia/sherlock-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.synopsys.com/docs/sherlock-apis-2025-r1/getting-started.md",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

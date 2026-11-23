@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "DealCloud API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "DealCloud API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "DealCloud MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://api.docs.dealcloud.com",
+   "requested_url": "https://api.docs.dealcloud.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+   "requested_url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+   "requested_url": "https://api.docs.dealcloud.com/mcp/getting-started",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://api.docs.dealcloud.com/mcp",
+   "requested_url": "https://api.docs.dealcloud.com/mcp",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://api.docs.dealcloud.com/docs",
+   "requested_url": "https://api.docs.dealcloud.com/docs",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://api.docs.dealcloud.com/docs/apikeys",
+   "requested_url": "https://api.docs.dealcloud.com/docs/apikeys",
+   "from": "search"
+  }
+ ]
+}

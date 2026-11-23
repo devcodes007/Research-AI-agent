@@ -1,0 +1,71 @@
+{
+ "searches": [
+  {
+   "query": "Zoho CRM API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Zoho CRM API credentials pricing plan required developer access",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  },
+  {
+   "query": "Zoho CRM MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://help.zoho.com/portal/en/kb/zoho-crm-platform/vertical-applications/api-guide/articles/authentication-token",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.zoho.com/portal/en/community/topic/kaizen-2-oauth2-0-and-self-client-api",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.zoho.com/en-in/crm/",
+   "requested_url": "https://zoho.com/crm",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+   "requested_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.zoho.com/assist/api/authentication.html",
+   "requested_url": "https://www.zoho.com/assist/api/authentication.html",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.zoho.com.cn/crm/help/developer/api/oauth-overview.html",
+   "requested_url": "https://www.zoho.com.cn/crm/help/developer/api/oauth-overview.html",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.zoho.com/crm/developer/mcp.html",
+   "requested_url": "https://www.zoho.com/crm/developer/mcp.html",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+   "requested_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+   "from": "search"
+  }
+ ]
+}

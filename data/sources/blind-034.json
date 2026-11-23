@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "GoHighLevel developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "GoHighLevel API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "GoHighLevel model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+   "requested_url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://marketplace.gohighlevel.com/docs/oauth/GettingStarted/index.html",
+   "requested_url": "https://marketplace.gohighlevel.com/docs/oauth/GettingStarted/index.html",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/get-access-token/index.html",
+   "requested_url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/get-access-token/index.html",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+   "requested_url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+   "requested_url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+   "requested_url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+   "from": "search"
+  }
+ ]
+}

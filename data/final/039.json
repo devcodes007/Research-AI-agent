@@ -1,0 +1,139 @@
+{
+  "id": 39,
+  "name": "Threads (Meta)",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Threads API lets apps publish posts, retrieve media and profiles, moderate replies, and read insights.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "Threads user access tokens conforming to OAuth 2.0; short-lived (1 hour) exchangeable for long-lived tokens, with per-permission scopes such as threads_basic.",
+  "self_serve": "approval",
+  "gate_detail": "Create a Meta app with the Threads use case. Testers with a role can grant permissions immediately; other app users require each permission to pass App Review and the app to be published.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Create and publish posts, retrieve media and profiles, moderate replies, mentions, insights, keyword search, webhooks and oEmbed.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "Meta's official MCP servers cover Facebook, Instagram, WhatsApp, Ads and app devtools; none is described for Threads content.",
+  "verdict": "needs_outreach",
+  "blocker": "approval_review",
+  "blocker_detail": "Permissions for app users without a role on the app require App Review approval and a published app.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.facebook.com/documentation/threads",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/get-started/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/get-started/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "For app users without a role on your app to grant your app these permissions, each permission must first be approved through the",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/get-started/",
+      "supports": [
+        "access"
+      ],
+      "quote": "To access the Threads API, create an app and pick the",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/mcp/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Meta runs official remote Model Context Protocol (MCP) servers that bring Facebook, Instagram, WhatsApp, and Meta Ads capabilities to your agentic workflows.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "REST style is not explicitly labeled in the sources.",
+    "Sandbox is not described; tester-role access is the nearest alternative.",
+    "Webhooks inferred from a documentation link title only.",
+    "S6 covers Meta Model API, a different product, and was ignored.",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Threads (Meta) API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Threads (Meta) API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Threads (Meta) MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.facebook.com/documentation/threads",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/mcp/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/mcp/devtools-mcp/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/get-started/",
+      "from": "search"
+    },
+    {
+      "url": "https://dev.meta.ai/docs/authentication",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": "threads",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2"
+    ],
+    "tools_count": 24,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

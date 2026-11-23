@@ -1,0 +1,71 @@
+{
+ "searches": [
+  {
+   "query": "Zendesk API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Zendesk API credentials pricing plan required developer access",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  },
+  {
+   "query": "Zendesk MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://cxsupporthub.zendesk.com/hc/en-us/articles/22532629471900-How-can-I-authenticate-API-requests",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.zendesk.com/marketplace/apps/support/1191848/mcp-server/",
+   "status": 403,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.zendesk.com/documentation/authentication/",
+   "requested_url": "https://developer.zendesk.com/documentation/authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+   "requested_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+   "requested_url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application",
+   "requested_url": "https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client",
+   "requested_url": "https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://support.zendesk.com/hc/en-us/articles/10497779528730-Using-the-Zendesk-MCP-client-to-access-MCP-tools-in-action-flows-and-advanced-action-flows",
+   "requested_url": "https://support.zendesk.com/hc/en-us/articles/10497779528730-Connecting-to-MCP-servers-and-using-MCP-tools-in-action-flows-and-advanced-action-flows",
+   "from": "search"
+  }
+ ]
+}

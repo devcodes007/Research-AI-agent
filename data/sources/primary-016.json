@@ -1,0 +1,65 @@
+{
+ "searches": [
+  {
+   "query": "LiveAgent API documentation authentication",
+   "error": "all search engines returned nothing: ['bing: No results found.', 'bing: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  },
+  {
+   "query": "LiveAgent API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "LiveAgent MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://support.liveagent.com/docs/api/v3/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+   "requested_url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+   "requested_url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://support.liveagent.com/578762-MCP-tools-reference",
+   "requested_url": "https://support.liveagent.com/578762-MCP-tools-reference",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://support.liveagent.com/869419-Twitter-application-integration",
+   "requested_url": "https://support.liveagent.com/869419-Twitter-application-integration",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.liveagent.com/features/api/",
+   "requested_url": "https://www.liveagent.com/features/api/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://www.liveagent.com/pricing/",
+   "requested_url": "https://www.liveagent.com/pricing/",
+   "from": "search"
+  }
+ ]
+}

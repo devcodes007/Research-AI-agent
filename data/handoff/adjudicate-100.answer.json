@@ -1,0 +1,11 @@
+{
+ "auth": {
+  "value": [
+   "Bearer token",
+   "OAuth2"
+  ],
+  "source": "S2",
+  "quote": "Authorization : Bearer TOKEN",
+  "reason": "Requests use a Bearer token header (PAT/WAT), and S3 separately documents OAuth2 for distributed integrations; nothing supports Other."
+ }
+}

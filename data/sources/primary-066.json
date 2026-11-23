@@ -1,0 +1,83 @@
+{
+ "searches": [
+  {
+   "query": "Neo4j API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Neo4j API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Neo4j MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://neo4j.com/docs/api",
+   "status": 404,
+   "thin": false,
+   "error": null
+  },
+  {
+   "url": "https://support.neo4j.com/s/article/214863378-A-lightweight-approach-to-testing-the-Neo4j-REST-API-with-Authentication",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://support.neo4j.com/s/article/16708073060115-Aura-API-Endpoints-configuration-and-Testing-in-Postman",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://support.neo4j.com/s/topic/0TOUN0000001EYn4AM/billing",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://neo4j.com/docs/aura/api/authentication/",
+   "requested_url": "https://neo4j.com/docs/aura/api/authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://neo4j.com/docs/mcp/current/",
+   "requested_url": "https://neo4j.com/docs/mcp/current/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+   "requested_url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://neo4j.com/docs/api/python-driver/current/api.html",
+   "requested_url": "https://neo4j.com/docs/api/python-driver/current/api.html",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://neo4j.com/pricing/",
+   "requested_url": "https://neo4j.com/pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://neo4j.com/licensing/?ref=web-open-core",
+   "requested_url": "https://neo4j.com/licensing/?ref=web-open-core",
+   "from": "search"
+  }
+ ]
+}

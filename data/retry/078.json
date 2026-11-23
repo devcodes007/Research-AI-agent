@@ -1,0 +1,109 @@
+{
+  "id": 78,
+  "name": "Coda",
+  "category": "Productivity and Project Management",
+  "description": "Coda (now Superhuman Docs) is a doc and table workspace with a REST API for docs and rows.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Provided sources do not state what credential is sent on API calls.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources do not say how a developer obtains credentials or whether a free plan suffices; only a 'Free and Paid Workspaces' section heading appears, with no content.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Docs API at base path https://coda.io/apis/v1: list/search/create/copy docs, share and publish, discover pages, tables and controls, read/insert/upsert/update/delete rows.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Vendor's own API docs recommend the Superhuman Docs MCP server for AI tools; no URL given.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "Right product and a public REST API are confirmed, but the sources do not establish auth method or access prerequisites.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "supports": [
+        "api"
+      ],
+      "quote": "This API uses a base path of https://coda.io/apis/v1 .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "you may also want to consider using the Superhuman Docs MCP server .",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "No source states the auth method (likely a token, but not in sources).",
+    "No source states self-serve access terms or plan requirements.",
+    "Webhooks and sandbox are not mentioned.",
+    "S2-S6 are Packs admin pages or Coda Payments, a different product, and were ignored."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "retry",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Coda API pricing which plan includes API access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Coda API authentication generate access token developer settings",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Coda API access approval review partner requirements",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "from": "hint"
+    },
+    {
+      "url": "https://coda.io/resources/courses/enterprise-org-admin-workspace-setup/integration-approval-and-security",
+      "from": "search"
+    },
+    {
+      "url": "https://coda.io/resources/tips/integration-approval-and-security",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.coda.co/payout/integration-guides/getting-started/authentication-and-authorization",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.coda.co/codapay/integration-guides/integration-checklist",
+      "from": "search"
+    },
+    {
+      "url": "https://www.coda.co/pricing/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "ungrounded:auth",
+    "ungrounded:access"
+  ]
+}

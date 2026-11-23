@@ -1,0 +1,140 @@
+{
+  "id": 87,
+  "name": "Xero",
+  "category": "Finance and Fintech",
+  "description": "Xero is cloud accounting software with a developer platform offering OAuth 2.0 APIs, SDKs and an MCP server.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "OAuth 2.0 authorization code (with PKCE) and client credentials via Custom Connections.",
+  "self_serve": "free_tier",
+  "gate_detail": "Free developer account and Starter app plan at no charge, limited to 5 connections. Core and higher plans require app certification and a credit card.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Accounting and related APIs with SDKs; advanced plan adds Journals endpoint, Practice Manager API and Bulk Connections.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Xero's AI Toolkit includes an MCP Server, with a Remote MCP FAQ on developer.xero.com; no URL given.",
+  "verdict": "conditional",
+  "blocker": "paid_plan",
+  "blocker_detail": "Beyond 5 connections, paid tiers requiring app certification apply, billed monthly by credit card.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://apis.io/security/xero/xero-authentication/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Xero secures its APIs with http and oauth2 across 3 declared security schemes, as derived from its OpenAPI definitions.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.xero.com",
+      "supports": [
+        "access"
+      ],
+      "quote": "Sign up for a free account to build on the Xero platform.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.xero.com/pricing",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Monthly Tier Fee No charge $35 AUD $245 AUD $1445 AUD Price on Application",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.xero.com/pricing",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "Your card details will be required when moving from the Starter to the Core plan.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.xero.com",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Get Started with Xero's AI Toolkit including OpenAI Agents SDK, MCP Server, LangChain and prompt examples.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Webhooks and sandbox are not covered by the sources.",
+    "MCP URL not stated.",
+    "Whether the MCP server is vendor-hosted is inferred from the vendor FAQ.",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Xero API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Xero API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Xero MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.xero.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://developer.xero.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.xero.com/faq/remote-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://xerotrust.readthedocs.io/en/latest/authentication.html",
+      "from": "search"
+    },
+    {
+      "url": "https://www.xero.com/pricing-plans/",
+      "from": "search"
+    },
+    {
+      "url": "https://apis.io/security/xero/xero-authentication/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ],
+  "catalog": {
+    "toolkit": "xero",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2"
+    ],
+    "tools_count": 109,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

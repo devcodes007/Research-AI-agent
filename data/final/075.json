@@ -1,0 +1,136 @@
+{
+  "id": 75,
+  "name": "Asana",
+  "category": "Productivity and Project Management",
+  "description": "Asana's developer platform offers a RESTful API, webhooks and app components for work-management automation.",
+  "auth": [
+    "OAuth2",
+    "Other"
+  ],
+  "auth_notes": "Personal access tokens (PATs), Enterprise-tier Service Account tokens and OAuth; OpenID Connect also described.",
+  "self_serve": "instant",
+  "gate_detail": "PATs are generated in the developer console and suffice for single-user apps; OAuth for multi-user apps. Service Accounts (needed for audit log, SCIM, exports) are Enterprise-only and super-admin created. Free-plan status not stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "RESTful JSON API for much of Asana's data, plus webhooks, app components, Audit Log API, SCIM and organizational exports.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "No Asana-published MCP server appears in the sources; only a third-party directory page mentions an API key.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Admin-level endpoints (audit log, SCIM, exports) need an Enterprise Service Account; standard API use does not.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.asana.com/docs/authentication",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "PATs are generated in the developer console .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.asana.com/docs/authentication",
+      "supports": [
+        "auth",
+        "verdict"
+      ],
+      "quote": "Service Accounts are an Enterprise tier feature and can only be created by Asana super admins",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.asana.com/docs/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "This is the best choice if multiple users need to sign in to your app.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.asana.com/docs/api-features",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "The Asana API is a RESTful interface, providing programmatic access to much of the data in the system.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.asana.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "Automate tedious work in powerful, bespoke ways with our platform",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Whether a free Asana plan can generate PATs is not stated.",
+    "Sandbox and official MCP not established.",
+    "Part of the authentication page is truncated.",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Asana API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Asana API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', \"auto: ConnectError: ConnectError('error sending request for url (https:",
+      "backend": "ddg"
+    },
+    {
+      "query": "Asana MCP server official",
+      "error": "all search engines returned nothing: ['duckduckgo: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', \"bing: ConnectError: ConnectError('error sending request for url (",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.asana.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.asana.com/docs/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.asana.com/docs/api-features",
+      "from": "search"
+    },
+    {
+      "url": "https://asana.com/developers",
+      "from": "search"
+    },
+    {
+      "url": "https://public-api.org/api/411/asana",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": "asana",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2"
+    ],
+    "tools_count": 247,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

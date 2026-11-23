@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Firecrawl API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Firecrawl API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Firecrawl MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.firecrawl.dev/rate-limits",
+   "requested_url": "https://docs.firecrawl.dev/rate-limits",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.firecrawl.dev/mcp-server",
+   "requested_url": "https://docs.firecrawl.dev/mcp-server",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.firecrawl.dev/use-cases/developers-mcp",
+   "requested_url": "https://docs.firecrawl.dev/use-cases/developers-mcp",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+   "requested_url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.firecrawl.dev/api-reference/introduction",
+   "requested_url": "https://docs.firecrawl.dev/api-reference/introduction",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.firecrawl.dev/billing",
+   "requested_url": "https://docs.firecrawl.dev/billing",
+   "from": "search"
+  }
+ ]
+}

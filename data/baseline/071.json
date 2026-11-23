@@ -1,0 +1,136 @@
+{
+  "id": 71,
+  "name": "Notion",
+  "category": "Productivity and Project Management",
+  "description": "Notion API for reading and writing pages, databases, comments and users in workspaces.",
+  "auth": [
+    "OAuth2",
+    "API key"
+  ],
+  "auth_notes": "Internal connection tokens and personal access tokens are sent as Authorization Bearer headers; public or scoped integrations use OAuth 2.0.",
+  "self_serve": "free_tier",
+  "gate_detail": "Tokens and OAuth integrations are created in the Developer portal; a free Notion plan exists. The Admin API is Enterprise-only and some agent features are in private beta.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "REST API for pages, databases, comments, content queries and users, with an official JavaScript SDK and the ntn CLI.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Notion's own developer docs include a Notion MCP section; no URL is given in the sources.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Admin API requires Enterprise plan; other endpoints need only a workspace and an integration or token.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://developers.notion.com/guides/authorization/overview",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Personal access tokens (PATs) are created directly by a Notion user in the Developer portal.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.notion.com/guides/authorization/overview",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Authorization : Bearer {INTEGRATION_TOKEN}",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.notion.com/guides/authorization/overview",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Navigate to the Developer portal and create a new OAuth integration.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.notion.com/guides/notion-api/quick-start",
+      "supports": [
+        "api"
+      ],
+      "quote": "Official client library for Node.js.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.notion.com/help/what-is-the-notion-developer-platform",
+      "supports": [
+        "api",
+        "verdict"
+      ],
+      "quote": "The admin API lets organization owners on the Enterprise Plan run admin work with code.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.notion.com/guides/notion-api/quick-start",
+      "supports": [
+        "mcp",
+        "api"
+      ],
+      "quote": "\"tag\":\"Webhook events\",\"count\":31",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "MCP server URL and official status are inferred from a Notion MCP docs section, not stated outright.",
+    "Webhooks inferred from a Webhook events docs section.",
+    "No sandbox described."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Notion API documentation authentication",
+      "error": "all search engines returned nothing: ['duckduckgo: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'duckduckgo: error sending request for url (https://html.duckduckg",
+      "backend": "ddg"
+    },
+    {
+      "query": "Notion API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Notion MCP server official",
+      "error": "all search engines returned nothing: ['bing: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', \"bing: ConnectError: ConnectError('error sending request for url (https:",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.notion.com/guides/notion-api/quick-start",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.notion.com/guides/authorization/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.notion.com/guides/authorization/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://www.notion.com/help/what-is-the-notion-developer-platform",
+      "from": "search"
+    },
+    {
+      "url": "https://www.notion.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://needaiforthis.com/pricing/notion-developer-platform",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

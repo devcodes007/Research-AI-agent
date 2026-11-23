@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Devin developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Devin API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Devin model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.devin.ai/api-reference/authentication",
+   "requested_url": "https://docs.devin.ai/api-reference/authentication",
+   "from": "lead"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.devin.ai/api-reference/personal-access-tokens",
+   "requested_url": "https://docs.devin.ai/api-reference/personal-access-tokens",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+   "requested_url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.devin.ai/work-with-devin/mcp",
+   "requested_url": "https://docs.devin.ai/work-with-devin/mcp",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.devin.ai/api-reference/overview",
+   "requested_url": "https://docs.devin.ai/api-reference/overview",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.devin.ai/api-reference/common-flows",
+   "requested_url": "https://docs.devin.ai/api-reference/common-flows",
+   "from": "search"
+  }
+ ]
+}

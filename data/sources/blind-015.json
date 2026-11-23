@@ -1,0 +1,65 @@
+{
+ "searches": [
+  {
+   "query": "Pylon developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Pylon API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Pylon model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://dave-playground-knowledge-base.help.usepylon.com/articles/5322035552-how-do-i-approve-an-access-request-on-someone's-behalf?",
+   "status": 404,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+   "requested_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+   "requested_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.usepylon.com/integrations/api-webhooks",
+   "requested_url": "https://www.usepylon.com/integrations/api-webhooks",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.pylonsync.com/auth/api-keys",
+   "requested_url": "https://docs.pylonsync.com/auth/api-keys",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.pylonsync.com/auth/oauth",
+   "requested_url": "https://docs.pylonsync.com/auth/oauth",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://getpylon.com/developers/",
+   "requested_url": "https://getpylon.com/developers/",
+   "from": "search"
+  }
+ ]
+}

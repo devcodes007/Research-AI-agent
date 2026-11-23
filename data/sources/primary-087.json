@@ -1,0 +1,89 @@
+{
+ "searches": [
+  {
+   "query": "Xero API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Xero API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Xero MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/auth-flow/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developer.xero.com/documentation/xero-app-store/app-partner-guides/xero-app-store-subscriptions-pricing/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://central.xero.com/0/article/How-Xero-Developer-changes-affect-your-practice",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.xero.com",
+   "requested_url": "https://developer.xero.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.xero.com/pricing",
+   "requested_url": "https://developer.xero.com/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developer.xero.com/faq/remote-mcp",
+   "requested_url": "https://developer.xero.com/faq/remote-mcp",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://xerotrust.readthedocs.io/en/latest/authentication.html",
+   "requested_url": "https://xerotrust.readthedocs.io/en/latest/authentication.html",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.xero.com/pricing-plans/",
+   "requested_url": "https://www.xero.com/pricing-plans/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://apis.io/security/xero/xero-authentication/",
+   "requested_url": "https://apis.io/security/xero/xero-authentication/",
+   "from": "search"
+  }
+ ]
+}

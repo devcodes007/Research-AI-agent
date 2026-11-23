@@ -1,0 +1,65 @@
+{
+ "searches": [
+  {
+   "query": "Airtable API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Airtable API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Airtable MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://airtable.com/developers/web/api/authentication",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://airtable.com/developers/agents",
+   "requested_url": "https://airtable.com/developers",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://airtable.com/developers/web/api/authentication.md",
+   "requested_url": "https://airtable.com/developers/web/api/authentication.md",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+   "requested_url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://community.airtable.com/announcements-6/new-beta-new-api-authentication-methods-endpoints-and-public-api-docs-1442",
+   "requested_url": "https://community.airtable.com/announcements-6/new-beta-new-api-authentication-methods-endpoints-and-public-api-docs-1442",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://community.airtable.com/development-apis-11/airtable-api-key-deprecation-replacing-api-key-with-personal-access-token-4202",
+   "requested_url": "https://community.airtable.com/development-apis-11/airtable-api-key-deprecation-replacing-api-key-with-personal-access-token-4202",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+   "requested_url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+   "from": "search"
+  }
+ ]
+}

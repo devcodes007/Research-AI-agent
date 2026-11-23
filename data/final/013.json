@@ -1,0 +1,141 @@
+{
+  "id": 13,
+  "name": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "description": "Freshdesk helpdesk with a documented REST API v2 using API keys.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "API key per agent; service accounts can create API keys. Freshservice-specific OAuth page (S6) is a different product and is not counted.",
+  "self_serve": "paid_plan",
+  "gate_detail": "Rate-limit table shows the Free plan at 0 API calls per minute, so a paid plan is needed for production use. Trials get 50 calls per minute; signup is free.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Tickets, contacts, contact fields, agents, service accounts and API key management under /api/v2; plain JSON over HTTPS; separate app SDK.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Freshdesk support articles reference MCP integration and Freshworks MCP security; no URL given in sources.",
+  "verdict": "conditional",
+  "blocker": "paid_plan",
+  "blocker_detail": "Free plan shows 0 API calls per minute; Growth or higher plan required for working API access.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://support.freshdesk.com/support/solutions/folders/272646",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Where can I find my API key?",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+      "supports": [
+        "access"
+      ],
+      "quote": "The number of API calls you can make is based on your plan.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Please note: For every trial period the API limit is 50 per minute.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.freshdesk.com/api/",
+      "supports": [
+        "api"
+      ],
+      "quote": "Freshdesk's APIs belong to the Representational State Transfer (REST) category.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "MCP Integration: Frequently asked questions (FAQ)",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Free plan 0 calls per minute is read from a table and may be being rolled out",
+    "Authentication scheme details inferred from API key articles",
+    "Sandbox support not shown",
+    "MCP is only referenced via article titles",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Freshdesk API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Freshdesk API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Freshdesk MCP server official",
+      "error": "all search engines returned nothing: ['brave: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results fou",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.freshdesk.com/api/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.freshdesk.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://support.freshdesk.com/support/solutions/folders/272646",
+      "from": "search"
+    },
+    {
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000011661-connect-to-external-systems-using-api-actions",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/service_ticket/oauth-implementation-in-apps/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ],
+  "catalog": {
+    "toolkit": "freshdesk",
+    "match": "slug",
+    "schemes": [
+      "API_KEY"
+    ],
+    "tools_count": 184,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": 47,
+  "name": "Ecwid",
+  "category": "Ecommerce",
+  "description": "Ecwid (Lightspeed) offers a REST API, webhooks and apps for managing store data.",
+  "auth": [
+    "OAuth2",
+    "API key"
+  ],
+  "auth_notes": "Custom apps get a secret access token sent as a Bearer token; public apps use OAuth 2.0 authorization-code flow returning an access token.",
+  "self_serve": "instant",
+  "gate_detail": "After signing up and getting a custom app, secret and public tokens are available immediately. Public apps need App Market registration. A test store is suggested for development; plan requirements not stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "REST API to access and manage store data, payment and shipping methods, and storefront settings, including orders, products, categories, customers and discounts.",
+  "webhooks": "yes",
+  "sandbox": "yes",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "No MCP server is mentioned in the sources.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Custom-app tokens are self-serve; public apps listed on the App Market involve a registration process.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://docs.ecwid.com/api-reference",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "After signing up with Ecwid and getting a custom app, you already have two tokens",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+      "supports": [
+        "auth"
+      ],
+      "quote": "your secret access token as a Bearer Token on the Authorization tab",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.ecwid.com/",
+      "supports": [
+        "api"
+      ],
+      "quote": "Build automated business processes or sync the store data with an external service.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+      "supports": [
+        "api"
+      ],
+      "quote": "you can safely experiment and develop without impacting your live store and its data.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Free-plan availability for API access is not directly stated.",
+    "Test store wording is truncated in the source.",
+    "No MCP information in the sources."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Ecwid API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Ecwid API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Ecwid MCP server official",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.ecwid.com/api-reference",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.ecwid.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.ecwid.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md",
+      "from": "search"
+    },
+    {
+      "url": "https://mindcloud.co/docs/universal/rest/ecwid/latest/introduction/authentication",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

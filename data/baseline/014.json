@@ -1,0 +1,126 @@
+{
+  "id": 14,
+  "name": "Front",
+  "category": "Support and Helpdesk",
+  "description": "Front shared inbox and customer communication platform with REST Core API, SDKs and MCP server.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "Scoped API tokens created by a company admin; OAuth apps also exist with resource permissions.",
+  "self_serve": "approval",
+  "gate_detail": "Only a Front company admin can create and manage API tokens. Plans are per seat (Starter $25/seat/mo) with a free trial; sources do not describe a free tier or sandbox.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Core API for conversations, messages, drafts, contacts, templates and more, with token scopes; Plugin SDK for UI plugins.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Official Front MCP server with Claude and OpenAI directory connectors, custom connection option and an Admin MCP beta; URL not stated.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "A Front company admin must create API tokens; a paid seat plan or trial is needed for a workspace.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://help.front.com/en/articles/2331",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Front's API settings give you the controls you need to manage active API tokens and what resources they can access.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.front.com/en/articles/2331",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "You must be a Front company admin to manage API tokens.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.front.com/en/categories/326",
+      "supports": [
+        "api"
+      ],
+      "quote": "Front provides developers the following resources for building integrations with our APIs and SDKs.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://community.front.com/mcp-server-88",
+      "supports": [
+        "api",
+        "auth"
+      ],
+      "quote": "For comparison, the Core REST API does support templates",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.front.com/en/articles/4883136",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The MCP server specifically enables external AI assistants and similar tools to access a predetermined set of Front data and actions.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Webhooks and sandbox not shown in sources",
+    "Whether API access is limited to certain plans is not stated",
+    "MCP server URL not given"
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Front API documentation authentication",
+      "error": "all search engines returned nothing: ['duckduckgo: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No results found.', 'auto: No results found.', 'auto: No results fou",
+      "backend": "ddg"
+    },
+    {
+      "query": "Front API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Front MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+      "from": "search"
+    },
+    {
+      "url": "https://help.front.com/en/categories/326",
+      "from": "search"
+    },
+    {
+      "url": "https://help.front.com/en/articles/2331",
+      "from": "search"
+    },
+    {
+      "url": "https://help.front.com/en/articles/4883136",
+      "from": "search"
+    },
+    {
+      "url": "https://front.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://community.front.com/mcp-server-88",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

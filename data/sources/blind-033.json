@@ -1,0 +1,65 @@
+{
+ "searches": [
+  {
+   "query": "LinkedIn Ads developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "LinkedIn Ads API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "LinkedIn Ads model context protocol MCP server",
+   "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://www.linkedin.com/developers/tools/oauth",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+   "requested_url": "https://learn.microsoft.com/linkedin/marketing",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+   "requested_url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+   "requested_url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.linkedin.com/help/linkedin/answer/a526048/accessing-linkedin-apis?lang=en",
+   "requested_url": "https://www.linkedin.com/help/linkedin/answer/a526048/accessing-linkedin-apis?lang=en",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/linkedin-api-partner-support-guide",
+   "requested_url": "https://learn.microsoft.com/en-us/linkedin/shared/linkedin-api-partner-support-guide",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developer.linkedin.com/product-catalog/marketing/advertising-api",
+   "requested_url": "https://developer.linkedin.com/product-catalog/marketing/advertising-api",
+   "from": "search"
+  }
+ ]
+}

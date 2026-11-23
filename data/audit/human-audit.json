@@ -1,0 +1,554 @@
+{
+  "reviewer": "Dev",
+  "reviewed_at": "2026-11-23T16:23:06.424Z",
+  "judgments": [
+    {
+      "app_id": 92,
+      "field": "auth",
+      "note": "https://docs.connect.tryotter.com/api-reference/auth/requestToken/",
+      "status": "answered",
+      "correct": [
+        "OAuth2"
+      ]
+    },
+    {
+      "app_id": 92,
+      "field": "self_serve",
+      "note": "https://otter.ai/pricing",
+      "status": "answered",
+      "correct": "paid_plan"
+    },
+    {
+      "app_id": 92,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "official"
+    },
+    {
+      "app_id": 92,
+      "field": "verdict",
+      "note": "",
+      "status": "unsure"
+    },
+    {
+      "app_id": 6,
+      "field": "auth",
+      "note": "https://developers.podio.com/authentication",
+      "status": "answered",
+      "correct": [
+        "OAuth2"
+      ]
+    },
+    {
+      "app_id": 6,
+      "field": "self_serve",
+      "note": "",
+      "status": "unsure"
+    },
+    {
+      "app_id": 6,
+      "field": "mcp_status",
+      "note": "",
+      "status": "unsure"
+    },
+    {
+      "app_id": 6,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "conditional"
+    },
+    {
+      "app_id": 29,
+      "field": "auth",
+      "note": "https://developer.aircall.io/docs/plan-your-integration",
+      "status": "answered",
+      "correct": [
+        "OAuth2",
+        "Basic"
+      ]
+    },
+    {
+      "app_id": 29,
+      "field": "self_serve",
+      "note": "https://developer.aircall.io/docs/plan-your-integration",
+      "status": "answered",
+      "correct": "approval"
+    },
+    {
+      "app_id": 29,
+      "field": "mcp_status",
+      "note": "https://developer.aircall.io/docs/mcp-faqs",
+      "status": "answered",
+      "correct": "not_found"
+    },
+    {
+      "app_id": 29,
+      "field": "verdict",
+      "note": "https://developer.aircall.io/",
+      "status": "answered",
+      "correct": "build_now"
+    },
+    {
+      "app_id": 59,
+      "field": "auth",
+      "note": "https://docs.waterfall.io/v1/authentication",
+      "status": "answered",
+      "correct": [
+        "API key"
+      ]
+    },
+    {
+      "app_id": 59,
+      "field": "self_serve",
+      "note": "https://docs.waterfall.io/v1/book-demo",
+      "status": "answered",
+      "correct": "approval"
+    },
+    {
+      "app_id": 59,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 59,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "needs_outreach"
+    },
+    {
+      "app_id": 62,
+      "field": "auth",
+      "note": "https://vercel.com/docs/rest-api",
+      "status": "answered",
+      "correct": [
+        "Bearer token"
+      ]
+    },
+    {
+      "app_id": 62,
+      "field": "self_serve",
+      "note": "https://vercel.com/docs/rest-api",
+      "status": "answered",
+      "correct": "instant"
+    },
+    {
+      "app_id": 62,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 62,
+      "field": "verdict",
+      "note": "https://vercel.com/docs/rest-api",
+      "status": "answered",
+      "correct": "build_now"
+    },
+    {
+      "app_id": 44,
+      "field": "auth",
+      "note": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "status": "answered",
+      "correct": [
+        "OAuth2",
+        "JWT"
+      ]
+    },
+    {
+      "app_id": 44,
+      "field": "self_serve",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 44,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 44,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "conditional"
+    },
+    {
+      "app_id": 90,
+      "field": "auth",
+      "note": "https://apis.io/security/pitchbook/pitchbook-authentication/",
+      "status": "answered",
+      "correct": [
+        "API key"
+      ]
+    },
+    {
+      "app_id": 90,
+      "field": "self_serve",
+      "note": "https://investordatarooms.com/pitchbook-api/",
+      "status": "answered",
+      "correct": "sales"
+    },
+    {
+      "app_id": 90,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 90,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "needs_outreach"
+    },
+    {
+      "app_id": 40,
+      "field": "auth",
+      "note": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+      "status": "answered",
+      "correct": [
+        "API key"
+      ]
+    },
+    {
+      "app_id": 40,
+      "field": "self_serve",
+      "note": "https://support.sendgrid.com/hc/en-us/articles/360041831393-How-to-Upgrade-or-Change-your-SendGrid-Pricing-Plan",
+      "status": "answered",
+      "correct": "trial"
+    },
+    {
+      "app_id": 40,
+      "field": "mcp_status",
+      "note": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+      "status": "answered",
+      "correct": "official"
+    },
+    {
+      "app_id": 40,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "conditional"
+    },
+    {
+      "app_id": 79,
+      "field": "auth",
+      "note": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+      "status": "answered",
+      "correct": [
+        "Bearer token"
+      ]
+    },
+    {
+      "app_id": 79,
+      "field": "self_serve",
+      "note": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+      "status": "answered",
+      "correct": "paid_plan"
+    },
+    {
+      "app_id": 79,
+      "field": "mcp_status",
+      "note": "",
+      "status": "unsure"
+    },
+    {
+      "app_id": 79,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "conditional"
+    },
+    {
+      "app_id": 17,
+      "field": "auth",
+      "note": "https://www.plain.com/docs/graphql/oauth",
+      "status": "answered",
+      "correct": [
+        "API key",
+        "OAuth2"
+      ]
+    },
+    {
+      "app_id": 17,
+      "field": "self_serve",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 17,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 17,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "conditional"
+    },
+    {
+      "app_id": 27,
+      "field": "auth",
+      "note": "https://core.telegram.org/gateway/api",
+      "status": "answered",
+      "correct": [
+        "Bearer token",
+        "Other"
+      ]
+    },
+    {
+      "app_id": 27,
+      "field": "self_serve",
+      "note": "https://core.telegram.org",
+      "status": "answered",
+      "correct": "free_tier"
+    },
+    {
+      "app_id": 27,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "not_found"
+    },
+    {
+      "app_id": 27,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "unclear"
+    },
+    {
+      "app_id": 1,
+      "field": "auth",
+      "note": "",
+      "status": "answered",
+      "correct": [
+        "OAuth2"
+      ]
+    },
+    {
+      "app_id": 1,
+      "field": "self_serve",
+      "note": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+      "status": "answered",
+      "correct": "paid_plan"
+    },
+    {
+      "app_id": 1,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "official"
+    },
+    {
+      "app_id": 1,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "conditional"
+    },
+    {
+      "app_id": 35,
+      "field": "auth",
+      "note": "",
+      "status": "answered",
+      "correct": [
+        "API key",
+        "OAuth2",
+        "Basic",
+        "Bearer token"
+      ]
+    },
+    {
+      "app_id": 35,
+      "field": "self_serve",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 35,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 35,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "unclear"
+    },
+    {
+      "app_id": 45,
+      "field": "auth",
+      "note": "",
+      "status": "answered",
+      "correct": [
+        "OAuth2",
+        "Bearer token",
+        "Session"
+      ]
+    },
+    {
+      "app_id": 45,
+      "field": "self_serve",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 45,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "official"
+    },
+    {
+      "app_id": 45,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "conditional"
+    },
+    {
+      "app_id": 58,
+      "field": "auth",
+      "note": "https://sherlock.docs.pyansys.com/",
+      "status": "answered",
+      "correct": [
+        "API key"
+      ]
+    },
+    {
+      "app_id": 58,
+      "field": "self_serve",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 58,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "community"
+    },
+    {
+      "app_id": 58,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "unclear"
+    },
+    {
+      "app_id": 93,
+      "field": "auth",
+      "note": "",
+      "status": "answered",
+      "correct": [
+        "API key",
+        "OAuth2"
+      ]
+    },
+    {
+      "app_id": 93,
+      "field": "self_serve",
+      "note": "",
+      "status": "answered",
+      "correct": "instant"
+    },
+    {
+      "app_id": 93,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "official"
+    },
+    {
+      "app_id": 93,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "build_now"
+    },
+    {
+      "app_id": 5,
+      "field": "auth",
+      "note": "",
+      "status": "answered",
+      "correct": [
+        "OAuth2",
+        "Bearer token"
+      ]
+    },
+    {
+      "app_id": 5,
+      "field": "self_serve",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 5,
+      "field": "mcp_status",
+      "note": "https://api.twenty.com/mcp",
+      "status": "answered",
+      "correct": "official"
+    },
+    {
+      "app_id": 5,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "conditional"
+    },
+    {
+      "app_id": 36,
+      "field": "auth",
+      "note": "",
+      "status": "answered",
+      "correct": [
+        "API key",
+        "OAuth2"
+      ]
+    },
+    {
+      "app_id": 36,
+      "field": "self_serve",
+      "note": "",
+      "status": "answered",
+      "correct": "unknown"
+    },
+    {
+      "app_id": 36,
+      "field": "mcp_status",
+      "note": "",
+      "status": "answered",
+      "correct": "official"
+    },
+    {
+      "app_id": 36,
+      "field": "verdict",
+      "note": "",
+      "status": "answered",
+      "correct": "unclear"
+    }
+  ]
+}

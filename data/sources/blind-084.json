@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Paygent Connect developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Paygent Connect API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Paygent Connect model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.paygent.to/getting-started/quickstart",
+   "requested_url": "https://docs.paygent.to/getting-started/quickstart",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.paygent.to/reference/api-reference/",
+   "requested_url": "https://docs.paygent.to/reference/api-reference/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+   "requested_url": "https://docs.withpaygent.com/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.withpaygent.com/cli/commands/api-keys",
+   "requested_url": "https://docs.withpaygent.com/cli/commands/api-keys",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.withpaygent.com/api-reference/customers-api",
+   "requested_url": "https://docs.withpaygent.com/api-reference/customers-api",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.paygent.to/",
+   "requested_url": "https://docs.paygent.to/",
+   "from": "search"
+  }
+ ]
+}

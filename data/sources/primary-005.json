@@ -1,0 +1,52 @@
+{
+ "searches": [
+  {
+   "query": "Twenty API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Twenty API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Twenty MCP server official",
+   "error": "all search engines returned nothing: ['bing: No results found.', 'brave: No results found.', 'brave: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results foun",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://twenty.com",
+   "requested_url": "https://twenty.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.twenty.com/developers/extend/oauth",
+   "requested_url": "https://docs.twenty.com/developers/extend/oauth",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.twenty.com/user-guide/billing/capabilities/pricing-plans",
+   "requested_url": "https://docs.twenty.com/user-guide/billing/capabilities/pricing-plans",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.twenty.com/developers/extend/api",
+   "requested_url": "https://docs.twenty.com/developers/extend/api",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://api.twenty.com/open-api/core",
+   "requested_url": "https://api.twenty.com/open-api/core",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": 38,
+  "name": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Pinterest developer platform API for content, ads, conversions and shopping catalogs.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "OAuth 2 authorization flow with app ID, client secret, redirect URI and scopes; MCP example uses a Bearer token.",
+  "self_serve": "approval",
+  "gate_detail": "Requires a business account, verified email and accepting developer terms to register an app. Test tokens need Trial access approval and expire after 24 hours. Sandbox exists for test calls.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Manage organic Pins and Boards, ad campaigns and reporting, product catalogs and shopping ads, conversions and analytics.",
+  "webhooks": "unknown",
+  "sandbox": "yes",
+  "mcp_status": "official",
+  "mcp_url": "https://api.pinterest.com/mcp",
+  "mcp_notes": "Pinterest MCP Server announced with OAuth 2.0; site says it is on the way and not yet publicly launched.",
+  "verdict": "needs_outreach",
+  "blocker": "approval_review",
+  "blocker_detail": "Trial access approval is mentioned as the gate for test tokens; production access requirements are not detailed in sources.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Your app ID and client secret",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.pinterest.com/docs/getting-started/connect-app/",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Build a working authentication flow based on OAuth 2",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.pinterest.com/docs/getting-started/connect-app/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Once your app is approved for Trial access you can generate a token to test the API without setting up the Oauth flow.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.pinterest.com/docs/getting-started/connect-app/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Login or [create a business account]",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.pinterest.com/docs/getting-started/connect-app/",
+      "supports": [
+        "api"
+      ],
+      "quote": "Our sandbox environment allows you to make test calls without impacting the Pinterest product environment.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "OAuth 2.0 authorization and granular permissions keep credentials protected and access appropriately controlled.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Production access approval process not described in sources.",
+    "MCP server appears not yet publicly launched.",
+    "Webhooks not mentioned; REST style not explicitly labeled."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Pinterest API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Pinterest API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Pinterest MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.pinterest.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.pinterest.com/docs/overview/welcome/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.pinterest.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.pinterest.com/docs/getting-started/connect-app/",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Attio developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Attio API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Attio model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.attio.com/rest-api/guides/authentication",
+   "requested_url": "https://docs.attio.com/rest-api/guides/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.attio.com/mcp/overview",
+   "requested_url": "https://docs.attio.com/mcp/overview",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://attio.com/help/reference/attio-ai/attio-mcp",
+   "requested_url": "https://attio.com/help/reference/attio-ai/attio-mcp",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.attio.com/rest-api/overview",
+   "requested_url": "https://docs.attio.com/rest-api/overview",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://attio.com/platform/developers",
+   "requested_url": "https://attio.com/platform/developers",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+   "requested_url": "https://attio.com/help/reference/apps/generating-an-api-key",
+   "from": "search"
+  }
+ ]
+}

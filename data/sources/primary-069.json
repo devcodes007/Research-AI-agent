@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Datadog API documentation authentication",
+   "error": "all search engines returned nothing: ['bing: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'bing: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  },
+  {
+   "query": "Datadog API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Datadog MCP server official",
+   "results": 8,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.datadoghq.com/api",
+   "requested_url": "https://docs.datadoghq.com/api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.datadoghq.com/account_management/personal-access-tokens.md",
+   "requested_url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.datadoghq.com/mcp_server.md",
+   "requested_url": "https://docs.datadoghq.com/mcp_server/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.datadoghq.com/mcp_server/setup.md",
+   "requested_url": "https://docs.datadoghq.com/mcp_server/setup/?tab=antigravity",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.datadoghq.com/account_management/api-app-keys.md",
+   "requested_url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://www.datadoghq.com/blog/datadog-api-authentication/",
+   "requested_url": "https://www.datadoghq.com/blog/datadog-api-authentication/",
+   "from": "search"
+  }
+ ]
+}

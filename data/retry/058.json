@@ -1,0 +1,114 @@
+{
+  "id": 58,
+  "name": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "description": "Sherlock hint points to an open-source GitHub repository, but the sources give no usable content about it.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "No source describes outbound API credentials for the sherlock-project repository; other products named Sherlock use unrelated schemes.",
+  "self_serve": "unknown",
+  "gate_detail": "The sources contain no developer access information for the hinted GitHub project; only a repository page header with no README content was captured.",
+  "api_styles": [
+    "None"
+  ],
+  "api_scope": "Sources do not describe any first-party hosted API for the hinted project.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "No source mentions an MCP server for the hinted project.",
+  "verdict": "unclear",
+  "blocker": "ambiguous_product",
+  "blocker_detail": "Sources mix several unrelated products called Sherlock; none documents a hosted API for the hinted GitHub project.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "supports": [
+        "description"
+      ],
+      "quote": "sherlock Public",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/yuvara1/sherlock-api",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "Maven multi-module Spring Boot 3.4 / Java 21 backend containing the Sherlock edge",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.sherlock.sh/en/articles/15898909-manage-members-and-identity-access",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "The Members tab allows you to manage your team’s access to Sherlock.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.sherlocks.ai/docs/partner-api",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "Sherlocks Partner API",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "S1 (the hinted repository) was truncated before any README text, so nothing is known about what the project does or how it is accessed.",
+    "S2, S3, S4, S5 and S6 describe different products (a Spring Boot backend, sherlock.sh, sherlock.im, Sherlocks.ai, Sherlock audits) and are not the hinted project.",
+    "No auth, access, webhook, sandbox or MCP statement applies to the hinted product; auth Other and access unknown reflect absence of evidence."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "retry",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Sherlock API pricing which plan includes API access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Sherlock API authentication generate access token developer settings",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Sherlock API access approval review partner requirements",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "from": "hint"
+    },
+    {
+      "url": "https://github.com/yuvara1/sherlock-api",
+      "from": "search"
+    },
+    {
+      "url": "https://help.sherlock.sh/en/articles/15898909-manage-members-and-identity-access",
+      "from": "search"
+    },
+    {
+      "url": "https://support.sherlock.im/knowledge_base/item/292200",
+      "from": "search"
+    },
+    {
+      "url": "https://www.sherlocks.ai/docs/partner-api",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.sherlock.xyz/collaborative-audits/scoping-and-audit-requirements",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "ungrounded:auth",
+    "ungrounded:access"
+  ]
+}

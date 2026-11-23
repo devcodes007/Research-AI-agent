@@ -1,0 +1,138 @@
+{
+  "id": 25,
+  "name": "Pumble",
+  "category": "Communications and Messaging",
+  "description": "Pumble team chat with an API addon that issues API keys for HTTP requests.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Install the API addon in the workspace, then generate keys in Pumble; keys are entered in Swagger Authorize.",
+  "self_serve": "free_tier",
+  "gate_detail": "Addon is stated as available on all plans to Owner, Admin and Member, so the free plan suffices. Rate limit is 1000 requests per minute per user. Private channels require the addon bot to be a member.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Send messages, replies, deletions, reactions, create channels, list channel messages and the key creator's channels and DMs; full list in Swagger docs.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "A third-party catalog profile lists MCP Server as no; no vendor MCP in sources.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No payment or approval gate stated; addon install needs workspace permission grant.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Owner, Admin, Member Available on all plans",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Before you can create an API key, you need to install the API addon on your Pumble workspace.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "supports": [
+        "api"
+      ],
+      "quote": "The full list of available actions is available in the Swagger documentation.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://apis.io/providers/pumble/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "| MCP Server | no |",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Webhook and sandbox support not stated",
+    "Marketplace or OAuth app routes not covered",
+    "Quote 'Owner, Admin, Member Available on all plans' spans two source lines",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Pumble API documentation authentication",
+      "error": "all search engines returned nothing: ['bing: No results found.', 'bing: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    },
+    {
+      "query": "Pumble API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Pumble MCP server official",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "from": "search"
+    },
+    {
+      "url": "https://pumble.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.trimble.com/en/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.google.com/program/plans-and-pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://apis.io/providers/pumble/",
+      "from": "search"
+    },
+    {
+      "url": "https://pricingnow.com/question/pumble-pricing/",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": "pumble",
+    "match": "slug",
+    "schemes": [
+      "API_KEY"
+    ],
+    "tools_count": 9,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

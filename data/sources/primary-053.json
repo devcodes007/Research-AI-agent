@@ -1,0 +1,71 @@
+{
+ "searches": [
+  {
+   "query": "Ahrefs API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Ahrefs API credentials pricing plan required developer access",
+   "error": "all search engines returned nothing: ['duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No resul",
+   "backend": "ddg"
+  },
+  {
+   "query": "Ahrefs MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+   "status": 404,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "status": 404,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.ahrefs.com",
+   "requested_url": "https://ahrefs.com/api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+   "requested_url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.ahrefs.com/mcp/docs/openclaw.md",
+   "requested_url": "https://docs.ahrefs.com/mcp/docs/openclaw.md",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.ahrefs.com/",
+   "requested_url": "https://docs.ahrefs.com/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://ahrefs.com/seo-api",
+   "requested_url": "https://ahrefs.com/seo-api",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://ahrefs.com/academy/api-course/lesson-1",
+   "requested_url": "https://ahrefs.com/academy/api-course/lesson-1",
+   "from": "search"
+  }
+ ]
+}

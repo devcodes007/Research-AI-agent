@@ -1,0 +1,115 @@
+{
+  "id": 92,
+  "name": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "description": "Otter.ai offers an API, webhooks and an MCP server, but the sources document no developer API details.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Credential type for the Otter.ai API is not stated in any source; the Otter docs in the sources describe a different restaurant product.",
+  "self_serve": "sales",
+  "gate_detail": "The pricing page lists Otter API and Webhooks under the Enterprise plan, which is custom priced with a demo request. Free Basic plan lists an Otter MCP server.",
+  "api_styles": [
+    "Other"
+  ],
+  "api_scope": "Not documented in the sources; pricing page only lists Otter API and Webhooks as an Enterprise feature.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Pricing page lists an Otter MCP server on the Basic plan and MCP server integration for AI assistants; no URL or docs shown.",
+  "verdict": "needs_outreach",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Otter API and Webhooks appear only on the Enterprise plan, which requires scheduling a demo.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://otter.ai/pricing",
+      "supports": [
+        "access",
+        "verdict",
+        "auth"
+      ],
+      "quote": "Otter API & Webhooks",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://otter.ai/pricing",
+      "supports": [
+        "access"
+      ],
+      "quote": "Custom pricing Schedule a demo",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://otter.ai/pricing",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Otter MCP server",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://otter.ai/pricing",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "MCP server integration for AI assistants",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources S1, S2, S3 and S5 cover other products (Otter restaurant API, OtterSign, Otterly) and were not used.",
+    "Authentication method and API style for Otter.ai are not established.",
+    "MCP server URL and whether the MCP is first-party are not shown."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Otter AI API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Otter AI API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Otter AI MCP server official",
+      "results": 8,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.connect.tryotter.com/guides/core-concepts/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.connect.tryotter.com/guides/core-concepts/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://api.otterwaiver.com/docs/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.otterly.ai/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.connect.tryotter.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://otter.ai/pricing",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

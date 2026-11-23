@@ -1,0 +1,131 @@
+{
+  "id": 46,
+  "name": "Squarespace",
+  "category": "Ecommerce",
+  "description": "Squarespace offers Commerce and Reseller REST APIs, webhooks, custom code and an MCP server for developers.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "Generated API keys for custom applications on a merchant's own site, or OAuth 2.0 for registered OAuth clients (required for Squarespace Extensions).",
+  "self_serve": "approval",
+  "gate_detail": "API keys require the Commerce Advanced plan. OAuth requires registering an OAuth client that is reviewed and approved; listing in Extensions is a separate process. No sandbox stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Commerce APIs read and write orders, products, inventory, transactions, contacts and discounts; Reseller APIs provision sites and domains; Webhook Subscriptions API available via OAuth only.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.squarespace.com/mcp",
+  "mcp_notes": "Vendor-hosted remote MCP server on developers.squarespace.com docs; Domains tools without sign-in, Commerce tools after OAuth 2.1 sign-in in Claude and ChatGPT.",
+  "verdict": "needs_outreach",
+  "blocker": "approval_review",
+  "blocker_detail": "OAuth clients must be reviewed and approved; the API-key path needs a paid Commerce Advanced plan.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "you can use a generated API key or start the OAuth process with Squarespace to become a registered OAuth client.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "With Squarespace's Commerce Advanced plan, you can develop a custom application for a Squarespace merchant site.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Registering an OAuth client, and having it reviewed and approved, only allows OAuth connections with Squarespace.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.squarespace.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "Read and write orders, products, inventory, and transactions. REST endpoints, webhooks for order events, and signed payloads for safe server-to-server delivery.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.squarespace.com/mcp/connect-a-client",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "https://mcp.squarespace.com/mcp",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/oauth",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Squarespace uses OAuth 2.0 to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "No sandbox or test environment is described.",
+    "Whether OAuth client approval is routine or selective is not stated.",
+    "Source excerpts are truncated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Squarespace API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Squarespace API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: [\"bing: ConnectError: ConnectError('error sending request for url (https://www.startpage\", 'brave: No results found.', 'brave: No results found.', 'yahoo: No resul",
+      "backend": "ddg"
+    },
+    {
+      "query": "Squarespace MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.squarespace.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.squarespace.com/mcp/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.squarespace.com/mcp/connect-a-client",
+      "from": "search"
+    },
+    {
+      "url": "https://developers-preview.squarespace.com/commerce-apis/oauth.md",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

@@ -1,0 +1,202 @@
+{
+  "id": 24,
+  "name": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "description": "Lark (lark-sh) realtime database platform docs; not the Larksuite open platform requested.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Server signs tokens with a dashboard secret key; REST API takes auth tokens. Token format (JWT or otherwise) not stated in the sources.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources describe a dashboard secret key for signing tokens but say nothing on signup, plans or approval. They also cover docs.larksh.com, not open.larksuite.com, so access for the hinted product is not established.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "Sources cover Lark SDK, Firebase SDKs, REST API and CLI navigation for a database-style platform; nothing on Larksuite messaging endpoints.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "No MCP information in the sources.",
+  "verdict": "unclear",
+  "blocker": "ambiguous_product",
+  "blocker_detail": "The only source is for a different product (docs.larksh.com) rather than open.larksuite.com, so the hinted API is not evidenced.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://docs.larksh.com/platform/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Regenerate if compromised. You can regenerate your secret key from the dashboard at any time.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.larksh.com/platform/authentication",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "They would have full access to your database as any user.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.larksh.com/platform/authentication",
+      "supports": [
+        "api",
+        "access"
+      ],
+      "quote": "REST API authentication Pass auth tokens in REST API requests.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.larksh.com/platform/authentication",
+      "supports": [
+        "description"
+      ],
+      "quote": "Authentication tells Lark who is making a request.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mcp.so/servers/lark-openapi-mcp",
+      "supports": [
+        "auth"
+      ],
+      "quote": "It supports both App Access Token and User Access Token authentication, along with stdio and SSE transport modes.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mcp.so/servers/lark-openapi-mcp",
+      "supports": [
+        "mcp",
+        "api"
+      ],
+      "quote": "Lark Mcp Server is an official MCP (Model Context Protocol) tool that encapsulates Feishu/Lark Open Platform APIs as MCP tools",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/junyuan-qi/lark-mcp-server",
+      "supports": [
+        "access"
+      ],
+      "quote": "A registered Lark/Feishu application with appropriate permissions",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/lorrylockie/lark-mcp",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "A Lark/Feishu application with App ID and App Secret",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.larksuite.my/approval",
+      "supports": [
+        "description"
+      ],
+      "quote": "All the apps you need.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.chanty.com/blog/lark-pricing/",
+      "supports": [
+        "description"
+      ],
+      "quote": "Lark presents itself as an all-in-one collaboration platform",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.chanty.com/blog/lark-pricing/",
+      "supports": [
+        "api"
+      ],
+      "quote": "custom integrations and API support",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.chanty.com/blog/lark-pricing/",
+      "supports": [
+        "description"
+      ],
+      "quote": "Lark introduces AnyCross, a no-code platform to streamline workflow automation across systems.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mcp.so/servers/lark-openapi-mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Lark Mcp Server is an official MCP (Model Context Protocol) tool that encapsulates Feishu/Lark Open Platform APIs as MCP tools",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Source is docs.larksh.com (lark-sh), not open.larksuite.com",
+    "Larksuite open platform auth, signup and approval gates not covered",
+    "Token format not specified"
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Lark (Larksuite) API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Lark (Larksuite) API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Lark (Larksuite) MCP server official",
+      "error": "all search engines returned nothing: ['brave: No results found.', 'brave: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results fou",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.larksh.com/platform/authentication",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ],
+  "catalog": {
+    "toolkit": "lark",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2"
+    ],
+    "tools_count": 451,
+    "auth_agreement": "inconclusive"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "adjudicated",
+    "agreed": [
+      "auth",
+      "self_serve",
+      "verdict"
+    ],
+    "disputed": {
+      "mcp_status": {
+        "pass_A": "unknown",
+        "pass_B": "official",
+        "final": "official",
+        "resolved_by": "adjudication",
+        "resolved": true,
+        "changed_from_pass_A": true,
+        "reason": "S2 describes the @larksuiteoapi/lark-mcp package as an official MCP tool wrapping Lark Open Platform APIs."
+      }
+    },
+    "rule_fixes": [],
+    "retry_model": "Claude Sonnet 5.5 via Claude Code"
+  }
+}

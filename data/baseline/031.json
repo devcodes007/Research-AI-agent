@@ -1,0 +1,132 @@
+{
+  "id": 31,
+  "name": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Google Ads lets advertisers create and manage ads; the Google Ads API automates campaign management.",
+  "auth": [
+    "OAuth2",
+    "JWT"
+  ],
+  "auth_notes": "OAuth 2.0 user flows or service accounts via Google Cloud project; a Google Cloud project access level is required for production.",
+  "self_serve": "approval",
+  "gate_detail": "Production use needs a Google Cloud project with an API access level (Explorer, Basic or Standard); Standard goes through application review. API is free; Test access covers test accounts only.",
+  "api_styles": [
+    "RPC",
+    "SDK"
+  ],
+  "api_scope": "Programmatic management of Google Ads accounts, campaigns and reporting via the Google Ads API, with client libraries; also Google Ads scripts.",
+  "webhooks": "yes",
+  "sandbox": "yes",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Google Ads MCP server bridges AI agents to the Google Ads API; local stdio or remote streamable-http.",
+  "verdict": "needs_outreach",
+  "blocker": "approval_review",
+  "blocker_detail": "Access levels are granted by application review; Standard review can take days to weeks, and Explorer limits daily operations and some features.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/client-libs/python/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "the Google Ads API uses the OAuth 2.0 protocol for authentication and authorization.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/productionize/access-levels",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "uses an application review process to grant various access levels.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/productionize/access-levels",
+      "supports": [
+        "access"
+      ],
+      "quote": "The Google Ads API is free to use; there are no charges for using the Google Ads API at Explorer access, Basic access, or Standard access levels.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "supports": [
+        "access"
+      ],
+      "quote": "The Explorer access level allows your Google Cloud project to execute up to 2,880 operations per day against production accounts.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The Google Ads MCP server provides a standardized bridge to the Google Ads API.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.google.com/google-ads",
+      "supports": [
+        "api"
+      ],
+      "quote": "Use webhook to send data from Google Ads to your CRM system.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Webhook is for lead form data, not general API events.",
+    "MCP URL not stated; local stdio install shown.",
+    "REST style not explicitly stated; reference is RPC."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Google Ads API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Google Ads API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Google Ads MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.google.com/google-ads",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/client-libs/python/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/productionize/access-levels",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

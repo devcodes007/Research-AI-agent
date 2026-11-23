@@ -1,0 +1,52 @@
+{
+ "searches": [
+  {
+   "query": "Pipedrive API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Pipedrive API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Pipedrive MCP server official",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.pipedrive.com/",
+   "requested_url": "https://pipedrive.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+   "requested_url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developers.pipedrive.com/docs/api/v1",
+   "requested_url": "https://developers.pipedrive.com/docs/api/v1",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.pipedrive.com/en/features/crm-api",
+   "requested_url": "https://www.pipedrive.com/en/features/crm-api",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://devcommunity.pipedrive.com/t/core-api-concepts-docs/55",
+   "requested_url": "https://devcommunity.pipedrive.com/t/core-api-concepts-docs/55",
+   "from": "search"
+  }
+ ]
+}

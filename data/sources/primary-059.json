@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Waterfall.io API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Waterfall.io API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Waterfall.io MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.waterfall.io/v1/authentication",
+   "requested_url": "https://docs.waterfall.io/v1/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.waterfall.io/v1/overview",
+   "requested_url": "https://docs.waterfall.io/v1/overview",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.waterfall.io/v1/book-demo",
+   "requested_url": "https://docs.waterfall.io/v1/book-demo",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.waterfall.io/pricing",
+   "requested_url": "https://www.waterfall.io/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.waterfall.io/",
+   "requested_url": "https://www.waterfall.io/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://apidocs.waterfall.com/#!/v2/authenticate",
+   "requested_url": "https://apidocs.waterfall.com/#!/v2/authenticate",
+   "from": "search"
+  }
+ ]
+}

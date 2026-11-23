@@ -1,0 +1,131 @@
+{
+  "id": 99,
+  "name": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "description": "Hosted REST API returning YouTube video transcripts, search, channel and playlist data, with MCP access.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "API key sent in the Authorization header as a Bearer value; keys come from a dashboard.",
+  "self_serve": "unknown",
+  "gate_detail": "Docs say to sign up for an API key from the dashboard. Endpoints cost credits (some free), but plan prices, free allowance and trial terms are not stated in the sources.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Transcript extraction, video info, YouTube search, channel uploads/latest/sections/posts and playlist videos under /api/v2/youtube, billed in credits with some free endpoints.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Vendor docs describe TranscriptAPI MCP tools for Claude, ChatGPT and agent builders; no server URL appears in the sources.",
+  "verdict": "conditional",
+  "blocker": "other",
+  "blocker_detail": "Credit-based usage; sources do not state whether signup is free or a paid plan is needed for useful volume.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Include your API key in the Authorization header of every request",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Don't have an API key yet? Get one from your dashboard",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/getting-started/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Sign up for an API key",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Costs 1 credit per page.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "The YouTube Transcript API provides a simple and reliable way to extract transcripts from YouTube videos programmatically.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "all from within your AI assistant via Model Context Protocol (MCP)",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources do not state pricing, free tier or trial, so self-serve level is unknown.",
+    "No MCP server URL given; official status inferred from vendor's own docs page.",
+    "Webhooks and sandbox not mentioned; Swagger UI is live testing, not a sandbox."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "YouTube Transcript developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "YouTube Transcript API access request approval partner program",
+      "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    },
+    {
+      "query": "YouTube Transcript model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://transcriptapi.com/docs/api/",
+      "from": "lead"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "from": "lead"
+    },
+    {
+      "url": "https://transcriptapi.com/docs/getting-started/",
+      "from": "search"
+    },
+    {
+      "url": "https://transcriptapi.com/blog/youtube-transcript-api-complete-developer-guide",
+      "from": "search"
+    },
+    {
+      "url": "https://gettranscript.app/blog/youtube-transcript-api-guide",
+      "from": "search"
+    },
+    {
+      "url": "https://www.youtubetranscript.dev/api-docs",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "unknown_access_but_confident_verdict"
+  ]
+}

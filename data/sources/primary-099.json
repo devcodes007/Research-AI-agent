@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "YouTube Transcript API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "YouTube Transcript API credentials pricing plan required developer access",
+   "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  },
+  {
+   "query": "YouTube Transcript MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://transcriptapi.com/docs/api/",
+   "requested_url": "https://transcriptapi.com/docs/api/",
+   "from": "lead"
+  },
+  {
+   "id": "S2",
+   "url": "https://transcriptapi.com/docs/mcp/",
+   "requested_url": "https://transcriptapi.com/docs/mcp/",
+   "from": "lead"
+  },
+  {
+   "id": "S3",
+   "url": "https://transcriptapi.com/docs/",
+   "requested_url": "https://transcriptapi.com/docs/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://yttranscript.ai/api-docs",
+   "requested_url": "https://yttranscript.ai/api-docs",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.youtubetranscript.dev/api-docs",
+   "requested_url": "https://www.youtubetranscript.dev/api-docs",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://getyoutubetranscript.com/docs",
+   "requested_url": "https://getyoutubetranscript.com/docs",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+{"mcp_status":{"value":"unknown","source":"S2","quote":"Sentry's MCP (Model Context Protocol) monitoring tools help you understand what's happening in your MCP implementations.","reason":"Sources describe monitoring of users' MCP servers, not a Sentry-provided MCP server; neither existence nor absence is established."}}

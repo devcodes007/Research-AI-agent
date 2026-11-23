@@ -1,0 +1,71 @@
+{
+ "description": "Plain is a B2B customer support platform built on its own public GraphQL API.",
+ "auth": [
+  "API key"
+ ],
+ "auth_notes": "A machine user and API key are created and scoped with fine-grained permissions; a third-party profile says keys are sent as bearer credentials.",
+ "self_serve": "paid_plan",
+ "gate_detail": "Plans are priced per member seat; every plan starts with a 7-day no-card free trial. No free plan is described, and the sources do not say whether API keys work during the trial or on every tier.",
+ "api_styles": [
+  "GraphQL",
+  "SDK",
+  "CLI"
+ ],
+ "api_scope": "Core GraphQL API, same as the product is built on, covering customers, companies, threads, help center, labels, tiers and SLAs, plus TypeScript and Go SDKs.",
+ "webhooks": "yes",
+ "sandbox": "unknown",
+ "mcp_status": "unknown",
+ "mcp_url": null,
+ "mcp_notes": "A third-party profile lists a remote Plain MCP server (mcp.plain.com); no Plain-owned source confirms it, so status is left unknown.",
+ "verdict": "conditional",
+ "blocker": "paid_plan",
+ "blocker_detail": "Plain is sold per member seat after a 7-day trial; no free plan shown, and API access by tier is not stated.",
+ "confidence": "medium",
+ "evidence": [
+  {
+   "source": "S2",
+   "supports": [
+    "auth",
+    "api"
+   ],
+   "quote": "Create a machine user and an API key, and scope it with fine-grained permissi"
+  },
+  {
+   "source": "S1",
+   "supports": [
+    "access",
+    "verdict"
+   ],
+   "quote": "Every plan starts with a free trial lasting 7 days, and the trial doesn't need a credit card."
+  },
+  {
+   "source": "S1",
+   "supports": [
+    "access"
+   ],
+   "quote": "Each plan charges a price for every member seat"
+  },
+  {
+   "source": "S4",
+   "supports": [
+    "api"
+   ],
+   "quote": "built entirely on its own public GraphQL API"
+  },
+  {
+   "source": "S4",
+   "supports": [
+    "api",
+    "mcp"
+   ],
+   "quote": "HMAC-signed webhooks, a hosted MCP server"
+  }
+ ],
+ "uncertainties": [
+  "S2 is truncated; the full authentication page text was not available.",
+  "Webhooks, SDKs and MCP come only from a third-party catalog profile (S4), not Plain's own pages.",
+  "Sources do not say whether API access is limited to paid tiers or available during the trial.",
+  "No sandbox is described.",
+  "S3 (PlainID) and S6 (start.gg) are different products and were ignored."
+ ]
+}

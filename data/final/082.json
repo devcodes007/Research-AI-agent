@@ -1,0 +1,150 @@
+{
+  "id": 82,
+  "name": "Plaid",
+  "category": "Finance and Fintech",
+  "description": "Plaid financial data API for bank account linking, balances, identity, transactions and payments.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "client_id and secret sent in the request body or in PLAID-CLIENT-ID and PLAID-SECRET headers; access_token per Item.",
+  "self_serve": "approval",
+  "gate_detail": "Sandbox is always free with test Items. Production access must be requested via the Dashboard; a free Trial (US/Canada, new teams) allows 10 Production Items; EU/UK customers only get Custom plans.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Endpoints and webhooks across products such as Auth, Balance, Identity, Transactions, Investments, Liabilities and Enrich; Node SDK shown.",
+  "webhooks": "yes",
+  "sandbox": "yes",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Plaid-hosted remote Dashboard MCP server with diagnostics and analytics tools; URL not stated in sources.",
+  "verdict": "needs_outreach",
+  "blocker": "approval_review",
+  "blocker_detail": "Production API access must be requested via the Dashboard; Growth/Custom plans and EU/UK use require contacting sales.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://plaid.com/docs/api/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Almost all Plaid API endpoints require a `client_id` and `secret`.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://plaid.com/docs/api/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "You can [request Production API access](https://dashboard.plaid.com/overview/production) via the Dashboard.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://plaid.com/docs/account/billing/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Free Trial plans are available to new Plaid teams (US/Canada only) created on or after April 15, 2026.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://plaid.com/docs/account/billing/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "If your business is based in the EU or UK, or serves end users there, only Custom plans are available.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://plaid.com/docs/api/products/auth/",
+      "supports": [
+        "api"
+      ],
+      "quote": "API reference for endpoints and webhooks associated with the Plaid Auth product.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://plaid.com/docs/resources/mcp/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The **Dashboard MCP server** is a remote MCP server hosted by Plaid.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "MCP server URL is not stated in the sources.",
+    "Whether Production request approval is discretionary is not detailed.",
+    "Dashboard MCP uses OAuth tokens for Dashboard tools, not the core API.",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Plaid API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Plaid API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Plaid MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://plaid.com/docs/",
+      "from": "hint"
+    },
+    {
+      "url": "https://plaid.com/docs/api/products/auth/",
+      "from": "search"
+    },
+    {
+      "url": "https://plaid.com/docs/resources/mcp/",
+      "from": "search"
+    },
+    {
+      "url": "https://plaid.com/docs/api/",
+      "from": "search"
+    },
+    {
+      "url": "https://plaid.com/docs/account/billing/",
+      "from": "search"
+    },
+    {
+      "url": "https://plaid.com/pricing/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ],
+  "catalog": {
+    "toolkit": "plaid",
+    "match": "slug",
+    "schemes": [
+      "API_KEY"
+    ],
+    "tools_count": 70,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

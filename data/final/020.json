@@ -1,0 +1,136 @@
+{
+  "id": 20,
+  "name": "Gladly",
+  "category": "Support and Helpdesk",
+  "description": "Gladly customer service platform with REST API, Lookup API, webhooks and Chat SDK.",
+  "auth": [
+    "Basic"
+  ],
+  "auth_notes": "Token-based Basic Authentication; API tokens tied to a Gladly user with the API User permission, sent in the Authorization header over HTTPS.",
+  "self_serve": "approval",
+  "gate_detail": "A technical admin with a Gladly account must create the token in Settings, and the user needs the API User permission/role granted. No free signup or plan details are stated; it is a customer-account product.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "REST API for agents, customers, conversations, topics, tasks, inboxes, teams, reports, exports and webhooks, plus a Lookup API for serving your own data.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "Sources describe Gladly AI connecting to external MCP servers, not a Gladly-published server.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Needs a Gladly customer account and an admin granting the API User permission to create tokens.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Gladly API uses token-based Basic Authentication. API tokens are associated with designated Gladly users.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+      "supports": [
+        "access"
+      ],
+      "quote": "These can be created within the Gladly UI, for users who have the `API User` role.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+      "supports": [
+        "access"
+      ],
+      "quote": "Click **Create Token**. A new token is immediately generated within the page.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Your user must have the API user permission to create and use an API token.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.gladly.com/rest/",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "Clients can access the REST API via HTTPS at your organization's Gladly domain",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan or pricing requirements for API access are not stated.",
+    "Sandbox is mentioned only for Chat SDK; API sandbox not confirmed.",
+    "MCP pages describe Gladly as an MCP client, not a server.",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Gladly API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Gladly API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Gladly MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+      "from": "search"
+    },
+    {
+      "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+      "from": "search"
+    },
+    {
+      "url": "https://help.gladly.com/docs/what-are-mcp-connections",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.gladly.com/rest/",
+      "from": "search"
+    },
+    {
+      "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.gladly.com/chat/",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": null,
+    "match": "none",
+    "schemes": [],
+    "tools_count": 0,
+    "auth_agreement": "no_toolkit"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

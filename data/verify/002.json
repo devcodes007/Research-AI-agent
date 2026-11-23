@@ -1,0 +1,127 @@
+{
+  "id": 2,
+  "name": "HubSpot",
+  "category": "CRM and Sales",
+  "description": "HubSpot is a CRM platform with a developer platform, OAuth apps, service keys and remote MCP server.",
+  "auth": [
+    "OAuth2",
+    "Bearer token"
+  ],
+  "auth_notes": "OAuth 2.0 authorization code flow for apps (access and refresh tokens); service keys, formerly private-app-style tokens, sent as Bearer tokens for account-level calls.",
+  "self_serve": "unknown",
+  "gate_detail": "Credentials are created inside a HubSpot account under Development (apps, service keys). Sources do not state which plan tier or free signup is needed; installing OAuth apps may require a Super Admin.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "CRM APIs such as contacts accessed at api.hubapi.com, with scope-based permissions; also CMS and other API areas listed in navigation, plus a developer CLI.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "HubSpot offers a remote MCP server for CRM access and a local CLI-based developer MCP server.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Requires a HubSpot account; installs can need a Super Admin, and some scopes depend on account subscription tier. Free-signup access path not stated.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/oauth-quickstart-guide",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "sending a URL-form encoded POST request to https://api.hubapi.com/oauth/v3/token",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "You can then include your service key as a Bearer token in your preferred API client or programming language.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+      "supports": [
+        "access"
+      ],
+      "quote": "navigate to Keys > Service keys",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/oauth-quickstart-guide",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "they’ll need to have a Super Admin install the app.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.hubspot.com/ai-tools/mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "HubSpot offers two distinct MCP (Model Context Protocol) servers",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan tier or free signup requirement for credentials is not stated.",
+    "Webhooks and sandbox are not covered in the visible source text.",
+    "MCP server URL is not given."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "HubSpot developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "HubSpot API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "HubSpot model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/oauth-quickstart-guide",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/working-with-oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/api-reference/latest/authentication/manage-oauth-tokens",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.hubspot.com/ai-tools/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "unknown_access_but_confident_verdict"
+  ]
+}

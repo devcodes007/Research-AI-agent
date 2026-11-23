@@ -1,0 +1,214 @@
+{
+  "id": 15,
+  "name": "Pylon",
+  "category": "Support and Helpdesk",
+  "description": "Pylon B2B support platform with an API token and hosted OAuth MCP server.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Per third-party wrapper docs, an API token is generated in Pylon app settings; first-party API docs are not in sources.",
+  "self_serve": "unknown",
+  "gate_detail": "Token is generated in Pylon's workspace settings per a third-party README, implying a Pylon account is needed. Plan, pricing or approval requirements are not stated in sources; no sandbox shown.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Pylon API described by an OpenAPI spec per a third-party wrapper; hosted MCP covers issues, accounts, contacts and knowledge base.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.usepylon.com/",
+  "mcp_notes": "Hosted Streamable HTTP MCP with OAuth sign-in. The pylonapi/@pylonapi/mcp package is a different product.",
+  "verdict": "conditional",
+  "blocker": "other",
+  "blocker_detail": "Account and plan terms for API tokens unconfirmed; first-party API docs absent from sources.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://github.com/Carter-S/pylon-mcp",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Generate a Pylon API token at https://app.usepylon.com/settings/api-keys .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/Carter-S/pylon-mcp",
+      "supports": [
+        "api"
+      ],
+      "quote": "An MCP server exposing the full Pylon API as Claude tools — auto-generated from Pylon's OpenAPI spec, so all 114 endpoints are available",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mcp.so/servers/pylon-remote",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The Pylon remote MCP server is a hosted Model Context Protocol endpoint at https://mcp.usepylon.com/",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mcp.so/servers/pylon-remote",
+      "supports": [
+        "mcp",
+        "auth"
+      ],
+      "quote": "Pylon uses OAuth: the first time you connect, your MCP client opens a browser window to sign in and authorize access",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/mcp",
+      "supports": [
+        "mcp",
+        "description"
+      ],
+      "quote": "Connect ChatGPT, Claude, and Cursor to Pylon. Work issues, accounts, contacts, and your knowledge base with the permissions you already have.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/api-webhooks",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "As an Admin, generate an API token in Pylon to authenticate your requests.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Only Admin users can create API tokens.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "supports": [
+        "api"
+      ],
+      "quote": "To call the API from TypeScript, Python, or Go, use our SDKs",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/api-webhooks",
+      "supports": [
+        "api"
+      ],
+      "quote": "Webhooks fire on specific events inside Pylon and post to an endpoint you control",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "Pylon’s API can be used to programmatically access and take action on data within Pylon.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/api-webhooks",
+      "supports": [
+        "api"
+      ],
+      "quote": "Go to the Webhooks page in Settings and specify your target endpoint URL, along with any custom headers.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.usepylon.com/pricing",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Pylon MCP server",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "API auth evidence comes from a third-party wrapper, not first-party docs",
+    "Plan or approval needed for API token unknown",
+    "pylonapi.com is a different, unrelated product",
+    "Webhooks and sandbox not shown",
+    "Composio's toolkit lists auth ['OAuth2']; our research lists ['API key']. Review flag only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Pylon API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No resul",
+      "backend": "ddg"
+    },
+    {
+      "query": "Pylon API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    },
+    {
+      "query": "Pylon MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.usepylon.com/integrations/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://github.com/pylonapi/pylon-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://mcp.so/servers/pylon-remote",
+      "from": "search"
+    },
+    {
+      "url": "https://github.com/Carter-S/pylon-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://mcp.so/servers/pylon-mcp",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "unknown_access_but_confident_verdict",
+    "composio_catalog_auth_disagree"
+  ],
+  "catalog": {
+    "toolkit": "pylon_mcp",
+    "match": "url",
+    "schemes": [
+      "DCR_OAUTH"
+    ],
+    "tools_count": 12,
+    "auth_agreement": "disagree"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "adjudicated",
+    "agreed": [
+      "auth",
+      "self_serve",
+      "verdict"
+    ],
+    "disputed": {
+      "mcp_status": {
+        "pass_A": "official",
+        "pass_B": "unknown",
+        "pass_C": "official",
+        "final": "official",
+        "resolved": true,
+        "resolved_by": "majority_of_3_with_verified_quote",
+        "changed_from_pass_A": false,
+        "reason": "two of three independent passes agree"
+      }
+    },
+    "rule_fixes": [],
+    "retry_model": "Claude Sonnet 5.5 via Claude Code"
+  }
+}

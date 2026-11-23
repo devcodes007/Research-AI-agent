@@ -1,0 +1,1 @@
+{"verdict": {"value": "conditional", "source": "S1", "quote": "To access the Intercom API, you have two authentication options depending on whether you app is public or private.", "reason": "Access path depends on private (access token) versus public (OAuth) app, so feasibility is conditional."}}

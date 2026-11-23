@@ -1,0 +1,83 @@
+{
+ "searches": [
+  {
+   "query": "BigCommerce API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "BigCommerce API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "BigCommerce MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://www.bigcommerce.com/blog/authenticate-bigcommerce-and-b2b-edition-apis-with-one-api-account/",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://support.bigcommerce.com/s/article/MCP-Server-for-Tools-and-AI-Agents",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://support.bigcommerce.com/s/article/Store-API-Accounts",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://support.bigcommerce.com/s/topic/0TO1300000059cCGAQ/api-documentation",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+   "requested_url": "https://developer.bigcommerce.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+   "requested_url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+   "requested_url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+   "requested_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+   "requested_url": "https://docs.bigcommerce.com/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.bigcommerce.com/developer/docs/ai-agent-setup",
+   "requested_url": "https://docs.bigcommerce.com/developer/docs/ai-agent-setup",
+   "from": "search"
+  }
+ ]
+}

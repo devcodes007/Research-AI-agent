@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Shopify API documentation authentication",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', \"auto: ConnectError: ConnectError('error sending reque",
+   "backend": "ddg"
+  },
+  {
+   "query": "Shopify API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Shopify MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://shopify.dev/docs/api/usage/authentication",
+   "requested_url": "https://shopify.dev/docs/api/usage/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://shopify.dev/docs/apps/launch/billing/shopify-app-pricing",
+   "requested_url": "https://shopify.dev/docs/apps/launch/billing/shopify-app-pricing",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://shopify.dev/docs/api/ai-toolkit",
+   "requested_url": "https://shopify.dev/docs/apps/build/ai-toolkit",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://community.shopify.dev/c/authentication/6",
+   "requested_url": "https://community.shopify.dev/c/authentication/6",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://shopify.dev/changelog/posts/mcp-server-for-the-shopify-dev-assistant",
+   "requested_url": "https://shopify.dev/changelog/posts/mcp-server-for-the-shopify-dev-assistant",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://www.shopify.com/partners/blog/17056443-how-to-generate-a-shopify-api-token",
+   "requested_url": "https://www.shopify.com/partners/blog/17056443-how-to-generate-a-shopify-api-token",
+   "from": "search"
+  }
+ ]
+}

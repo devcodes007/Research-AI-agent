@@ -1,0 +1,1 @@
+{"auth": {"value": ["API key", "OAuth2"], "source": "S5", "quote": "All API requests require authentication. Two methods are supported:", "reason": "Exactly two methods: API keys (sent via HTTP Basic transport) and OAuth 2.0; Basic is not a separate method."}}

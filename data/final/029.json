@@ -1,0 +1,149 @@
+{
+  "id": 29,
+  "name": "Aircall",
+  "category": "Communications and Messaging",
+  "description": "Aircall public REST API and webhooks for calls, contacts, users, messaging and AI agents.",
+  "auth": [
+    "OAuth2",
+    "Basic"
+  ],
+  "auth_notes": "OAuth required for public apps (technology partners); Basic Auth for Aircall customers' own accounts. OAuth gives one account-level access token.",
+  "self_serve": "approval",
+  "gate_detail": "Public apps require a tech partner application and integration plan review (1 to 5 business days) before developer account and OAuth credentials issue. Private apps for your own workspace need no marketplace approval. Message sending needs Professional plan.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "REST API for calls, contacts, users, tags, webhooks, company, analytics exports, AI voice agent calls and messaging; webhooks for events; Embed SDK.",
+  "webhooks": "yes",
+  "sandbox": "yes",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "Aircall docs state they do not offer an MCP server as of writing.",
+  "verdict": "needs_outreach",
+  "blocker": "approval_review",
+  "blocker_detail": "Multi-tenant OAuth credentials come only after partner application and plan review; messaging API also needs the Professional plan.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developer.aircall.io/docs/plan-your-integration",
+      "supports": [
+        "auth"
+      ],
+      "quote": "OAuth is required for public apps.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.aircall.io/docs/plan-your-integration",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "If approved, you'll receive your developer account and OAuth credentials to start building",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.aircall.io/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Connect your CRM, automate workflows, or build custom integrations for your own Aircall workspace, no marketplace approval needed.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://support.aircall.io/en-gb/articles/20698710100381",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Important: Sending messages via API is only available on the Aircall Professional plan.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.aircall.io/docs/mcp-faqs",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "As of this writting we don't offer an MCP servier but stay tuned.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.aircall.io/",
+      "supports": [
+        "api"
+      ],
+      "quote": "Use our REST API and webhooks to access calls, contacts, and users",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "How customers obtain Basic Auth credentials is not stated in the excerpts",
+    "Sandbox is mentioned for technology partners only",
+    "MCP statement may be outdated",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Aircall API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No resul",
+      "backend": "ddg"
+    },
+    {
+      "query": "Aircall API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Aircall MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.aircall.io/docs/mcp-faqs",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.aircall.io/",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.aircall.io/docs/plan-your-integration",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.aircall.io/api-references",
+      "from": "search"
+    },
+    {
+      "url": "https://support.aircall.io/en-gb/articles/20698710100381",
+      "from": "search"
+    },
+    {
+      "url": "https://aircall.io/call-center-software-features/webhooks-api/",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": "aircall",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2",
+      "BASIC"
+    ],
+    "tools_count": 48,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

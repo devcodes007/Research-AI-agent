@@ -1,0 +1,122 @@
+{
+  "id": 1,
+  "name": "Salesforce",
+  "category": "CRM and Sales",
+  "description": "Salesforce is a CRM platform with REST and Connect REST APIs for accessing org data.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "Access token obtained via OAuth through a connected or external client app; token passed as Authorization Bearer header on REST calls.",
+  "self_serve": "instant",
+  "gate_detail": "A free Developer Edition org can be signed up for testing and development; development sandboxes also work. Production-org API availability by edition is not stated in the sources.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "REST API covers resources such as process approvals (submit, approve, reject); Connect REST API is a further REST surface. Documentation also references Salesforce CLI.",
+  "webhooks": "unknown",
+  "sandbox": "yes",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources do not mention any MCP server.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment blocker shown for development use; production edition entitlements not covered by sources.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "REST API requires an access token obtained by authentication.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Developer Edition provides a free and easy solution so that you can use Salesforce for testing and development.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Create an external client app in a Salesforce org, enable OAuth, and configure an OAuth flow.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/dome-process-approvals-submit.html",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "-H \"Authorization: Bearer token\"",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-process-approvals.html",
+      "supports": [
+        "api"
+      ],
+      "quote": "Accesses all approval processes.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Webhook support is not covered by the sources.",
+    "API access entitlement by production edition is not stated.",
+    "MCP server existence is not addressed."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Salesforce developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Salesforce API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Salesforce model context protocol MCP server",
+      "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", \"auto: ConnectError: ConnectError('error sending request for url (https:",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-process-approvals.html",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/dome-process-approvals-submit.html",
+      "from": "search"
+    },
+    {
+      "url": "https://www.salesforce.com/company/legal/partner-agreements/",
+      "from": "search"
+    },
+    {
+      "url": "https://getknit.dev/blog/salesforce-api-key/",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

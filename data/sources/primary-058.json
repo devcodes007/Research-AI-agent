@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Sherlock API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Sherlock API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Sherlock MCP server official",
+   "error": "all search engines returned nothing: ['bing: No results found.', 'bing: No results found.', 'bing: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://github.com/sherlock-project/sherlock",
+   "requested_url": "https://github.com/sherlock-project/sherlock",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.sherlockai.dev/api-reference/",
+   "requested_url": "https://docs.sherlockai.dev/api-reference/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.sherlockai.dev/",
+   "requested_url": "https://docs.sherlockai.dev/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://sherlock.docs.pyansys.com/",
+   "requested_url": "https://sherlock.docs.pyansys.com/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://getsherlock.dev/pricing/",
+   "requested_url": "https://getsherlock.dev/pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://www.sherlock.sh/pricing",
+   "requested_url": "https://www.sherlock.sh/pricing",
+   "from": "search"
+  }
+ ]
+}

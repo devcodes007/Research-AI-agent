@@ -1,0 +1,120 @@
+{
+  "id": 98,
+  "name": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "description": "Mermaid CLI (mmdc) is a local command-line tool that renders Mermaid diagrams; not a hosted API.",
+  "auth": [
+    "None/local"
+  ],
+  "auth_notes": "Local npm/Docker CLI with no credentials documented in the sources. Separate hosted Mermaid API (different product) uses Bearer API key.",
+  "self_serve": "unknown",
+  "gate_detail": "The sources do not describe credentials for the CLI; it is installed and run locally. The separate hosted Mermaid API reportedly works with free accounts and a monthly credit allowance.",
+  "api_styles": [
+    "CLI",
+    "SDK"
+  ],
+  "api_scope": "Command-line tool plus a Node.JS API that is not covered by semver; no hosted endpoints for the CLI.",
+  "webhooks": "no",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "Official Mermaid MCP Server exists for the Mermaid.ai product, not the CLI repo; no MCP in the CLI sources.",
+  "verdict": "unclear",
+  "blocker": "local_tool_not_hosted_api",
+  "blocker_detail": "mermaid-cli is a local command-line renderer, not a hosted first-party API requiring developer credentials.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "Command line tool for the Mermaid library",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "supports": [
+        "api"
+      ],
+      "quote": "It's possible to call mermaid-cli via a Node.JS API.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mermaid.ai/products/mermaid-api",
+      "supports": [
+        "api"
+      ],
+      "quote": "Mermaid API is a hosted service that runs Mermaid for you",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mermaid.ai/products/mermaid-api",
+      "supports": [
+        "access"
+      ],
+      "quote": "Any Mermaid account works, including a free one",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mermaid.ai/products/mermaid-api",
+      "supports": [
+        "auth"
+      ],
+      "quote": "-H \"Authorization: Bearer $MERMAID_API_KEY\"",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Auth and access quotes come from the separate hosted Mermaid API (S6), not the CLI; no source states the CLI needs no credentials.",
+    "S3 (MERMAID coral reef API) and S4 (another mermaid CLI) are unrelated products."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Mermaid CLI developer API getting started API key OAuth",
+      "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", \"auto: ConnectError: ConnectError('error sending request for url (https:",
+      "backend": "ddg"
+    },
+    {
+      "query": "Mermaid CLI API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Mermaid CLI model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md?plain=1",
+      "from": "lead"
+    },
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "from": "hint"
+    },
+    {
+      "url": "https://mermaid-api.readthedocs.io/en/latest/authentication.html",
+      "from": "search"
+    },
+    {
+      "url": "https://github.com/noahsabaj/mermaid-cli/blob/main/docs/cli-reference.md",
+      "from": "search"
+    },
+    {
+      "url": "https://mermaid.ai/docs/ai/mcp-server",
+      "from": "search"
+    },
+    {
+      "url": "https://mermaid.ai/products/mermaid-api",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

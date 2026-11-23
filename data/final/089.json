@@ -1,0 +1,153 @@
+{
+  "id": 89,
+  "name": "Ramp",
+  "category": "Finance and Fintech",
+  "description": "Ramp is a finance platform with a developer API documented at docs.ramp.com.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Unknown. Fetched pages are JavaScript shells with no authentication content.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources contain only JavaScript-shell pages, so how a developer obtains credentials, and any plan, approval or sales gate, is not established.",
+  "api_styles": [
+    "Other"
+  ],
+  "api_scope": "Sources only point to an OpenAPI spec and API reference files, implying a documented developer API; no scope details are given.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "A page URL named ramp-mcp exists, but its content is a shell; nothing confirms an official MCP server.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "Insufficient evidence: every source returned only a JavaScript-rendering shell without documentation content.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.ramp.com/developer-api/authentication",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "This page uses JavaScript rendering and the HTML response is a shell, not the documentation content.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ramp.com",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "/openapi/developer-api.json (OpenAPI spec).",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ramp.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "/llms-api.txt (API reference),",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "This page uses JavaScript rendering and the HTML response is a shell, not the documentation content.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ramp.com",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "/openapi/developer-api.json (OpenAPI spec)",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/getting-started",
+      "supports": [
+        "api"
+      ],
+      "quote": "If you run into any issues while helping developers with the Ramp API",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Authentication method is not stated in any source.",
+    "Credential access path and gating are not stated.",
+    "Webhooks and sandbox support are not stated.",
+    "MCP server existence is not confirmed; only a page URL hints at it.",
+    "API style is inferred from the OpenAPI spec reference only, not stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Ramp API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Ramp API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Ramp MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.ramp.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/getting-started",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/overview/getting-started",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": "ramp",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2"
+    ],
+    "tools_count": 186,
+    "auth_agreement": "inconclusive"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "agreed",
+    "agreed": [
+      "auth",
+      "self_serve",
+      "mcp_status",
+      "verdict"
+    ],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

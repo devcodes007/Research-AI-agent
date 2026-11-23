@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Gorgias API documentation authentication",
+   "error": "all search engines returned nothing: [\"yahoo: DNSError: DNSError('error sending request for url (https://search.yahoo.com/sear\", \"yahoo: DNSError: DNSError('error sending request for url (https://sear",
+   "backend": "ddg"
+  },
+  {
+   "query": "Gorgias API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Gorgias MCP server official",
+   "error": "all search engines returned nothing: ['yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+   "requested_url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+   "requested_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developers.gorgias.com/",
+   "requested_url": "https://developers.gorgias.com/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+   "requested_url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.gorgias.com/pricing",
+   "requested_url": "https://www.gorgias.com/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.digitalgenius.com/docs/gorgias-get-credentials",
+   "requested_url": "https://docs.digitalgenius.com/docs/gorgias-get-credentials",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": 15,
+  "name": "Pylon",
+  "category": "Support and Helpdesk",
+  "description": "Pylon is a B2B support platform with an API to read and write issues, accounts and contacts.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Admin-generated API token authenticates requests; sources do not say how it is sent in headers.",
+  "self_serve": "unknown",
+  "gate_detail": "Only Admin users can create API tokens, so a Pylon workspace with an admin is needed. Sources do not state which plan includes API access or whether a free signup or sandbox exists.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "Read and write access to accounts, contacts, issues, messages, tasks and projects, knowledge base, custom fields, custom objects, tags, macros, teams, surveys and users; TypeScript, Python and Go SDKs plus experimental CLI.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Docs navigation lists a Pylon MCP page, but no provided source describes it or gives a URL.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "API token creation is restricted to Admin users; plan requirements and signup path are not stated in sources.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://www.usepylon.com/integrations/api-webhooks",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "As an Admin, generate an API token in Pylon to authenticate your requests.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Only Admin users can create API tokens.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "supports": [
+        "api"
+      ],
+      "quote": "To call the API from TypeScript, Python, or Go, use our SDKs",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/api-webhooks",
+      "supports": [
+        "api"
+      ],
+      "quote": "Webhooks fire on specific events inside Pylon and post to an endpoint you control",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "Pylon’s API can be used to programmatically access and take action on data within Pylon.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "How the token is sent (header scheme) is not stated.",
+    "Plan or pricing requirements for API access are not stated.",
+    "MCP server content is not in the sources.",
+    "S4-S6 describe different products and were ignored."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Pylon developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Pylon API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Pylon model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+      "from": "search"
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/api-webhooks",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.pylonsync.com/auth/api-keys",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.pylonsync.com/auth/oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://getpylon.com/developers/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "unknown_access_but_confident_verdict"
+  ]
+}

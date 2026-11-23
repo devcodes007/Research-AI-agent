@@ -1,0 +1,122 @@
+{
+  "id": 18,
+  "name": "Help Scout",
+  "category": "Support and Helpdesk",
+  "description": "Help Scout shared inbox helpdesk with Inbox API, Docs API and webhooks for developers.",
+  "auth": [
+    "OAuth2",
+    "Basic"
+  ],
+  "auth_notes": "Inbox API uses OAuth 2.0 (Authorization Code and Client Credentials flows, tokens sent in Authorization header). Docs API uses an API key passed via HTTP Basic auth as the username.",
+  "self_serve": "free_tier",
+  "gate_detail": "Developer creates an OAuth2 app under Your Profile > My apps; credentials must belong to an active invited user. Docs API keys need a Docs permission granted by an Account Owner or Administrator. A Free plan exists; API availability by plan is not stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Inbox API for conversations, threads, tags, users, workflows and webhooks; Docs API for articles, collections, categories and sites; Chat API and webhooks also listed.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "No vendor MCP server appears in the provided sources.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment gate stated for creating an OAuth app; Docs API key needs an admin-granted permission.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization , implementing Authorization Code and Client Credential flows.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Create one by navigating to Your Profile > My apps and click Create My App.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.helpscout.com/docs-api/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "The API key is passed via HTTP Basic Authentication and goes in the username field. A dummy password, such as X, goes in the password field.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.helpscout.com/",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "Inbox API - read and write data to Help Scout inboxes",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.helpscout.com/",
+      "supports": [
+        "api"
+      ],
+      "quote": "Webhooks - get notified about activity in Help Scout",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Whether the Free plan includes API access is not stated.",
+    "No sandbox environment is mentioned.",
+    "Source S1 is truncated; rate limits and full webhook details not seen."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Help Scout API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Help Scout API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Help Scout MCP server official",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No resul",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.helpscout.com/pricing/",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.helpscout.com/docs-api/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.helpscout.com/article/1141-docs-api",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.helpscout.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.helpscout.com/",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

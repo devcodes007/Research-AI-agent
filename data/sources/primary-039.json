@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Threads (Meta) API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Threads (Meta) API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Threads (Meta) MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.facebook.com/documentation/threads",
+   "requested_url": "https://developers.facebook.com/docs/threads",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developers.facebook.com/documentation/mcp/",
+   "requested_url": "https://developers.facebook.com/documentation/mcp/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developers.facebook.com/documentation/mcp/devtools-mcp/",
+   "requested_url": "https://developers.facebook.com/documentation/mcp/devtools-mcp/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developers.facebook.com/documentation/threads/",
+   "requested_url": "https://developers.facebook.com/documentation/threads/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developers.facebook.com/documentation/threads/get-started/",
+   "requested_url": "https://developers.facebook.com/documentation/threads/get-started/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://dev.meta.ai/docs/authentication",
+   "requested_url": "https://dev.meta.ai/docs/authentication",
+   "from": "search"
+  }
+ ]
+}

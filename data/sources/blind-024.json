@@ -1,0 +1,155 @@
+{
+ "searches": [
+  {
+   "query": "Lark (Larksuite) developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Lark (Larksuite) API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Lark (Larksuite) model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://open.larksuite.com",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/common-capabilities/sso/api/obtain-oauth-code",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/authen-v1/api/request-authentication",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token-development-guide?lang=en-US",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/get-",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/common-capabilities/sso/api/get-access_token",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/approval-v4/development-guide/approval-access-guide",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/approval-v4/development-guide/native-approval-access-guide",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/advanced-configuration",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/home/index?lang=en-US",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/common-capabilities/sso/web-application-sso/web-app-overview?lang=en-US",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open-sg.larksuite.com/document/server-docs/approval-v4/approval-related-faqs",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.larksuite.com/hc/en-US/category/7054521564322086917-approval",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.larksuite.com/hc/en-US/articles/374839901090-lark-approval-user-guide",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open-sg.larksuite.com/document/ukTMukTMukTM/uMDNyUjLzQjM14yM0ITN",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://deepwiki.com/larksuite/lark-openapi-mcp/3-mcp-server",
+   "status": 429,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://pypi.org/project/mcp-server-larksuite-doc/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.larksuite.my/approval",
+   "requested_url": "https://www.larksuite.my/approval",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://mcp.so/servers/lark-openapi-mcp",
+   "requested_url": "https://mcp.so/servers/lark-openapi-mcp",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://github.com/junyuan-qi/lark-mcp-server",
+   "requested_url": "https://github.com/junyuan-qi/lark-mcp-server",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://github.com/lorrylockie/lark-mcp",
+   "requested_url": "https://github.com/lorrylockie/lark-mcp",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": 34,
+  "name": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "All-in-one CRM and marketing platform with a marketplace OAuth API and v3 docs.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "OAuth 2.0 authorization code grant via marketplace apps; token endpoint also lists refresh_token and client_credentials grants. Access tokens are Bearer.",
+  "self_serve": "unknown",
+  "gate_detail": "Developers register an OAuth app in the marketplace and generate client ID and secret themselves. Sources do not state plan, fee or review requirements.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "APIs cover contacts, conversations, calendars, workflows, payments and webhooks; an MCP server exposes over 700 actions across 38 features.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "HighLevel MCP Server, also called LeadConnector MCP Server, connects via OAuth; no URL shown in sources.",
+  "verdict": "unclear",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment blocker is stated, but plan requirements for creating apps are not established.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+      "supports": [
+        "auth"
+      ],
+      "quote": "HighLevel supports the Authorization Code Grant flow with v2 APIs.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+      "supports": [
+        "access"
+      ],
+      "quote": "Upon saving, your Client ID and Client Secret will be generated.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/get-access-token/index.html",
+      "supports": [
+        "auth"
+      ],
+      "quote": "The OAuth2 grant type — authorization_code, refresh_token, or client_credentials",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+      "supports": [
+        "api"
+      ],
+      "quote": "The APIs support contacts, conversations, calendars, workflows, payments, webhooks,",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The HighLevel MCP Server, also called the LeadConnector MCP Server, connects through OAuth",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "No API key to create or paste.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan or fee requirements for marketplace app creation are not stated.",
+    "MCP server URL not given.",
+    "Sandbox not described; REST style inferred."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "GoHighLevel developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "GoHighLevel API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "GoHighLevel model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+      "from": "search"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/oauth/GettingStarted/index.html",
+      "from": "search"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/get-access-token/index.html",
+      "from": "search"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+      "from": "search"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+      "from": "search"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": 93,
+  "name": "Fathom",
+  "category": "AI, Research and Media-native",
+  "description": "Fathom (fathom.video) is an AI meeting recorder whose API exposes meeting summaries, transcripts and action items.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "SDKs authenticate with API keys created at user level; public OAuth apps require registering an app with Fathom first.",
+  "self_serve": "instant",
+  "gate_detail": "Docs say anyone can start building and API keys are created per user. Sources do not state whether a free plan suffices. Public OAuth apps need registration; marketplace listing is for partners. Rate limit 60 calls per minute.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Meetings list, summaries, transcripts and recording downloads, plus webhooks; TypeScript and Python SDKs.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Vendor developer docs include an MCP section and MCP Setup pages; no server URL given in the sources.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Plan requirement for API key creation is not stated; OAuth app registration needed only for public integrations.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.fathom.ai/sdks/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Authenticate with the Fathom SDKs using API keys",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.fathom.ai/sdks/oauth",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "OAuth users need to register an app with us before using this feature.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.fathom.video/en/articles/8368641",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Anyone can browse the API docs and start building!",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.fathom.video/en/articles/8368641",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "API keys are created at the user level. Your key can access meetings recorded by you or shared to your Team.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.fathom.ai/faq",
+      "supports": [
+        "api"
+      ],
+      "quote": "Call POST /recordings/{recording_id}/download to start generating a downloadable file",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.fathom.ai/faq",
+      "supports": [
+        "api"
+      ],
+      "quote": "Create one in User Settings → API Access → Manage → Add Webhook (or via the API).",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources do not say whether a free plan can create API keys or whether a paid plan is needed.",
+    "MCP status inferred from an MCP section in vendor docs; no page content or URL shown.",
+    "S5 (usefathom.com) is Fathom Analytics, a different product, and was ignored.",
+    "No sandbox described; S1 and S4 bodies are truncated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "retry",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Fathom API pricing which plan includes API access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Fathom API authentication generate access token developer settings",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Fathom API access approval review partner requirements",
+      "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.fathom.ai/",
+      "from": "lead"
+    },
+    {
+      "url": "https://help.fathom.video/en/articles/8368641",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.fathom.ai/sdks/oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.fathom.ai/sdks/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://usefathom.com/api/v1/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.fathom.ai/faq",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

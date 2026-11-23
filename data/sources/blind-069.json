@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Datadog developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Datadog API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Datadog model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.datadoghq.com/api",
+   "requested_url": "https://docs.datadoghq.com/api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog.md",
+   "requested_url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.datadoghq.com/account_management/rbac/request_access.md",
+   "requested_url": "https://docs.datadoghq.com/account_management/rbac/request_access/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.datadoghq.com/mcp_server.md",
+   "requested_url": "https://docs.datadoghq.com/mcp_server/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.datadoghq.com/security/mcp_server.md",
+   "requested_url": "https://docs.datadoghq.com/security/mcp_server/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.datadoghq.com/api/latest.md",
+   "requested_url": "https://docs.datadoghq.com/api/latest/",
+   "from": "search"
+  }
+ ]
+}

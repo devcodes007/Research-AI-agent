@@ -1,0 +1,126 @@
+{
+  "id": 26,
+  "name": "Discord",
+  "category": "Communications and Messaging",
+  "description": "Discord REST API for bots and OAuth2 apps, with gateway events and webhooks.",
+  "auth": [
+    "API key",
+    "OAuth2",
+    "Basic"
+  ],
+  "auth_notes": "Bot token sent as Authorization: Bot TOKEN (API-key-like); OAuth2 bearer tokens for users; Basic only on OAuth2 token endpoints.",
+  "self_serve": "instant",
+  "gate_detail": "Bot token is found on the Bot page in app settings, and OAuth2 client ID and secret on the OAuth2 page. Some scopes such as voice and rpc are limited to approved partners; Social SDK relationships.read needs a submission.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "Other"
+  ],
+  "api_scope": "REST API for Discord data, plus OAuth2 scopes for identity, guilds, webhooks and role connections; WebSocket gateway for real-time events.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "Sources show only community MCP Discord servers, no vendor-published MCP server.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Core bot and OAuth2 access is self-serve; only specific partner-only scopes need approval.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://docs.discord.com/developers/reference",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.discord.com/developers/reference",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Using a bot token found on the Bot page within your app’s settings.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.discord.com/developers/reference",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Using an OAuth2 bearer token gained through the OAuth2 API .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.discord.com/developers/topics/oauth2",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "voice allows your app to connect to voice on user’s behalf and see all the voice members - only available to approved partners",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.discord.com/developers/topics/oauth2",
+      "supports": [
+        "api"
+      ],
+      "quote": "webhook.incoming this generates a webhook that is returned in the oauth token response for authorization code grants",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sandbox or test environment not stated",
+    "Whether bot token creation needs any account verification not stated",
+    "Gateway events and webhook event delivery details are not covered"
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Discord API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Discord API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Discord MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.discord.com/developers/topics/oauth2",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.discord.com/developers/reference",
+      "from": "search"
+    },
+    {
+      "url": "https://discord.com/servers/model-context-protocol-1312302100125843476",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.discord.food/reference",
+      "from": "search"
+    },
+    {
+      "url": "https://discord.me/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://discordbotlist.com/servers/mcp-official",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

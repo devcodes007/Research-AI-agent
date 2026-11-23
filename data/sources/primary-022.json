@@ -1,0 +1,83 @@
+{
+ "searches": [
+  {
+   "query": "Twilio API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Twilio API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Twilio MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://help.twilio.com/articles/36881264279067-How-to-Use-API-Key-and-Secret-to-Authenticate-Twilio-CLI-Commands",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.twilio.com/articles/223136027-Auth-Tokens-and-How-to-Change-Them",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.twilio.com/articles/223135567-Managing-your-Account-s-Support-Plan",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.twilio.com/articles/39942551460379",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.twilio.com/docs/iam/credentials/api",
+   "requested_url": "https://www.twilio.com/docs/iam/credentials/api",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.twilio.com/docs/ai/mcp",
+   "requested_url": "https://www.twilio.com/docs/ai/mcp",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.twilio.com/docs/iam/api",
+   "requested_url": "https://www.twilio.com/docs/iam/api",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.twilio.com/en-us/user-authentication-identity/pricing",
+   "requested_url": "https://www.twilio.com/en-us/user-authentication-identity/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.twilio.com/en-us/pricing",
+   "requested_url": "https://www.twilio.com/en-us/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://www.twilio.com/en-us/blog/introducing-twilio-alpha-mcp-server",
+   "requested_url": "https://www.twilio.com/en-us/blog/introducing-twilio-alpha-mcp-server",
+   "from": "search"
+  }
+ ]
+}

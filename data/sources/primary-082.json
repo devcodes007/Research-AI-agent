@@ -1,0 +1,71 @@
+{
+ "searches": [
+  {
+   "query": "Plaid API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Plaid API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Plaid MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://support.plaid.com/hc/en-us/articles/16194632655895-How-much-does-Plaid-cost-and-what-are-the-pricing-models",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://support.plaid.com/hc/en-us/articles/39994173227159-What-is-the-Plaid-Trial-plan",
+   "status": 403,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://plaid.com/docs/",
+   "requested_url": "https://plaid.com/docs",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://plaid.com/docs/api/products/auth/",
+   "requested_url": "https://plaid.com/docs/api/products/auth/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://plaid.com/docs/resources/mcp/",
+   "requested_url": "https://plaid.com/docs/resources/mcp/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://plaid.com/docs/api/",
+   "requested_url": "https://plaid.com/docs/api/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://plaid.com/docs/account/billing/",
+   "requested_url": "https://plaid.com/docs/account/billing/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://plaid.com/pricing/",
+   "requested_url": "https://plaid.com/pricing/",
+   "from": "search"
+  }
+ ]
+}

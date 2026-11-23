@@ -1,0 +1,64 @@
+{
+ "description": "HubSpot CRM platform with OAuth and private app token APIs plus remote MCP server.",
+ "auth": [
+  "OAuth2",
+  "Bearer token"
+ ],
+ "auth_notes": "OAuth access tokens for public/multi-customer apps; private app access tokens, both sent in Authorization header as Bearer.",
+ "self_serve": "unknown",
+ "gate_detail": "Sources do not state plan requirements for creating private apps or OAuth apps. The MCP server requires the HubSpot account admin to connect first via a user-level app. Free tools exist per homepage.",
+ "api_styles": [
+  "REST",
+  "CLI"
+ ],
+ "api_scope": "CRM and other HubSpot APIs on api.hubapi.com via OAuth or private app tokens; remote MCP server covers CRM records, activities, content, campaigns.",
+ "webhooks": "unknown",
+ "sandbox": "unknown",
+ "mcp_status": "official",
+ "mcp_url": null,
+ "mcp_notes": "HubSpot offers a remote MCP server and a local CLI-based developer MCP server; endpoint URL not given in excerpts.",
+ "verdict": "conditional",
+ "blocker": "admin_or_enterprise_only",
+ "blocker_detail": "MCP requires account admin to connect first; some MCP features need Professional or Enterprise subscriptions. API plan gating not established.",
+ "confidence": "medium",
+ "evidence": [
+  {
+   "source": "S3",
+   "supports": [
+    "auth",
+    "api"
+   ],
+   "quote": "Learn more about using OAuth or private access tokens to make authenticated API requests to HubSpot."
+  },
+  {
+   "source": "S4",
+   "supports": [
+    "access",
+    "mcp"
+   ],
+   "quote": "The admin of the HubSpot account needs to connect first, to allow other users in the account to connect thereafter."
+  },
+  {
+   "source": "S4",
+   "supports": [
+    "mcp",
+    "description"
+   ],
+   "quote": "HubSpot offers two distinct MCP (Model Context Protocol) servers"
+  },
+  {
+   "source": "S5",
+   "supports": [
+    "api",
+    "mcp"
+   ],
+   "quote": "Behind the scenes, the HubSpot MCP server is based on the CRM search API"
+  }
+ ],
+ "uncertainties": [
+  "Plan needed to create private apps or developer accounts not stated",
+  "Webhooks and sandbox not covered in excerpts",
+  "Remote MCP URL not stated",
+  "Whether legacy vs new developer platform auth differs in access requirements"
+ ]
+}

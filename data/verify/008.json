@@ -1,0 +1,136 @@
+{
+  "id": 8,
+  "name": "Close",
+  "category": "CRM and Sales",
+  "description": "Close is a sales CRM with a REST API, webhooks, OAuth apps and an MCP server.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "API keys sent via HTTP Basic (key as username, empty password); OAuth 2.0 for user-facing integrations.",
+  "self_serve": "unknown",
+  "gate_detail": "Keys are created in a Close account under Settings, Developer, API Keys, subject to role permission (Manage own API keys). Sources do not state which plan or trial is required for an account.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "REST API for leads, contacts, opportunities, activities and custom fields, with webhooks, a 30-day event log and an experimental OpenAPI spec; community client libraries exist.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Developer platform lists a Close MCP Server for AI agents; its URL for CRM data is not given in the sources.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Needs a Close account and a role allowing Manage own API keys; plan or trial requirements for account creation are not stated.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developer.close.com/api/overview/api-key-authentication",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "API keys can be created and managed in your Close account under Settings → Developer → API Keys .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.close.com/api/overview/api-key-authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "API keys use HTTP Basic client side authentication .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.close.com/api/overview",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "OAuth 2.0 — Best for user-facing integrations.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.close.com/integrations/api-keys-oauth",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Your role sets the maximum access level for your keys. Ask an admin about your role if you need a different level.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.close.com/",
+      "supports": [
+        "api",
+        "mcp"
+      ],
+      "quote": "Real-time event notifications and a 30-day event log.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.close.com/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Give Claude, ChatGPT, Cursor, and other tools direct access to Close data via the MCP server",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan or trial needed to obtain a Close account is not stated.",
+    "Sandbox environment is not described.",
+    "CRM MCP server URL is not given."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Close developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Close API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Close model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.close.com/api/overview/api-key-authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.close.com/api/overview/oauth-authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://help.close.com/integrations/api-keys-oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://help.close.com/integrations/api-keys-oauth.md",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.close.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.close.com/api/overview",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "unknown_access_but_confident_verdict"
+  ]
+}

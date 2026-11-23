@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Monday.com API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Monday.com API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Monday.com MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.monday.com",
+   "requested_url": "https://developer.monday.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.monday.com/api-reference/docs/authentication",
+   "requested_url": "https://developer.monday.com/api-reference/docs/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developer.monday.com/apps/docs/integration-authorization",
+   "requested_url": "https://developer.monday.com/apps/docs/integration-authorization",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developer.monday.com/apps/docs/plans-and-pricing",
+   "requested_url": "https://developer.monday.com/apps/docs/plans-and-pricing",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+   "requested_url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developer.monday.com/api-reference/docs/mondaycom-mcp",
+   "requested_url": "https://developer.monday.com/api-reference/docs/mondaycom-mcp",
+   "from": "search"
+  }
+ ]
+}

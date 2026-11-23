@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Plain API pricing which plan includes API access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Plain API authentication generate access token developer settings",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Plain API access approval review partner requirements",
+   "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://help.plain.com/article/pricing",
+   "requested_url": "https://help.plain.com/article/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.plain.com/docs/graphql/authentication",
+   "requested_url": "https://www.plain.com/docs/graphql/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.plainid.io/apidocs/authentication",
+   "requested_url": "https://docs.plainid.io/apidocs/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://apis.io/providers/plain/",
+   "requested_url": "https://apis.io/plans/plain-support/plain-support-plans-pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://apis.io/plans/plain/plain-plans-pricing/",
+   "requested_url": "https://apis.io/plans/plain/plain-plans-pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developer.start.gg/docs/authentication/",
+   "requested_url": "https://developer.start.gg/docs/authentication/",
+   "from": "search"
+  }
+ ]
+}

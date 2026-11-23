@@ -1,0 +1,147 @@
+{
+  "id": 95,
+  "name": "Reducto",
+  "category": "AI, Research and Media-native",
+  "description": "Reducto is a document processing API for parsing, extracting, splitting, classifying and editing files.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "API key from studio.reducto.ai sent in the Authorization header as a Bearer value.",
+  "self_serve": "free_tier",
+  "gate_detail": "Free account signup in the docs; Standard plan includes $150 in free usage, then pay-as-you-go. Enterprise features such as VPC, BAA and custom SLA need higher tiers. No sandbox stated.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "Endpoints for parse, extract, split, classify and edit across 30+ file types, with Python, Node.js and Go SDKs, a CLI and Studio.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.reducto.ai/mcp",
+  "mcp_notes": "Vendor-documented hosted MCP server using a Bearer API key, plus a local uvx server with browser login.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Usage is billed after the free credits, but no approval or sales step is required to start.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.reducto.ai/quickstart",
+      "supports": [
+        "access"
+      ],
+      "quote": "Sign up for a free account without leaving the docs.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.reducto.ai/quickstart",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "curl -X POST \"https://platform.reducto.ai/parse\" \\ -H \"Authorization: Bearer $REDUCTO_API_KEY \"",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.reducto.ai/mcp-server",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "replace your-api-key with a key from studio.reducto.ai/api-keys",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://reducto.ai/pricing",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Standard includes $150 of free usage, then list rates apply.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.reducto.ai/mcp-server",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The hosted server runs at https://mcp.reducto.ai/mcp .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://reducto.ai/pricing",
+      "supports": [
+        "api"
+      ],
+      "quote": "Custom Webhooks",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Webhook availability is only inferred from a pricing feature list.",
+    "No sandbox environment is described.",
+    "Pricing page FAQ answers on API key access are not shown.",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Reducto API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    },
+    {
+      "query": "Reducto API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Reducto MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.reducto.ai/",
+      "from": "lead"
+    },
+    {
+      "url": "https://docs.reducto.ai/mcp-server",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.reducto.ai/quickstart",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.reducto.ai/reference/credit-usage",
+      "from": "search"
+    },
+    {
+      "url": "https://reducto.ai/developers",
+      "from": "search"
+    },
+    {
+      "url": "https://reducto.ai/pricing",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": null,
+    "match": "none",
+    "schemes": [],
+    "tools_count": 0,
+    "auth_agreement": "no_toolkit"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

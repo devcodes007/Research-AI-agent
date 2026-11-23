@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "iPayX API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "iPayX API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "iPayX MCP server official",
+   "error": "all search engines returned nothing: ['bing: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'bing: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ipayx.ai/docs",
+   "requested_url": "https://ipayx.ai/docs",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ipayx.ai/docs/api",
+   "requested_url": "https://www.ipayx.ai/docs/api",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.ipayx.ai/developers",
+   "requested_url": "https://www.ipayx.ai/developers",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.ipayx.ai/api-terms",
+   "requested_url": "https://www.ipayx.ai/api-terms",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.ipayx.ai/pricing",
+   "requested_url": "https://www.ipayx.ai/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developers.google.com/program/plans-and-pricing",
+   "requested_url": "https://developers.google.com/program/plans-and-pricing",
+   "from": "search"
+  }
+ ]
+}

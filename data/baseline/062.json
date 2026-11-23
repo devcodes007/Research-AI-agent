@@ -1,0 +1,124 @@
+{
+  "id": 62,
+  "name": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Vercel REST API for deploying web apps, managing projects, domains, environment variables and teams.",
+  "auth": [
+    "Bearer token"
+  ],
+  "auth_notes": "Vercel Access Tokens sent in the Authorization: Bearer header; created in account settings. Team resources selected via teamId query parameter.",
+  "self_serve": "instant",
+  "gate_detail": "Developers create Access Tokens in account settings; no plan requirement is stated. Read-only or scoped tokens are reportedly unavailable (community thread), so tokens are full-account. No sandbox stated.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "HTTP REST API under api.vercel.com covering deployments, domains, projects, environment variables, teams, webhooks, storage, sandboxes and many other categories; SDK also mentioned.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Docs navigation lists a 'Vercel MCP' entry under Build with AI, but no source describes it or states a URL.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No payment or approval gate stated; tokens lack read-only scoping, which users complain about on Pro.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header: Authorization: Bearer <TOKEN>",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Create and manage Access Tokens in your account settings .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "All endpoints live under the URL https://api.vercel.com and follow the REST architecture.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "description"
+      ],
+      "quote": "You can deploy new versions of web applications, manage custom domains, retrieve information about deployments, and manage secrets and environment variables for projects.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://community.vercel.com/t/granting-an-app-read-only-access-to-the-vercel-api/41250",
+      "supports": [
+        "auth"
+      ],
+      "quote": "The lack of read-only permissions prevents us from using API tokens for these use cases.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan requirements for creating Access Tokens are not stated (access-tokens page was truncated).",
+    "Vercel MCP is only a navigation label; its status and URL are not described.",
+    "Webhook support inferred from a Webhooks endpoint category in the API listing."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Vercel API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Vercel API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Vercel MCP server official",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No resul",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "from": "hint"
+    },
+    {
+      "url": "https://vercel.com/docs/security/access-control",
+      "from": "search"
+    },
+    {
+      "url": "https://vercel.com/docs/accounts/access-tokens",
+      "from": "search"
+    },
+    {
+      "url": "https://community.vercel.com/t/granting-an-app-read-only-access-to-the-vercel-api/41250",
+      "from": "search"
+    },
+    {
+      "url": "https://vercel.com/docs/cli/api",
+      "from": "search"
+    },
+    {
+      "url": "https://blog.vercel.com/docs/integrations/create-integration/marketplace-api/reference/vercel",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

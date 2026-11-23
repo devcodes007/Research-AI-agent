@@ -1,0 +1,143 @@
+{
+ "searches": [
+  {
+   "query": "Lark (Larksuite) API pricing which plan includes API access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Lark (Larksuite) API authentication generate access token developer settings",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Lark (Larksuite) API access approval review partner requirements",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://open.larksuite.com",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list?from=home",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token-development-guide",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/get-",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/approval-v4/development-guide/approval-access-guide",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/approval-v4/development-guide/native-approval-access-guide",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open-sg.larksuite.com/document/server-docs/getting-started/terminology",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open-sg.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.larksuite.com/hc/en-US/category/7054521564330459141-developer-documentation",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open-sg.larksuite.com/document/server-docs/approval-v4/approval-related-faqs",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://base.larksuite.com/pricing",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.larksuite.com/en_us/plans",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.larksuite.com/hc/en-US/articles/497171699982-overview-of-lark-plans",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://open-sg.larksuite.com/document/uAjLw4CM/uYjL24iN/mobile-app/mobile-app-overview",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://deepwiki.com/larksuite/oapi-sdk-go/2.3-authentication-and-token-management",
+   "status": 429,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://deepwiki.com/larksuite/lark-openapi-mcp/2.2-authentication-mechanisms",
+   "status": 429,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.larksuite.com/hc/en-US/category/7054521564322086917-approval",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.larksuite.com/hc/en-US/articles/000472088408-overview-of-app-permissions-and-approval-rules",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://deepwiki.com/larksuite/oapi-sdk-python/6.5-approval-and-workflow-apis",
+   "status": 429,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.chanty.com/blog/lark-pricing/",
+   "requested_url": "https://www.chanty.com/blog/lark-pricing/",
+   "from": "search"
+  }
+ ]
+}

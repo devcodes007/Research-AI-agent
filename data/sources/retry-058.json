@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Sherlock API pricing which plan includes API access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Sherlock API authentication generate access token developer settings",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Sherlock API access approval review partner requirements",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://github.com/sherlock-project/sherlock",
+   "requested_url": "https://github.com/sherlock-project/sherlock",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://github.com/yuvara1/sherlock-api",
+   "requested_url": "https://github.com/yuvara1/sherlock-api",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://help.sherlock.sh/en/articles/15898909-manage-members-and-identity-access",
+   "requested_url": "https://help.sherlock.sh/en/articles/15898909-manage-members-and-identity-access",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://support.sherlock.im/knowledge_base/item/292200",
+   "requested_url": "https://support.sherlock.im/knowledge_base/item/292200",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.sherlocks.ai/docs/partner-api",
+   "requested_url": "https://www.sherlocks.ai/docs/partner-api",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.sherlock.xyz/collaborative-audits/scoping-and-audit-requirements",
+   "requested_url": "https://docs.sherlock.xyz/collaborative-audits/scoping-and-audit-requirements",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": 80,
+  "name": "Harvest",
+  "category": "Productivity and Project Management",
+  "description": "Harvest is a time-tracking and invoicing product with a v2 REST-style API and Forecast API.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "V2 requires an access token; a Personal Access Token tied to the user is the quickest option. A second option is truncated in the sources.",
+  "self_serve": "instant",
+  "gate_detail": "Personal Access Tokens can be generated through a Harvest ID account. Plan requirements are not stated and no sandbox is described.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Resources include clients, invoices, estimates, expenses, tasks, time entries, projects, users, reports, approvals, time off, imports, notifications and the Forecast API.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources show no Harvest time-tracking MCP server; the Greenhouse Harvest source is a different product.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment gate appears in the sources, though plan requirements are not stated.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "The V2 API requires an access token to authenticate requests. There are two options available to you:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "A Personal Access Token which is tied directly to you and is the quickest way to start playing aro",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.getharvest.com/blog/2017/09/introducing-harvest-api-v2",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "By using PATs, which you can easily generate via your Harvest ID account",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "Welcome to the Harvest API v2 Help Center",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Second auth option (likely OAuth2) is cut off in the source.",
+    "Free plan versus paid plan requirement is not stated.",
+    "Webhooks, sandbox and MCP are not covered.",
+    "S4 (Greenhouse Harvest) and S5 (harvest.com site monitoring) are different products and were ignored."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Harvest API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Harvest API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Harvest MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://help.getharvest.com/api-v2/",
+      "from": "hint"
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/",
+      "from": "search"
+    },
+    {
+      "url": "https://harvestdocs.greenhouse.io/docs/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://harvest.com/support/api/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.getharvest.com/blog/2017/09/introducing-harvest-api-v2",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "WhatsApp Business developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "WhatsApp Business API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "WhatsApp Business model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+   "requested_url": "https://developers.facebook.com/docs/whatsapp",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developers.facebook.com/documentation/mcp/",
+   "requested_url": "https://developers.facebook.com/documentation/mcp/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+   "requested_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developers.facebook.com/documentation/meta-business-agent/get-api-key/",
+   "requested_url": "https://developers.facebook.com/documentation/meta-business-agent/get-api-key/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/overview/",
+   "requested_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/overview/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/get-started-for-solution-partners/",
+   "requested_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/get-started-for-solution-partners/",
+   "from": "search"
+  }
+ ]
+}

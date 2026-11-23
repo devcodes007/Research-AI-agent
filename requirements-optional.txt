@@ -1,0 +1,3 @@
+# Only for fully automated runs with an API or local model (not needed for handoff mode)
+litellm
+tenacity

@@ -1,0 +1,124 @@
+{
+  "id": 68,
+  "name": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "description": "MongoDB Atlas Administration API for managing Atlas clusters, projects and organizations programmatically.",
+  "auth": [
+    "OAuth2",
+    "API key"
+  ],
+  "auth_notes": "Service accounts (OAuth 2.0 client credentials) are recommended; programmatic API keys are a legacy method.",
+  "self_serve": "free_tier",
+  "gate_detail": "Atlas offers a free-forever M0 tier; credentials are created in an organization or project by users with suitable access roles. Whether the Admin API works on the free tier is not stated.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "Atlas Administration API for administrative tasks outside the Atlas UI, plus Go SDK, Atlas CLI, Terraform provider and other tooling.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources mention MCP clients only as delegated access consumers; no vendor MCP server is described.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Needs organization or project access to create service accounts or keys; optional IP access list restricts use.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=service-account",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "The Atlas Administration API uses one of two authentication methods to authenticate requests: service account or API keys.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "We recommend you use service accounts instead of API keys to authenticate to the Atlas Administration API.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.mongodb.com/pricing",
+      "supports": [
+        "access"
+      ],
+      "quote": "Yes, MongoDB Atlas offers a free-forever tier, the M0.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=service-account",
+      "supports": [
+        "access"
+      ],
+      "quote": "If you haven't already created a service account or API keys for an organization, you can create them for a project",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "You can interact with Atlas programmatically to perform administrative tasks or manage your deployments using the following resources.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Source S3 is truncated; API key authentication details are not shown.",
+    "Webhooks, sandbox and MCP are not established by the sources.",
+    "Free-tier access to the Admin API is not directly stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "MongoDB Atlas API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "MongoDB Atlas API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "MongoDB Atlas MCP server official",
+      "error": "all search engines returned nothing: ['bing: No results found.', \"bing: ConnectError: ConnectError('error sending request for url (https://www.startpage\", \"auto: ConnectError: ConnectError('error send",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "from": "hint"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=service-account",
+      "from": "search"
+    },
+    {
+      "url": "https://www.mongodb.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://atlasui.readthedocs.io/en/latest/service_accounts.html",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

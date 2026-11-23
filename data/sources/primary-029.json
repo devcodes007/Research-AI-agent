@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Aircall API documentation authentication",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No resul",
+   "backend": "ddg"
+  },
+  {
+   "query": "Aircall API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Aircall MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.aircall.io/docs/mcp-faqs",
+   "requested_url": "https://developer.aircall.io/docs/mcp-faqs",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.aircall.io/",
+   "requested_url": "https://developer.aircall.io/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developer.aircall.io/docs/plan-your-integration",
+   "requested_url": "https://developer.aircall.io/docs/plan-your-integration",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developers.aircall.io/api-references",
+   "requested_url": "https://developers.aircall.io/api-references",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://support.aircall.io/en-gb/articles/20698710100381",
+   "requested_url": "https://support.aircall.io/en-gb/articles/20698710100381",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://aircall.io/call-center-software-features/webhooks-api/",
+   "requested_url": "https://aircall.io/call-center-software-features/webhooks-api/",
+   "from": "search"
+  }
+ ]
+}

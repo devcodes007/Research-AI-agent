@@ -1,0 +1,101 @@
+{
+ "searches": [
+  {
+   "query": "fanbasis API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "fanbasis API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "fanbasis MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://dev-docs.fanbasis.com/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://demo.embedded.fanbasis.io/docs/getting-started",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://github.com/FanBasis/fbnewapi",
+   "status": 404,
+   "thin": false,
+   "error": null
+  },
+  {
+   "url": "https://apidocs.fan/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://mcpservers.org/official",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://mcpservers.org/",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.plan.fanbase.io/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.fanbasis.com/auth/setup/signup",
+   "requested_url": "https://www.fanbasis.com/auth/setup/signup",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.x.com/x-api/getting-started/getting-access",
+   "requested_url": "https://docs.x.com/x-api/getting-started/getting-access",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://api-sandbox.commas.net/enterprises",
+   "requested_url": "https://api-sandbox.commas.net/enterprises",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://legal.fanvue.com/api-policy",
+   "requested_url": "https://legal.fanvue.com/api-policy",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://commas.com/",
+   "requested_url": "https://commas.com/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://commas.com/fanbasis-is-now-commas",
+   "requested_url": "https://commas.com/fanbasis-is-now-commas",
+   "from": "search"
+  }
+ ]
+}

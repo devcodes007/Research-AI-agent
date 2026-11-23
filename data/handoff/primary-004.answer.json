@@ -1,0 +1,69 @@
+{
+ "description": "Attio CRM with REST API, App SDK and MCP, authenticated by workspace access tokens.",
+ "auth": [
+  "API key"
+ ],
+ "auth_notes": "Workspace admins generate scoped access tokens (called API keys) that do not expire; OAuth for apps not shown in excerpts.",
+ "self_serve": "free_tier",
+ "gate_detail": "Token generation is available on all plans but requires a workspace admin. Start-for-free signup exists on the site. Sandbox not described.",
+ "api_styles": [
+  "REST",
+  "SDK"
+ ],
+ "api_scope": "REST API and App SDK for reading, creating and updating workspace data, with webhook reference docs; also an Attio MCP.",
+ "webhooks": "yes",
+ "sandbox": "unknown",
+ "mcp_status": "official",
+ "mcp_url": null,
+ "mcp_notes": "Attio developer platform lists Attio MCP; docs navigation has an MCP section; URL not given.",
+ "verdict": "build_now",
+ "blocker": "none",
+ "blocker_detail": "",
+ "confidence": "high",
+ "evidence": [
+  {
+   "source": "S4",
+   "supports": [
+    "auth",
+    "access"
+   ],
+   "quote": "API keys allow you to connect external tools and services to your workspace with secure, scoped access."
+  },
+  {
+   "source": "S4",
+   "supports": [
+    "access"
+   ],
+   "quote": "Available on all plans."
+  },
+  {
+   "source": "S4",
+   "supports": [
+    "access",
+    "auth"
+   ],
+   "quote": "Tokens do not expire, but can be deleted at any time."
+  },
+  {
+   "source": "S5",
+   "supports": [
+    "api",
+    "mcp"
+   ],
+   "quote": "Connect your GTM stack with the REST API, App SDK, or Attio MCP."
+  },
+  {
+   "source": "S3",
+   "supports": [
+    "api"
+   ],
+   "quote": "Webhook reference"
+  }
+ ],
+ "uncertainties": [
+  "OAuth support for third-party apps not visible in excerpts",
+  "Sandbox availability not stated",
+  "MCP URL not stated",
+  "Webhook evidence is only a docs tag count"
+ ]
+}

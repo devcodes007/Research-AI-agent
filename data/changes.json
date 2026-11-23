@@ -1,0 +1,195 @@
+[
+  {
+    "id": 5,
+    "name": "Twenty",
+    "field": "auth",
+    "before": [
+      "OAuth2",
+      "API key"
+    ],
+    "after": [
+      "OAuth2",
+      "Bearer token"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Twenty",
+    "field": "verdict",
+    "before": "conditional",
+    "after": "unclear"
+  },
+  {
+    "id": 8,
+    "name": "Close",
+    "field": "auth",
+    "before": [
+      "API key",
+      "Basic",
+      "OAuth2"
+    ],
+    "after": [
+      "API key",
+      "OAuth2"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Plain",
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key",
+      "OAuth2"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "field": "mcp_status",
+    "before": "unknown",
+    "after": "official"
+  },
+  {
+    "id": 27,
+    "name": "Telegram",
+    "field": "mcp_status",
+    "before": "not_found",
+    "after": "community"
+  },
+  {
+    "id": 28,
+    "name": "WhatsApp Business",
+    "field": "verdict",
+    "before": "conditional",
+    "after": "needs_outreach"
+  },
+  {
+    "id": 35,
+    "name": "Mailchimp",
+    "field": "auth",
+    "before": [
+      "API key",
+      "OAuth2",
+      "Basic",
+      "Bearer token"
+    ],
+    "after": [
+      "OAuth2"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Mailchimp",
+    "field": "mcp_status",
+    "before": "official",
+    "after": "unknown"
+  },
+  {
+    "id": 35,
+    "name": "Mailchimp",
+    "field": "verdict",
+    "before": "build_now",
+    "after": "unclear"
+  },
+  {
+    "id": 36,
+    "name": "Klaviyo",
+    "field": "auth",
+    "before": [
+      "API key",
+      "OAuth2"
+    ],
+    "after": [
+      "API key"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Klaviyo",
+    "field": "verdict",
+    "before": "build_now",
+    "after": "unclear"
+  },
+  {
+    "id": 44,
+    "name": "Salesforce Commerce Cloud",
+    "field": "self_serve",
+    "before": "unknown",
+    "after": "paid_plan"
+  },
+  {
+    "id": 44,
+    "name": "Salesforce Commerce Cloud",
+    "field": "mcp_status",
+    "before": "unknown",
+    "after": "official"
+  },
+  {
+    "id": 45,
+    "name": "Magento (Adobe Commerce)",
+    "field": "auth",
+    "before": [
+      "OAuth2",
+      "Bearer token",
+      "Session"
+    ],
+    "after": [
+      "Other"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Sherlock",
+    "field": "mcp_status",
+    "before": "unknown",
+    "after": "community"
+  },
+  {
+    "id": 69,
+    "name": "Datadog",
+    "field": "auth",
+    "before": [
+      "API key",
+      "OAuth2",
+      "Other"
+    ],
+    "after": [
+      "API key"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Datadog",
+    "field": "verdict",
+    "before": "conditional",
+    "after": "unclear"
+  },
+  {
+    "id": 78,
+    "name": "Coda",
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "Other"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Fathom",
+    "field": "self_serve",
+    "before": "unknown",
+    "after": "instant"
+  },
+  {
+    "id": 93,
+    "name": "Fathom",
+    "field": "verdict",
+    "before": "unclear",
+    "after": "build_now"
+  }
+]

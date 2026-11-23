@@ -1,0 +1,131 @@
+{
+  "id": 57,
+  "name": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "description": "Web data platform offering proxies, scraper APIs, SERP API, Web Unlocker and datasets.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Bright Data API key sent as Authorization: Bearer header; obtained from account settings.",
+  "self_serve": "free_tier",
+  "gate_detail": "Every signup gets a free trial and a recurring 5,000 credits per month free tier. Personal-email accounts without a payment method are restricted from Proxy Networks and Web Unlocker until a no-charge verification payment method is added.",
+  "api_styles": [
+    "REST",
+    "CLI"
+  ],
+  "api_scope": "REST APIs for Web Unlocker, SERP, Web Scraper, Browser API and datasets, plus Account Management API (e.g. pricing plans); docs also reference a CLI.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Bright Data MCP server documented on docs.brightdata.com with hosted and self-hosted modes; needs a Bright Data API key.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Some products need a payment method for verification only; no approval or sales gate.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://docs.brightdata.com/api-reference/account-management-api/Get_pricing_plans",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Use your Bright Data API Key as a Bearer token in the Authorization header.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.brightdata.com/api-reference/account-management-api/Get_pricing_plans",
+      "supports": [
+        "access"
+      ],
+      "quote": "Obtain your API Key from the Bright Data account settings at https://brightdata.com/cp/setting/users",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.brightdata.com/general/account/billing-and-pricing/faqs",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Everyone who signs up to Bright Data automatically gets a free trial, which can be used for all Bright Data products.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.brightdata.com/general/account/billing-and-pricing/faqs",
+      "supports": [
+        "access"
+      ],
+      "quote": "Every new account also gets a recurring free tier of 5,000 credits per month for the Web Unlocker API, SERP API, Web Scraper API, Scraper Studio and Browser API",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Browser control tools are enabled by default. All you need is your Bright Data API key",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://brightdata.com/pricing/web-scraper",
+      "supports": [
+        "api"
+      ],
+      "quote": "Webhook or API delivery",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "MCP server URL not stated in sources.",
+    "Sandbox not described.",
+    "Payment verification requirement applies to personal-email accounts for some products."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Bright Data API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No resul",
+      "backend": "ddg"
+    },
+    {
+      "query": "Bright Data API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Bright Data MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.brightdata.com/general/account/billing-and-pricing/faqs",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.brightdata.com/api-reference/account-management-api/Get_pricing_plans",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.brightdata.com/products/mcp-server/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+      "from": "search"
+    },
+    {
+      "url": "https://brightdata.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://brightdata.com/pricing/web-scraper",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

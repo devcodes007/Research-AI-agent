@@ -1,0 +1,114 @@
+{
+  "id": 58,
+  "name": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "description": "Sherlock-project is a GitHub repository; sources give no developer API information for it.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Not established by sources; the repository page content is essentially empty and other Sherlock results are different products.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources do not establish any hosted first-party API or credential path for sherlock-project; unrelated products named Sherlock appear in other sources.",
+  "api_styles": [
+    "None"
+  ],
+  "api_scope": "No first-party public API is documented in the sources for sherlock-project.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "No MCP information in the sources for sherlock-project.",
+  "verdict": "unclear",
+  "blocker": "ambiguous_product",
+  "blocker_detail": "Sources cover unrelated products (Sherlock AI logging, PySherlock for Ansys, getsherlock.dev, sherlock.sh) and an empty GitHub page.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "supports": [
+        "description",
+        "verdict"
+      ],
+      "quote": "sherlock Public",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://sherlock.docs.pyansys.com/",
+      "supports": [
+        "verdict",
+        "auth"
+      ],
+      "quote": "Python API to interact with Ansys Sherlock (Reliability Engineering software) from 2022R2 and later versions.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://getsherlock.dev/pricing/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Sign in with GitHub",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.sherlockai.dev/",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "A Python package for performance monitoring and logging utilities",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "S1 repository text contains no README or API content.",
+    "S4, S5, S3 and S6 describe different products named Sherlock; quotes only show product ambiguity, not sherlock-project auth or access.",
+    "Auth and access for the hinted product are unknown."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Sherlock API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Sherlock API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Sherlock MCP server official",
+      "error": "all search engines returned nothing: ['bing: No results found.', 'bing: No results found.', 'bing: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.sherlockai.dev/api-reference/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.sherlockai.dev/",
+      "from": "search"
+    },
+    {
+      "url": "https://sherlock.docs.pyansys.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://getsherlock.dev/pricing/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.sherlock.sh/pricing",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

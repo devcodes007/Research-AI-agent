@@ -1,0 +1,254 @@
+{
+  "id": 35,
+  "name": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Mailchimp offers a Marketing API for campaigns and a Transactional API (Mandrill) for event-driven email.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "Marketing API accepts an API key or OAuth 2 token, sent via HTTP Basic or Bearer header. Transactional authentication in sources covers sending-domain verification only.",
+  "self_serve": "unknown",
+  "gate_detail": "An API key for your own account is the fastest way to start; OAuth 2 is needed for third-party installs. Plan requirements and sandbox are not stated in the sources.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "Other"
+  ],
+  "api_scope": "Marketing API follows REST conventions on api.mailchimp.com/3.0 with OpenAPI descriptions and official client libraries; Transactional sends messages via API or SMTP.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": "https://mailchimp.com/developer/_mcp/server",
+  "mcp_notes": "Official docs-search MCP server, not account access; a separate Transactional MCP guide exists. Agents act on accounts via API or skills.",
+  "verdict": "unclear",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment gate stated; OAuth 2 needed only for third-party integrations.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "An API key authenticates against the account that created it.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "You can use either HTTP Basic Authentication or Bearer Authentication.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "OAuth 2 authenticates against an account belonging to someone else.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+      "supports": [
+        "api"
+      ],
+      "quote": "The Marketing API generally follows REST conventions, with some deviations.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "This searches documentation, not your Mailchimp account.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimp.com/developer",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "Mailchimp Transactional (formerly Mandrill) sends targeted and event-driven messages via the API or SMTP",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimp.com/developer",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "Mailchimp’s Marketing API powers timely, relevant marketing campaigns with custom data pulled directly from your app.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimp.com/developer/integration-partner-program/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Support OAuth 2 authentication",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://oneclickonboard.com/blog/how-to-request-mailchimp-developer-access-securely",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "An Admin has those same rights but can also manage billing, connect integrations, and create API keys.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://oneclickonboard.com/blog/how-to-request-mailchimp-developer-access-securely",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Mailchimp supports OAuth 2.0 for connected apps",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimppp.smapply.io/res/p/faqs/",
+      "supports": [
+        "access"
+      ],
+      "quote": "No. Membership is free of charge.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimp.com/developer/integration-partner-program/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Support OAuth 2 authentication",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Connect your agent",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://mailchimp.com/developer",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "Mailchimp Marketing API Send marketing campaigns",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Free vs paid plan requirement for API access is not stated.",
+    "Webhooks and sandbox are not covered in the visible sources.",
+    "Transactional API key mechanics are not shown."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Mailchimp API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Mailchimp API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: ['duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No resul",
+      "backend": "ddg"
+    },
+    {
+      "query": "Mailchimp MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://mailchimp.com/developer",
+      "from": "hint"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://mailchimp.com/developer/transactional/docs/authentication-delivery/",
+      "from": "search"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+      "from": "search"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "from": "search"
+    },
+    {
+      "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": "mailchimp",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2"
+    ],
+    "tools_count": 275,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "adjudicated",
+    "agreed": [
+      "self_serve"
+    ],
+    "disputed": {
+      "auth": {
+        "pass_A": [
+          "API key",
+          "OAuth2",
+          "Basic",
+          "Bearer token"
+        ],
+        "pass_B": [
+          "OAuth2",
+          "API key"
+        ],
+        "final": [
+          "OAuth2"
+        ],
+        "resolved_by": "adjudication",
+        "resolved": true,
+        "changed_from_pass_A": true,
+        "reason": "Source requires OAuth 2 support for integrations; API key claims appear only in secondary text, so OAuth2 is the directly supported value."
+      },
+      "mcp_status": {
+        "pass_A": "official",
+        "pass_B": "unknown",
+        "final": "unknown",
+        "resolved_by": "adjudication",
+        "resolved": true,
+        "changed_from_pass_A": true,
+        "reason": "MCP page text is truncated; no visible source states official or community status."
+      },
+      "verdict": {
+        "pass_A": "build_now",
+        "pass_B": "conditional",
+        "final": "unclear",
+        "resolved_by": "adjudication",
+        "resolved": true,
+        "changed_from_pass_A": true,
+        "reason": "No source supports build_now or conditional; only general API availability is shown."
+      }
+    },
+    "rule_fixes": []
+  }
+}

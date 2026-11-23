@@ -1,0 +1,14 @@
+{
+ "self_serve": {
+  "value": "sales",
+  "source": "S1",
+  "quote": "Custom pricing Schedule a demo",
+  "reason": "Enterprise tier, which lists Otter API & Webhooks, has custom pricing and is reached via demo; no self-serve key path shown."
+ },
+ "verdict": {
+  "value": "needs_outreach",
+  "source": "S1",
+  "quote": "Otter API & Webhooks",
+  "reason": "API & Webhooks appear only under the Enterprise plan, which requires scheduling a demo."
+ }
+}

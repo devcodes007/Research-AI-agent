@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Fathom developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Fathom API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Fathom model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.fathom.ai/",
+   "requested_url": "https://developers.fathom.ai/",
+   "from": "lead"
+  },
+  {
+   "id": "S2",
+   "url": "https://help.fathom.video/en/articles/8368641",
+   "requested_url": "https://help.fathom.video/en/articles/8368641",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://help.fathom.video/en/articles/9117633",
+   "requested_url": "https://help.fathom.video/en/articles/9117633",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://help.fathom.video/en/articles/11497793",
+   "requested_url": "https://help.fathom.video/en/articles/11497793",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developers.fathom.ai/quickstart",
+   "requested_url": "https://developers.fathom.ai/quickstart",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developers.fathom.ai/mcp-docs",
+   "requested_url": "https://developers.fathom.ai/mcp-docs",
+   "from": "search"
+  }
+ ]
+}

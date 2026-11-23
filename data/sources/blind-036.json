@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Klaviyo developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Klaviyo API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Klaviyo model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.klaviyo.com/en",
+   "requested_url": "https://developers.klaviyo.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+   "requested_url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+   "requested_url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developers.klaviyo.com/en/v2025-04-15/docs/klaviyo_mcp_server",
+   "requested_url": "https://developers.klaviyo.com/en/v2025-04-15/docs/klaviyo_mcp_server",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developers.klaviyo.com/en",
+   "requested_url": "https://developers.klaviyo.com/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developers.klaviyo.com/en/docs/application_objects_for_app_partners",
+   "requested_url": "https://developers.klaviyo.com/en/docs/application_objects_for_app_partners",
+   "from": "search"
+  }
+ ]
+}

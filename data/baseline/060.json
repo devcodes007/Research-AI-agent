@@ -1,0 +1,124 @@
+{
+  "id": 60,
+  "name": "Clay",
+  "category": "Data, SEO and Scraping",
+  "description": "GTM data enrichment and workflow platform with API keys, a CLI and an MCP integration.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Clay API key created in the app (API and CLI, API keys tab) or via the clay api-keys create command; legacy key exists for older integrations.",
+  "self_serve": "instant",
+  "gate_detail": "A Clay account is needed to create a key. A Free plan (500 actions/mo) and 14-day trial exist; webhook automation and HTTP API integration are listed on higher plans. Public API breadth is not documented in sources.",
+  "api_styles": [
+    "CLI",
+    "Other"
+  ],
+  "api_scope": "Documented API key is for Clay-native integrations such as looking up rows in other tables; a clay CLI exists. No full public REST reference appears in sources.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Clay documents an MCP connection from workspaces to Claude, ChatGPT, Microsoft Copilot and Glean, managed by workspace admins.",
+  "verdict": "conditional",
+  "blocker": "other",
+  "blocker_detail": "Sources document an API key mainly for Clay-native integrations and MCP; breadth of a public developer API and plan requirements are unclear.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "A Clay API key is required for all Clay-native integrations.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+      "supports": [
+        "access"
+      ],
+      "quote": "In Clay, open API and CLI in the left sidebar, select the API keys tab, and click Add API key .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+      "supports": [
+        "api"
+      ],
+      "quote": "The key is shown only once, when you create it, so copy it somewhere safe.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://university.clay.com/docs/mcp-settings",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "MCP (Model Context Protocol) is how Clay connects your workspace to AI tools like Claude, ChatGPT, Microsoft Copilot, and Glean.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.clay.com/pricing",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Start building in Clay for free. No strings attached.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources do not describe a general REST API for outside developers.",
+    "Plan required for API key creation is not stated.",
+    "Webhooks are mentioned only as an automation feature on higher plans; MCP URL not given."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Clay API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    },
+    {
+      "query": "Clay API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Clay MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://university.clay.com/docs/mcp-settings",
+      "from": "search"
+    },
+    {
+      "url": "https://university.clay.com/docs/plans-and-billing",
+      "from": "search"
+    },
+    {
+      "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+      "from": "search"
+    },
+    {
+      "url": "https://www.clay.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://www.clay.com/guides/clay-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://www.clay.com/mcp",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

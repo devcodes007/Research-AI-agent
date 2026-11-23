@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "higgsfield API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "higgsfield API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "higgsfield MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+   "requested_url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+   "from": "lead"
+  },
+  {
+   "id": "S2",
+   "url": "https://higgsfield.ai/cli",
+   "requested_url": "https://higgsfield.ai/cli",
+   "from": "hint"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.higgsfield.ai/docs/authentication",
+   "requested_url": "https://docs.higgsfield.ai/docs/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.higgsfield.ai/docs/enterprise/access-control",
+   "requested_url": "https://docs.higgsfield.ai/docs/enterprise/access-control",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://higgsfield.ai/creator-hub/help-center/getting-started/official-higgsfield-platforms",
+   "requested_url": "https://higgsfield.ai/creator-hub/help-center/getting-started/official-higgsfield-platforms",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.higgsfield.ai/docs",
+   "requested_url": "https://docs.higgsfield.ai/",
+   "from": "search"
+  }
+ ]
+}

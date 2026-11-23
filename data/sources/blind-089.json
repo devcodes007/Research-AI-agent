@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Ramp developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Ramp API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Ramp model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.ramp.com",
+   "requested_url": "https://docs.ramp.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.ramp.com/developer-api/v1/getting-started",
+   "requested_url": "https://docs.ramp.com/developer-api/v1/getting-started",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.ramp.com/developer-api/v1/authorization",
+   "requested_url": "https://docs.ramp.com/developer-api/v1/authorization",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.ramp.com/developer-api/v1/api/authorization",
+   "requested_url": "https://docs.ramp.com/developer-api/v1/api/authorization",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.ramp.com/developer-api/v1",
+   "requested_url": "https://docs.ramp.com/developer-api/v1",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.ramp.com/developer-api/v1/overview",
+   "requested_url": "https://docs.ramp.com/developer-api/v1/overview",
+   "from": "search"
+  }
+ ]
+}

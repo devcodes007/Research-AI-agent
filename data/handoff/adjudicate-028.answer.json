@@ -1,0 +1,1 @@
+{"verdict": {"value": "conditional", "source": "S1", "quote": "View required and optional permissions for this use case and add them to an App Review submission, if applicable.", "reason": "Self-serve test tokens exist, but permissions may require App Review; no sales contact is required, so conditional rather than outreach."}}

@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Notion API documentation authentication",
+   "error": "all search engines returned nothing: ['duckduckgo: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'duckduckgo: error sending request for url (https://html.duckduckg",
+   "backend": "ddg"
+  },
+  {
+   "query": "Notion API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Notion MCP server official",
+   "error": "all search engines returned nothing: ['bing: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', \"bing: ConnectError: ConnectError('error sending request for url (https:",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.notion.com/guides/notion-api/quick-start",
+   "requested_url": "https://developers.notion.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developers.notion.com/guides/authorization/overview",
+   "requested_url": "https://developers.notion.com/guides/authorization/overview",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developers.notion.com/guides/authorization/overview",
+   "requested_url": "https://developers.notion.com/guides/get-started/authorization",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.notion.com/help/what-is-the-notion-developer-platform",
+   "requested_url": "https://www.notion.com/help/what-is-the-notion-developer-platform",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.notion.com/pricing",
+   "requested_url": "https://www.notion.com/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://needaiforthis.com/pricing/notion-developer-platform",
+   "requested_url": "https://needaiforthis.com/pricing/notion-developer-platform",
+   "from": "search"
+  }
+ ]
+}

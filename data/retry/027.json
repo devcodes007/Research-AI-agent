@@ -1,0 +1,126 @@
+{
+  "id": 27,
+  "name": "Telegram",
+  "category": "Communications and Messaging",
+  "description": "Telegram offers several developer APIs; the sources cover mainly the Gateway verification API and user-login MTProto methods.",
+  "auth": [
+    "Bearer token",
+    "Other"
+  ],
+  "auth_notes": "Gateway API: access token from Gateway account settings, sent as Authorization Bearer header or access_token parameter. User API: phone-code login tied to an auth key. Bot token flow not described.",
+  "self_serve": "unknown",
+  "gate_detail": "Gateway API token comes from Gateway account settings and messages are charged per pricing plan, but sending codes to your own number is free. Bot API credential steps are not shown in the sources.",
+  "api_styles": [
+    "RPC",
+    "Other"
+  ],
+  "api_scope": "Gateway API is an HTTP interface for sending and checking verification messages; core API exposes methods such as auth.sendCode for user login. Bot API methods are not described in the sources.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "No MCP server is mentioned in the sources.",
+  "verdict": "unclear",
+  "blocker": "ambiguous_product",
+  "blocker_detail": "Telegram has separate Bot, user (MTProto), Gateway and Mini Apps surfaces; the sources do not establish credential access for the bot-messaging API.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://core.telegram.org/gateway/api",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Before invoking API methods, you must obtain an access token in the Telegram Gateway account settings.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://core.telegram.org/gateway/api",
+      "supports": [
+        "auth"
+      ],
+      "quote": "in the HTTP header: Authorization: Bearer <token>",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://core.telegram.org/gateway/api",
+      "supports": [
+        "access",
+        "api"
+      ],
+      "quote": "Charges will apply according to the pricing plan for each successful message delivery.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://apis.io/plans/telegram/telegram-plans-pricing/",
+      "supports": [
+        "access"
+      ],
+      "quote": "By default, bots are able to message their users at no cost",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://core.telegram.org/api/auth",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Then, a text message containing an authorization code is sent to the user's phone using auth.sendCode .",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "The sources never state how a bot token is obtained, so Bot API credential access is not established.",
+    "Gateway API is a narrow verification-code product and may not be the intended integration surface.",
+    "Webhook support is inferred from Gateway callback_url usage and third-party pages, not from a Bot API source.",
+    "S4 (Mini Apps init data) and S6 (third-party blog) are not first-party API credential docs.",
+    "No sandbox or MCP information in the sources."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "retry",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Telegram API pricing which plan includes API access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Telegram API authentication generate access token developer settings",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Telegram API access approval review partner requirements",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://core.telegram.org/api/auth",
+      "from": "search"
+    },
+    {
+      "url": "https://core.telegram.org/gateway/api",
+      "from": "search"
+    },
+    {
+      "url": "https://core.telegram.org/gateway/verification-tutorial",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.telegram-mini-apps.com/platform/authorizing-user",
+      "from": "search"
+    },
+    {
+      "url": "https://apis.io/plans/telegram/telegram-plans-pricing/",
+      "from": "search"
+    },
+    {
+      "url": "https://aziqdev.com/blog/telegram-bot-api-pricing",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

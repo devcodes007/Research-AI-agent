@@ -1,0 +1,135 @@
+{
+  "id": 93,
+  "name": "Fathom",
+  "category": "AI, Research and Media-native",
+  "description": "Fathom is an AI meeting recorder; its API exposes meetings, transcripts, summaries and action items.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "Personal API keys sent in an X-Api-Key header; OAuth apps are supported for integrations other Fathom users install.",
+  "self_serve": "instant",
+  "gate_detail": "Key is generated in API Access of User Settings; docs say anyone can start building. Which plan is required is not stated. Keys see only the user's own or team-shared meetings. 60 calls per minute limit.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Meetings list with filters and pagination, transcripts, summaries and action items; separate recording transcript endpoint; TypeScript and Python SDKs.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Docs describe an official Fathom MCP server for connecting meeting data to LLMs; URL not stated in sources.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment gate stated for API keys; OAuth marketplace listing is partner-only but optional.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.fathom.ai/quickstart",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Head to the API Access section of your User Settings and genera",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.fathom.ai/quickstart",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "curl https://api.fathom.ai/external/v1/meetings \\ -H \"X-Api-Key: YOUR_API_KEY\"",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.fathom.video/en/articles/8368641",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Anyone can browse the API docs and start building!",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.fathom.video/en/articles/8368641",
+      "supports": [
+        "access"
+      ],
+      "quote": "API keys are created at the user level. Your key can access meetings recorded by you or shared to your Team.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.fathom.ai/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Building a public OAuth app (for other Fathom users to install)? Start here instead.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.fathom.ai/mcp-docs",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Fathom now offers an official MCP (Model Context Protocol) server,",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan tier needed to generate an API key (free vs paid) is not stated; self_serve instant is inferred.",
+    "Webhooks and sandbox are not mentioned in the sources.",
+    "MCP server URL is not given in the provided sources.",
+    "Source text is truncated in places."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Fathom developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Fathom API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Fathom model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.fathom.ai/",
+      "from": "lead"
+    },
+    {
+      "url": "https://help.fathom.video/en/articles/8368641",
+      "from": "search"
+    },
+    {
+      "url": "https://help.fathom.video/en/articles/9117633",
+      "from": "search"
+    },
+    {
+      "url": "https://help.fathom.video/en/articles/11497793",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.fathom.ai/quickstart",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.fathom.ai/mcp-docs",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "id": 81,
+  "name": "Stripe",
+  "category": "Finance and Fintech",
+  "description": "Stripe is a payments platform with a REST API for payments, billing, Connect and more.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Secret and restricted API keys (sk_test_, rk_live_, sk_live_) authenticate requests; the key determines live mode or sandbox.",
+  "self_serve": "instant",
+  "gate_detail": "Developers view and manage API keys in the Stripe Dashboard after creating an account. Test mode secret keys give sandbox access; live mode uses restricted or secret keys. Free signup cost not explicitly stated.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "REST API at api.stripe.com with form-encoded requests and JSON responses covering core resources, billing, Connect, Issuing, Terminal, Tax, Identity and more; official client libraries.",
+  "webhooks": "yes",
+  "sandbox": "yes",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.stripe.com",
+  "mcp_notes": "Stripe docs publish an MCP server at mcp.stripe.com with OAuth or agent API key authentication.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment gate stated; restricted keys can be configured with specific permissions.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.stripe.com/api",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "The Stripe API uses API keys to authenticate requests.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.stripe.com/api",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "You can use the Stripe API in sandboxes without affecting your live data or interacting with banking networks.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.stripe.com/api",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "The Stripe API is organized around REST .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.stripe.com/api",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "Test mode secret keys start with sk _ test _ and have unrestricted access to their sandboxes.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.stripe.com/mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "OAuth : Use OAuth when a client accesses Stripe on behalf of your Stripe user account.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources do not explicitly say account signup is free or instant.",
+    "Webhooks inferred from API reference navigation listing Webhooks and Event Destinations.",
+    "Some Connect or other products may need extra enablement not covered by sources.",
+    "No independent second pass completed for this app.",
+    "Composio's toolkit lists auth ['API key', 'OAuth2']; our research lists ['API key']. Review flag only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Stripe API documentation authentication",
+      "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    },
+    {
+      "query": "Stripe API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Stripe MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.stripe.com/api",
+      "from": "hint"
+    },
+    {
+      "url": "https://stripe.com/in/resources/more/api-call-pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.stripe.com/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.stripe.com/agentic-commerce/monetize-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.stripe.com/api/plans",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.stripe.com/api",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "composio_catalog_auth_partial"
+  ],
+  "catalog": {
+    "toolkit": "stripe",
+    "match": "slug",
+    "schemes": [
+      "API_KEY",
+      "OAUTH2"
+    ],
+    "tools_count": 428,
+    "auth_agreement": "partial"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

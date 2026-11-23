@@ -1,0 +1,123 @@
+{
+  "id": 91,
+  "name": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "description": "NotebookLM Enterprise API manages notebooks via Google Cloud's Discovery Engine REST endpoints; Pre-GA.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Google Cloud access token from gcloud sent in the Authorization header; users sign in via Google or third-party identity provider.",
+  "self_serve": "approval",
+  "gate_detail": "Requires a Google Cloud project with organization identity provider configured and an admin (project owner or Cloud NotebookLM Admin) setting up the product. API is Pre-GA with limited support.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "REST methods under v1alpha for notebooks, such as retrieving and listing recently viewed notebooks, and adding sources.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "community",
+  "mcp_url": null,
+  "mcp_notes": "Only third-party notebooklm-mcp tools using browser session cookies appear; no vendor-published MCP server in sources.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Enterprise setup by a project owner or Cloud NotebookLM Admin with identity provider configured; feature is Pre-GA.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "-H \"Authorization:Bearer $(gcloud auth print-access-token)\"",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "you must have your organization's identity provider (IdP)",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+      "supports": [
+        "access"
+      ],
+      "quote": "The project owner or a user who has the Cloud NotebookLM Admin role can set up",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "Pre-GA features are available \"as is\" and might have limited support.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://github.com/jiawei-jwt/notebooklm/blob/main/docs/AUTHENTICATION.md",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "claude mcp add notebooklm-mcp -- notebooklm-mcp",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Pricing or license requirement for the enterprise API is not stated in first-party sources.",
+    "Webhooks and sandbox are not mentioned.",
+    "Consumer NotebookLM has no first-party public API in the sources."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "NotebookLM API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "NotebookLM API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "NotebookLM MCP server official",
+      "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "from": "lead"
+    },
+    {
+      "url": "https://cloud.google.com/ai/gemini",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+      "from": "search"
+    },
+    {
+      "url": "https://github.com/HenriqueCosta05/notebooklm-ts-api/blob/main/docs/authentication.md",
+      "from": "search"
+    },
+    {
+      "url": "https://github.com/jiawei-jwt/notebooklm/blob/main/docs/AUTHENTICATION.md",
+      "from": "search"
+    },
+    {
+      "url": "https://goldie.agency/notebooklm-api-pricing/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

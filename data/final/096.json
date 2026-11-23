@@ -1,0 +1,159 @@
+{
+  "id": 96,
+  "name": "Devin",
+  "category": "AI, Research and Media-native",
+  "description": "Devin is Cognition's AI software engineer, with a v3 API for sessions, knowledge and playbooks.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Service user API keys (cog_ prefix) or personal access tokens, sent as Authorization Bearer; legacy v1/v2 keys are deprecated.",
+  "self_serve": "unknown",
+  "gate_detail": "Keys are provisioned in Settings > Devin API by creating a service user with an RBAC role. Required plan or admin rights are not stated; enterprise PATs need admin policy and approval.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "v3 organization and enterprise endpoints covering session management, knowledge, playbooks and secrets, plus enterprise analytics, audit logs and billing.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.devin.ai/mcp",
+  "mcp_notes": "Official Devin MCP server over Streamable HTTP; requires an API key and a Devin account.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Credentials require provisioning a service user in settings, which needs account admin access; plan requirements are not established in the sources.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Copy the API key — the key starts with cog_ and is shown only once, right after provisioning",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Use the key in the Authorization header of every API request",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "supports": [
+        "access"
+      ],
+      "quote": "Provision a service user in Settings > Devin API ( Service users tab) for an organization",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "supports": [
+        "api"
+      ],
+      "quote": "Assign a role that controls which endpoints the service user can access.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "URL: https://mcp.devin.ai/mcp",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Requires Devin account",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/personal-access-tokens",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Approval required Members submit a PAT request; an enterprise admin must approve it before the token can be created",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Required plan tier for API access is not stated.",
+    "REST style is inferred from curl examples.",
+    "Webhooks and sandbox are not described."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Devin API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Devin API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Devin MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "from": "lead"
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.devin.ai/cli/extensibility/mcp/configuration",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.devin.ai/desktop/accounts/api-reference/api-introduction",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.devin.ai/admin/billing",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "unknown_access_but_confident_verdict"
+  ],
+  "catalog": {
+    "toolkit": null,
+    "match": "none",
+    "schemes": [],
+    "tools_count": 0,
+    "auth_agreement": "no_toolkit"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "agreed",
+    "agreed": [
+      "auth",
+      "self_serve",
+      "mcp_status",
+      "verdict"
+    ],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

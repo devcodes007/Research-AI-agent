@@ -1,0 +1,128 @@
+{
+  "id": 33,
+  "name": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "LinkedIn Marketing and Advertising APIs for campaign management, reporting, audiences and conversions.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Apps are created in the LinkedIn Developer portal with a Client ID; the credential type sent on calls is not stated in the readable sources.",
+  "self_serve": "approval",
+  "gate_detail": "Create an app, add Advertising API and complete the access form; LinkedIn reviews it for Development tier. Private APIs need further approval. Established business and use case required.",
+  "api_styles": [
+    "Other"
+  ],
+  "api_scope": "Advertising API covers Ad Campaigns, Creatives, Ad Analytics, Matched and Predictive Audiences, Event Ads; the program also lists Conversions and Media Planning APIs.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources do not mention an MCP server.",
+  "verdict": "needs_outreach",
+  "blocker": "approval_review",
+  "blocker_detail": "Advertising API access requires application review, vetting, and further approval for private APIs.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/linkedin-api-partner-support-guide",
+      "supports": [
+        "auth"
+      ],
+      "quote": "In the Application Client ID field, enter your API key.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.linkedin.com/product-catalog/marketing/advertising-api",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "2. LinkedIn will review your application",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.linkedin.com/product-catalog/marketing/advertising-api",
+      "supports": [
+        "access"
+      ],
+      "quote": "Do you have an established business?",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.linkedin.com/product-catalog/marketing/advertising-api",
+      "supports": [
+        "api"
+      ],
+      "quote": "These APIs are private and require additional approval once you’ve been approved for the Advertising API.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.linkedin.com/help/linkedin/answer/a526048/accessing-linkedin-apis?lang=en",
+      "supports": [
+        "access"
+      ],
+      "quote": "To gain access to the Marketing APIs, read more information on our API offering",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+      "supports": [
+        "description"
+      ],
+      "quote": "The platform offers APIs to create LinkedIn marketing campaigns",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "OAuth flow details are not visible in the sources.",
+    "Webhooks, sandbox and MCP are not covered.",
+    "API style is not stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "LinkedIn Ads developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "LinkedIn Ads API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "LinkedIn Ads model context protocol MCP server",
+      "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+      "from": "hint"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+      "from": "search"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://www.linkedin.com/help/linkedin/answer/a526048/accessing-linkedin-apis?lang=en",
+      "from": "search"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/linkedin-api-partner-support-guide",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.linkedin.com/product-catalog/marketing/advertising-api",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

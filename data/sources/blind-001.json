@@ -1,0 +1,101 @@
+{
+ "searches": [
+  {
+   "query": "Salesforce developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Salesforce API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Salesforce model context protocol MCP server",
+   "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", \"auto: ConnectError: ConnectError('error sending request for url (https:",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=platform.platform_o_manage_api_tokens.htm&language=en_US&type=5",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=xcloud.security_api_access_control_about.htm&language=en_US&type=5",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&language=en_US&type=5",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf",
+   "status": null,
+   "thin": true,
+   "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)"
+  },
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=001115253&language=en_US&type=1",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://partners.salesforce.com/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://salesforce.stackexchange.com/questions/163476/rest-apex-api-partner-access",
+   "status": 403,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "requested_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+   "requested_url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-process-approvals.html",
+   "requested_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-process-approvals.html",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/dome-process-approvals-submit.html",
+   "requested_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/dome-process-approvals-submit.html",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.salesforce.com/company/legal/partner-agreements/",
+   "requested_url": "https://www.salesforce.com/company/legal/partner-agreements/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://getknit.dev/blog/salesforce-api-key/",
+   "requested_url": "https://getknit.dev/blog/salesforce-api-key/",
+   "from": "search"
+  }
+ ]
+}

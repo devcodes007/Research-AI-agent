@@ -1,0 +1,127 @@
+{
+  "id": 15,
+  "name": "Pylon",
+  "category": "Support and Helpdesk",
+  "description": "Pylon is a B2B support platform with an API and webhooks for reading and acting on its data.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Admin users generate an API token to authenticate requests; sources do not state how the token is sent on calls.",
+  "self_serve": "unknown",
+  "gate_detail": "Only Admin users can create API tokens. Sources do not say which pricing tier or plan includes API access, nor whether a free plan or sandbox exists.",
+  "api_styles": [
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "API reference covers accounts, contacts, issues, messages, custom fields, custom objects, tasks and projects, knowledge base, macros, tags, teams, surveys and users; SDKs exist for TypeScript, Python, Go.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Pricing page lists a Pylon MCP server as a platform feature; no URL given in sources.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Token creation requires an Admin user; plan requirements for API access are not stated in the sources.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "supports": [
+        "auth",
+        "access",
+        "api"
+      ],
+      "quote": "Only Admin users can create API tokens.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/api-webhooks",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "As an Admin, generate an API token in Pylon to authenticate your requests.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "supports": [
+        "api"
+      ],
+      "quote": "To call the API from TypeScript, Python, or Go, use our SDKs",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/api-webhooks",
+      "supports": [
+        "api"
+      ],
+      "quote": "Go to the Webhooks page in Settings and specify your target endpoint URL, along with any custom headers.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.usepylon.com/pricing",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Pylon MCP server",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "How the API token is sent on requests is not stated for Pylon; the Bearer-token article (S1) concerns a different product (Luminous) and was not used.",
+    "Which plan tier includes API access is not stated; no free tier or trial described.",
+    "S6 (getpylon.com) is a different product (solar software) and was ignored.",
+    "REST style not explicitly labeled."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "retry",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Pylon API pricing which plan includes API access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Pylon API authentication generate access token developer settings",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Pylon API access approval review partner requirements",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://luminous-knowledge-base.help.usepylon.com/articles/1321118148-how-do-i-create-and-manage-api-tokens-for-the-luminous-external-api",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "from": "search"
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/api-webhooks",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+      "from": "search"
+    },
+    {
+      "url": "https://www.usepylon.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://getpylon.com/developers/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "unknown_access_but_confident_verdict"
+  ]
+}

@@ -1,0 +1,1 @@
+{"mcp_status": {"value": "official", "source": "S2", "quote": "Lark Mcp Server is an official MCP (Model Context Protocol) tool that encapsulates Feishu/Lark Open Platform APIs as MCP tools", "reason": "S2 describes the @larksuiteoapi/lark-mcp package as an official MCP tool wrapping Lark Open Platform APIs."}}

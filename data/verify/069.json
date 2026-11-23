@@ -1,0 +1,127 @@
+{
+  "id": 69,
+  "name": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Datadog observability platform with an HTTP REST API for dashboards, monitors, logs, metrics and more.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "API key sent in DD-API-KEY header; some endpoints also need an Application key in DD-APPLICATION-KEY. OAuth2 (authorization code with PKCE) is supported for confidential clients.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources describe the key headers and OAuth client flow but never say how a developer obtains keys, whether a free signup or paid plan is needed, or any sandbox. Access prerequisites are not established.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Resource-oriented REST API returning JSON across many areas (dashboards, monitors, logs, metrics, incidents, users); official client libraries in Java, Python, Ruby, Go, TypeScript and Rust.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Datadog MCP Server documented on docs.datadoghq.com; URL given only as a template, https://mcp.<YOUR_DATADOG_SITE>/v1/mcp.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "Sources do not state how credentials are obtained or any plan requirement, so access cannot be confirmed.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.datadoghq.com/api",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Authenticate to the API with an API key using the header DD-API-KEY",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.datadoghq.com/api",
+      "supports": [
+        "auth"
+      ],
+      "quote": "For some endpoints, you also need an Application key , which uses the header DD-APPLICATION-KEY .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.datadoghq.com/api/latest.md",
+      "supports": [
+        "description",
+        "api"
+      ],
+      "quote": "The Datadog API is an HTTP REST API.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog.md",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "once your **confidential** client is created.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.datadoghq.com/mcp_server.md",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Connect AI agents to Datadog observability data using the MCP Server to query metrics, logs, traces, and other insights.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "How API and Application keys are obtained is not stated.",
+    "Whether a free plan or trial suffices is not stated.",
+    "Webhook and sandbox support not established.",
+    "MCP URL is a template, not a concrete endpoint."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Datadog developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Datadog API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Datadog model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.datadoghq.com/api",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog.md",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.datadoghq.com/account_management/rbac/request_access.md",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.datadoghq.com/mcp_server.md",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.datadoghq.com/security/mcp_server.md",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.datadoghq.com/api/latest.md",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

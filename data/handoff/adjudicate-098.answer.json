@@ -1,0 +1,14 @@
+{
+ "self_serve": {
+  "value": "instant",
+  "source": "S1",
+  "quote": "It's possible to call mermaid-cli via a Node.JS API.",
+  "reason": "Open-source CLI and Node API are installable directly via npm or docker with no account, key or approval."
+ },
+ "mcp_status": {
+  "value": "unknown",
+  "source": "S1",
+  "quote": "Command line tool for the Mermaid library",
+  "reason": "Sources never mention MCP either way, so neither an official server nor its absence is established."
+ }
+}

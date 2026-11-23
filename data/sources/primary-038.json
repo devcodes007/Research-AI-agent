@@ -1,0 +1,89 @@
+{
+ "searches": [
+  {
+   "query": "Pinterest API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Pinterest API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Pinterest MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://developers.pinterest.com/docs/getting-started/authentication/",
+   "status": 404,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/getting-started/access-tiers/",
+   "status": 404,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/getting-started/getting-access/",
+   "status": 404,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/getting-started/authentication-and-scopes/",
+   "status": 404,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.pinterest.com",
+   "requested_url": "https://developers.pinterest.com",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+   "requested_url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+   "requested_url": "https://developers.pinterest.com/about-pinterest-mcp/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developers.pinterest.com/docs/overview/welcome/",
+   "requested_url": "https://developers.pinterest.com/docs/api-basics/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developers.pinterest.com/",
+   "requested_url": "https://developers.pinterest.com/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developer.pinterest.com/docs/getting-started/connect-app/",
+   "requested_url": "https://developer.pinterest.com/docs/getting-started/connect-app/",
+   "from": "search"
+  }
+ ]
+}

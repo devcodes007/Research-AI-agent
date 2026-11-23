@@ -1,0 +1,1 @@
+{"auth": {"value": ["OAuth2", "Other"], "source": "S1", "quote": "You should use a Private Integration Token if:", "reason": "HighLevel supports both OAuth 2.0 and Private Integration Tokens; the latter is not a listed type, so Other."}}

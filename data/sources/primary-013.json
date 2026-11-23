@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Freshdesk API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Freshdesk API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Freshdesk MCP server official",
+   "error": "all search engines returned nothing: ['brave: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results found.', 'yahoo: No results fou",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+   "requested_url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://developers.freshdesk.com/api/",
+   "requested_url": "https://developers.freshdesk.com/api/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developers.freshdesk.com/",
+   "requested_url": "https://developers.freshdesk.com/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://support.freshdesk.com/support/solutions/folders/272646",
+   "requested_url": "https://support.freshdesk.com/support/solutions/folders/272646",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000011661-connect-to-external-systems-using-api-actions",
+   "requested_url": "https://support.freshdesk.com/support/solutions/articles/50000011661-connect-to-external-systems-using-api-actions",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/service_ticket/oauth-implementation-in-apps/",
+   "requested_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/service_ticket/oauth-implementation-in-apps/",
+   "from": "search"
+  }
+ ]
+}

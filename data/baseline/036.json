@@ -1,0 +1,132 @@
+{
+  "id": 36,
+  "name": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Klaviyo is a marketing platform with a public API, SDKs, OAuth and a hosted MCP server.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "Private API keys sent as 'Authorization: Klaviyo-API-Key ...' with scoped access; OAuth supported for API calls.",
+  "self_serve": "unknown",
+  "gate_detail": "Private keys are created by the user in account Settings > API keys. Plan requirements are not stated; the Customer Agent beta API additionally requires Customer Agent to be enabled. No sandbox stated.",
+  "api_styles": [
+    "SDK",
+    "Other"
+  ],
+  "api_scope": "Versioned API with OpenAPI spec and SDKs; scoped resources such as profiles, lists, segments, metrics, subscriptions, reporting, plus a beta Customer Agent API using JSON:API conventions.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.klaviyo.com/mcp",
+  "mcp_notes": "Remote Klaviyo-hosted MCP server using OAuth; a local server option also exists.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment gate stated; Customer Agent APIs require that feature enabled and a beta revision header.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://help.klaviyo.com/hc/en-us/articles/50972372091163",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Authorization: Klaviyo-API-Key your-private-api-key",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.klaviyo.com/hc/en-us/articles/50972372091163",
+      "supports": [
+        "access"
+      ],
+      "quote": "Navigate to **Settings > API keys** and click **Create Private API Key**.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Make API calls with OAuth",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en",
+      "supports": [
+        "api"
+      ],
+      "quote": "Create apps and integrations with Klaviyo's API, SDKs and MCP server that help businesses grow.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Add the remote server at `https://mcp.klaviyo.com/mcp` to your MCP client.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+      "supports": [
+        "mcp",
+        "auth"
+      ],
+      "quote": "It signs in with OAuth, so no API key goes in the configuration.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan requirements for API keys are not stated.",
+    "Webhooks and sandbox not covered in the visible sources.",
+    "REST style not explicitly labeled."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Klaviyo API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Klaviyo API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: ['bing: No results found.', 'bing: No results found.', 'bing: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    },
+    {
+      "query": "Klaviyo MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.klaviyo.com/en",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.klaviyo.com/en",
+      "from": "search"
+    },
+    {
+      "url": "https://help.klaviyo.com/hc/en-us/articles/50972372091163",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "unknown_access_but_confident_verdict"
+  ]
+}

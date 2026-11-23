@@ -1,0 +1,120 @@
+{
+  "id": 3,
+  "name": "Pipedrive",
+  "category": "CRM and Sales",
+  "description": "Pipedrive CRM with RESTful API using API tokens or OAuth 2.0, webhooks and SDKs.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "Per-account API token for manual integrations; OAuth 2.0 (authorization code, refresh tokens) for apps.",
+  "self_serve": "trial",
+  "gate_detail": "Every plan includes an API token at no extra charge, but no free plan is stated, only a 14-day trial. Developer sandbox account can be requested. Marketplace public apps involve a listing process not detailed.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "RESTful JSON API v1/v2 covering deals, persons, organizations, leads, activities, webhooks and more; official client libraries and OpenAPI 3 specs.",
+  "webhooks": "yes",
+  "sandbox": "yes",
+  "mcp_status": "not_found",
+  "mcp_url": null,
+  "mcp_notes": "No MCP server mentioned in the provided sources.",
+  "verdict": "conditional",
+  "blocker": "paid_plan",
+  "blocker_detail": "A Pipedrive account is needed; sources show a 14-day trial and no free plan, so ongoing API use implies a paid plan.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://www.pipedrive.com/en/features/crm-api",
+      "supports": [
+        "access",
+        "api"
+      ],
+      "quote": "Every Pipedrive plan comes with an API token that gives you access to our RESTful API for free.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/features/crm-api",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Secure authentication is managed using OAuth 2.0 authentication.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.pipedrive.com/docs/api/v1",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "The API token can be obtained manually from the Pipedrive app.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.pipedrive.com/docs/api/v1",
+      "supports": [
+        "api"
+      ],
+      "quote": "To test your applications, we recommend creating a new, separate Pipedrive account for sandboxing purposes.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.pipedrive.com/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Many companies, including Pipedrive, offer new users a 14-day free CRM trial to see if the software suits their needs.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Whether any permanent free plan exists is not stated",
+    "Marketplace public app approval requirements not detailed",
+    "MCP absence only inferred from sources not mentioning it"
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Pipedrive API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Pipedrive API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Pipedrive MCP server official",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.pipedrive.com/",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.pipedrive.com/docs/api/v1",
+      "from": "search"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/features/crm-api",
+      "from": "search"
+    },
+    {
+      "url": "https://devcommunity.pipedrive.com/t/core-api-concepts-docs/55",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

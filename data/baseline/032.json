@@ -1,0 +1,121 @@
+{
+  "id": 32,
+  "name": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Meta's Marketing API: Graph API endpoints for creating and managing ads across Facebook, Instagram, Messenger and WhatsApp.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "Every call requires an access token (user or app tokens); the specific token flow is not detailed in the sources.",
+  "self_serve": "approval",
+  "gate_detail": "Limited access is granted automatically when adding the Marketing API product but is for development only; production use needs Full access through App Review.",
+  "api_styles": [
+    "Other",
+    "SDK"
+  ],
+  "api_scope": "Graph API endpoints for campaigns, ad sets, creatives and insights, plus related Conversions, Catalog, Business Management and Commerce APIs; Meta Business SDK listed.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.facebook.com/ads",
+  "mcp_notes": "Meta-hosted remote Ads MCP server for managing Meta ads from AI agents.",
+  "verdict": "needs_outreach",
+  "blocker": "approval_review",
+  "blocker_detail": "Full access, needed for production apps with live advertisers, requires App Review approval.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Every Marketing API call requires an access token as a parameter.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Heavily rate-limited per ad account. For development only. Not for production apps running for live advertisers.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Automatically granted when you add the Marketing API product to your app.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+      "supports": [
+        "api"
+      ],
+      "quote": "The Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The server is remote-hosted at `https://mcp.facebook.com/ads` and works with any MCP-compatible AI agent.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Webhooks and sandbox not described in sources.",
+    "Exact token types and OAuth details not shown.",
+    "S6 (Meta Model API) is a different product and was ignored."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Meta Ads API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Meta Ads API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: ['bing: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    },
+    {
+      "query": "Meta Ads MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+      "from": "hint"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview/",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/mcp/",
+      "from": "search"
+    },
+    {
+      "url": "https://dev.meta.ai/docs/authentication",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

@@ -1,0 +1,112 @@
+{
+  "id": 84,
+  "name": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "description": "Sources describe Paygent, an AI-agent billing product, not the NMI-powered Paygent Connect payments gateway.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Documented API for a different Paygent product uses pg_live_ keys sent as Bearer tokens; not confirmed for Paygent Connect.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources cover the wrong product. That product has a free tier with no credit card required, but this says nothing about Paygent Connect (NMI) access.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Sources describe a REST API for plans, users and subscriptions of an AI usage-billing product, not payment gateway APIs.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "No MCP server for Paygent Connect appears in the sources.",
+  "verdict": "unclear",
+  "blocker": "ambiguous_product",
+  "blocker_detail": "All sources document a different Paygent (AI agent billing), so Paygent Connect (NMI) developer access cannot be established.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://docs.paygent.to/reference/api-reference/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Authentication: Bearer token in Authorization: Bearer pg_live_... header.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.paygent.to/reference/api-reference/",
+      "supports": [
+        "api"
+      ],
+      "quote": "The Paygent backend exposes a small REST API.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.paygent.to/pricing",
+      "supports": [
+        "access"
+      ],
+      "quote": "No credit card required to start.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.paygent.to/getting-started/configure-first-plan/",
+      "supports": [
+        "description"
+      ],
+      "quote": "Design realistic plan tiers for your product, submit them via the API, and update them as you learn.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources describe a different Paygent product, not NMI-powered Paygent Connect.",
+    "Auth, access and webhooks for Paygent Connect are not established.",
+    "Sandbox and MCP status unknown."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Paygent Connect API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    },
+    {
+      "query": "Paygent Connect API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Paygent Connect MCP server official",
+      "error": "all search engines returned nothing: ['duckduckgo: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'duckduckgo: error sending request for url (https://html.duckduckg",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.paygent.to/getting-started/configure-first-plan/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.withpaygent.com/documentation/introduction/pricing-models",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.paygent.to/reference/api-reference/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.withpaygent.com/cli/commands/plans",
+      "from": "search"
+    },
+    {
+      "url": "https://www.paygent.to/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://www.withpaygent.com/pricing",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

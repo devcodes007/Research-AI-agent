@@ -1,0 +1,129 @@
+{
+  "id": 5,
+  "name": "Twenty",
+  "category": "CRM and Sales",
+  "description": "Open-source CRM exposing REST and GraphQL APIs generated from each workspace schema.",
+  "auth": [
+    "Bearer token",
+    "OAuth2"
+  ],
+  "auth_notes": "Workspace-scoped bearer tokens generated in Settings Playground; OAuth 2.0 with authorization code plus PKCE and client credentials also documented.",
+  "self_serve": "unknown",
+  "gate_detail": "Tokens are generated in workspace settings; sources do not state whether a free plan suffices. Custom roles for API keys need the Organization plan on Twenty Cloud; self-hosted includes them.",
+  "api_styles": [
+    "REST",
+    "GraphQL"
+  ],
+  "api_scope": "REST and GraphQL APIs generated from each workspace schema; no static API reference. Rate limit 100 requests per minute, batches of 60 records.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://api.twenty.com/mcp",
+  "mcp_notes": "Twenty MCP server configured from Settings, AI, MCP; OAuth or API key header auth.",
+  "verdict": "unclear",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment gate is stated for tokens, but plan requirements for API access are not established.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://api.twenty.com/open-api/core",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Send a Bearer token with each request:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.twenty.com/open-api/core",
+      "supports": [
+        "access"
+      ],
+      "quote": "Tokens can be generated in Settings → Playground and are workspace-scoped.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.twenty.com/developers/extend/oauth",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Authorization code flow with PKCE and client credentials for server-to-server access.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "supports": [
+        "api"
+      ],
+      "quote": "REST and GraphQL APIs generated from your workspace schema.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://api.twenty.com/open-api/core",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The endpoint is:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.twenty.com/user-guide/permissions-access/overview",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "creating and assigning custom roles to members or API keys requires the Organization plan",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Whether a free plan grants API token creation is not stated.",
+    "Webhooks and sandbox are not covered by the sources.",
+    "S4 text lacks an explicit statement that the MCP server is vendor-published beyond its own domain."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Twenty developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Twenty API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Twenty model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.twenty.com/developers/extend/oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.twenty.com/user-guide/permissions-access/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "from": "search"
+    },
+    {
+      "url": "https://api.twenty.com/open-api/core",
+      "from": "search"
+    },
+    {
+      "url": "https://twenty.com/partners/integrators",
+      "from": "search"
+    },
+    {
+      "url": "https://twenty.com/partners/integrators",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

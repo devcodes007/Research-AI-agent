@@ -1,0 +1,155 @@
+{
+  "id": 65,
+  "name": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Supabase Data REST API and Management API for Postgres-backed projects, plus an official MCP server.",
+  "auth": [
+    "API key",
+    "Bearer token"
+  ],
+  "auth_notes": "Data API sits behind a gateway with key-auth, using project API keys from dashboard settings; Management API uses a personal access token sent as Bearer.",
+  "self_serve": "instant",
+  "gate_detail": "Developers get project API keys from dashboard settings and a Management API access token from account tokens page. No plan requirement stated for these; some MCP branching tools need a paid plan. No sandbox stated.",
+  "api_styles": [
+    "REST",
+    "GraphQL",
+    "SDK"
+  ],
+  "api_scope": "Auto-generated PostgREST REST API over each project's database, a Management API for organizations and projects, a GraphQL API listed in docs, and client libraries.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Supabase documents its own Supabase MCP Server for AI tools on supabase.com; hosted connection URL not stated in the sources.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment gate for API access stated; role scoping and MCP branching need paid plans.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://supabase.com/docs/guides/api",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "It exposes everything you need from a CRUD API at the URL `https://<project_ref>.supabase.co/rest/v1/`.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api",
+      "supports": [
+        "auth"
+      ],
+      "quote": "provisioned behind an API gateway with key-auth enabled.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "You can find the API Keys in the [**Settings > API Keys**](https://supabase.com/dashboard/project/_/settings/api-keys/) section of the Dashboard.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/platform/access-control",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "# Get your access token from https://supabase.com/dashboard/account/tokens",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/platform/access-control",
+      "supports": [
+        "auth"
+      ],
+      "quote": "-H \"Authorization: Bearer $SUPABASE_ACCESS_TOKEN\"",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "# Supabase MCP Server",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Free-tier versus paid-plan requirements for API keys are not stated.",
+    "MCP server URL is not given in the sources.",
+    "Webhooks and sandbox are not covered by the sources.",
+    "No independent second pass completed for this app.",
+    "Composio's toolkit lists auth ['API key', 'OAuth2']; our research lists ['API key', 'Bearer token']. Review flag only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Supabase API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Supabase API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Supabase MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://supabase.com/docs",
+      "from": "hint"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/auth",
+      "from": "search"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/platform/access-control",
+      "from": "search"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://bettersupabase.com/docs/frameworks/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "composio_catalog_auth_partial"
+  ],
+  "catalog": {
+    "toolkit": "supabase",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "tools_count": 230,
+    "auth_agreement": "partial"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

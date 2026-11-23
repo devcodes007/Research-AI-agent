@@ -1,0 +1,210 @@
+{
+  "id": 62,
+  "name": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Vercel REST API for deploying web apps, managing projects, domains, environment variables and teams.",
+  "auth": [
+    "Bearer token"
+  ],
+  "auth_notes": "Vercel Access Tokens sent in the Authorization: Bearer header; created in account settings. Team resources selected via teamId query parameter.",
+  "self_serve": "instant",
+  "gate_detail": "Developers create Access Tokens in account settings; no plan requirement is stated. Read-only or scoped tokens are reportedly unavailable (community thread), so tokens are full-account. No sandbox stated.",
+  "api_styles": [
+    "REST",
+    "SDK",
+    "CLI"
+  ],
+  "api_scope": "HTTP REST API under api.vercel.com covering deployments, domains, projects, environment variables, teams, webhooks, storage, sandboxes and many other categories; SDK also mentioned.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Docs navigation lists a 'Vercel MCP' entry under Build with AI, but no source describes it or states a URL.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No payment or approval gate stated; tokens lack read-only scoping, which users complain about on Pro.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header: Authorization: Bearer <TOKEN>",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Create and manage Access Tokens in your account settings .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "All endpoints live under the URL https://api.vercel.com and follow the REST architecture.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "description"
+      ],
+      "quote": "You can deploy new versions of web applications, manage custom domains, retrieve information about deployments, and manage secrets and environment variables for projects.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://community.vercel.com/t/granting-an-app-read-only-access-to-the-vercel-api/41250",
+      "supports": [
+        "auth"
+      ],
+      "quote": "The lack of read-only permissions prevents us from using API tokens for these use cases.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "api"
+      ],
+      "quote": "Webhooks 4 endpoint s",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+      "supports": [
+        "auth"
+      ],
+      "quote": "A JWT that proves the client's identity, either a JWT assertion you sign or an OIDC token from a trusted issuer.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://community.vercel.com/t/request-access-to-sign-in-with-vercel-api-permissions-read-only-logs-observability/49936",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "How can we get access to the private beta?",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://community.vercel.com/t/how-to-get-access-to-sign-in-with-vercel-api-permissions-private-beta/44972",
+      "supports": [
+        "access"
+      ],
+      "quote": "Per the docs those API Permissions are in private beta, and they aren't exposed in our app's Permissions settings yet",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan requirements for creating Access Tokens are not stated (access-tokens page was truncated).",
+    "Vercel MCP is only a navigation label; its status and URL are not described.",
+    "Webhook support inferred from a Webhooks endpoint category in the API listing.",
+    "Unresolved disagreement on mcp_status: pass A 'unknown' vs pass B 'official'",
+    "Composio's toolkit lists auth ['API key', 'OAuth2']; our research lists ['Bearer token']. Review flag only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Vercel API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Vercel API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Vercel MCP server official",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No resul",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "from": "hint"
+    },
+    {
+      "url": "https://vercel.com/docs/security/access-control",
+      "from": "search"
+    },
+    {
+      "url": "https://vercel.com/docs/accounts/access-tokens",
+      "from": "search"
+    },
+    {
+      "url": "https://community.vercel.com/t/granting-an-app-read-only-access-to-the-vercel-api/41250",
+      "from": "search"
+    },
+    {
+      "url": "https://vercel.com/docs/cli/api",
+      "from": "search"
+    },
+    {
+      "url": "https://blog.vercel.com/docs/integrations/create-integration/marketplace-api/reference/vercel",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "composio_catalog_auth_disagree"
+  ],
+  "catalog": {
+    "toolkit": "vercel",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "tools_count": 399,
+    "auth_agreement": "disagree"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "adjudicated",
+    "agreed": [
+      "self_serve",
+      "verdict"
+    ],
+    "disputed": {
+      "auth": {
+        "pass_A": [
+          "Bearer token"
+        ],
+        "pass_B": [
+          "Bearer token",
+          "OAuth2"
+        ],
+        "pass_C": [
+          "Bearer token"
+        ],
+        "final": [
+          "Bearer token"
+        ],
+        "resolved": true,
+        "resolved_by": "majority_of_3_with_verified_quote",
+        "changed_from_pass_A": false,
+        "reason": "two of three independent passes agree"
+      },
+      "mcp_status": {
+        "pass_A": "unknown",
+        "pass_B": "official",
+        "final": "unknown",
+        "resolved_by": "adjudication",
+        "resolved": false,
+        "changed_from_pass_A": false,
+        "reason": "Only a navigation label mentions Vercel MCP; no source states whether it is official, so neither candidate is established."
+      }
+    },
+    "rule_fixes": [],
+    "retry_model": "Claude Sonnet 5.5 via Claude Code"
+  }
+}

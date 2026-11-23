@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Amazon Selling Partner API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Amazon Selling Partner API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Amazon Selling Partner MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer-docs.amazon/sp-api",
+   "requested_url": "https://developer-docs.amazon.com/sp-api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+   "requested_url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.aws.amazon.com/partner-central/latest/developer-guide/setup-authentication.html",
+   "requested_url": "https://docs.aws.amazon.com/partner-central/latest/developer-guide/setup-authentication.html",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.aws.amazon.com/partner-central/latest/developer-guide/mcp-getting-started.html",
+   "requested_url": "https://docs.aws.amazon.com/partner-central/latest/developer-guide/mcp-getting-started.html",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.aws.amazon.com/partner-central/latest/developer-guide/partner-central-mcp-server.html",
+   "requested_url": "https://docs.aws.amazon.com/partner-central/latest/developer-guide/partner-central-mcp-server.html",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developer-docs.amazon/sp-api/",
+   "requested_url": "https://developer-docs.amazon/sp-api/",
+   "from": "search"
+  }
+ ]
+}

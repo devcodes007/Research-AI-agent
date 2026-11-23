@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Vercel API pricing which plan includes API access",
+   "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  },
+  {
+   "query": "Vercel API authentication generate access token developer settings",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Vercel API access approval review partner requirements",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://vercel.com/docs/rest-api",
+   "requested_url": "https://vercel.com/docs/rest-api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://vercel.com/docs/accounts/access-tokens",
+   "requested_url": "https://vercel.com/docs/accounts/access-tokens",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://vercel.com/docs/accounts/access-tokens#use-a-scoped-token-with-the-api",
+   "requested_url": "https://vercel.com/kb/guide/how-do-i-use-a-vercel-api-access-token",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://community.vercel.com/t/how-to-get-access-token-using-the-rest-api/8539",
+   "requested_url": "https://community.vercel.com/t/how-to-get-access-token-using-the-rest-api/8539",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://community.vercel.com/t/how-to-get-access-to-sign-in-with-vercel-api-permissions-private-beta/44972",
+   "requested_url": "https://community.vercel.com/t/how-to-get-access-to-sign-in-with-vercel-api-permissions-private-beta/44972",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://vercel.com/docs/integrations/create-integration/marketplace-api/reference/partner",
+   "requested_url": "https://vercel.com/docs/integrations/create-integration/marketplace-api/reference/partner",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "searches": [
+  {
+   "query": "Binance API documentation authentication",
+   "error": "all search engines returned nothing: [\"bing: ConnectError: ConnectError('error sending request for url (https://www.startpage\", 'bing: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  },
+  {
+   "query": "Binance API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Binance MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://developers.binance.com/en/docs/products/connect-2.0/account-and-credentials",
+   "status": 202,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://web3.binance.com/en/dev-docs/authentication",
+   "status": 202,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://merchant.binance.com/en/docs/getting-started",
+   "status": 202,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic",
+   "status": 202,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developers.binance.com/en/docs/agent-native/mcp-server",
+   "status": 202,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developers.binance.com/en",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.binance.com/en/binance-api",
+   "status": 202,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.binance.com/en-AE/binance-api",
+   "status": 202,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.binance.com/en/support/faq/detail/7a6e676e36fb455d96478932cb12d9f3",
+   "status": 202,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.binance.com/en/support/announcement/detail/07d45cdd3831498f8a4ff339031a8480",
+   "status": 202,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://www.npmjs.com/package/binance-mcp-server",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://mcpservers.org/servers/ethancod1ng/binance-mcp-server",
+   "status": 403,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://apis.io/plans/binance/binance-plans-pricing/",
+   "requested_url": "https://apis.io/plans/binance/binance-plans-pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://pypi.org/project/binance-mcp-server/",
+   "requested_url": "https://pypi.org/project/binance-mcp-server/",
+   "from": "search"
+  }
+ ]
+}

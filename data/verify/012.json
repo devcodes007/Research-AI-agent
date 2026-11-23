@@ -1,0 +1,132 @@
+{
+  "id": 12,
+  "name": "Intercom",
+  "category": "Support and Helpdesk",
+  "description": "Intercom is a customer messaging and support platform with a REST API, webhooks and an MCP server.",
+  "auth": [
+    "OAuth2",
+    "Bearer token"
+  ],
+  "auth_notes": "Access Tokens for private apps on your own workspace; OAuth required for public apps accessing other people's data. MCP mentions Bearer tokens tied to a teammate.",
+  "self_serve": "unknown",
+  "gate_detail": "OAuth client_id and client_secret come from an app's Basic Information page in the Developer Hub. Sources do not state plan, signup or review requirements for obtaining an Access Token or creating apps.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Versioned REST API (2.18) covering admins, articles, companies, contacts, conversations, data attributes, events, help center, messages, news, notes and segments.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Intercom documents its own MCP server for US and EU workspaces; connection URLs are not shown in the excerpt.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "Sources do not establish what plan or approval is needed to obtain tokens or create a Developer Hub app.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "To access the Intercom API, you have two authentication options depending on whether you app is public or private.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "If you are building a public integration that will have access to **other peoples'** Intercom data you are required to set up OAuth.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+      "supports": [
+        "access"
+      ],
+      "quote": "These can be found on the Basic Information page for your app in the Developer Hub.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+      "supports": [
+        "api"
+      ],
+      "quote": "Webhook topics are related to corresponding permission scopes",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The Intercom MCP server is available for US and EU hosted workspaces.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+      "supports": [
+        "api"
+      ],
+      "quote": "Key endpoints available in version 2.18 of the Intercom API include the ones below.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Access Token creation steps and plan requirements are not in the truncated sources.",
+    "MCP connection URL not shown.",
+    "Sandbox or test workspace not described.",
+    "Whether public OAuth apps need review is not stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Intercom developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Intercom API access request approval partner program",
+      "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    },
+    {
+      "query": "Intercom model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://www.intercom.com/help/en/articles/6615543-setting-up-data-connectors-authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps",
+      "from": "search"
+    },
+    {
+      "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

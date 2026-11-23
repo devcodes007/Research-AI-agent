@@ -1,0 +1,65 @@
+{
+ "searches": [
+  {
+   "query": "Salesforce Commerce Cloud API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Salesforce Commerce Cloud API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Salesforce Commerce Cloud MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+   "requested_url": "https://developer.salesforce.com/docs/commerce",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+   "requested_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/custom-api-authentication.html",
+   "requested_url": "https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/custom-api-authentication.html",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce",
+   "requested_url": "https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+   "requested_url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+   "requested_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+   "from": "search"
+  }
+ ]
+}

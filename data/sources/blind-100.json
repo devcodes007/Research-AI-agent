@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Grain developer API getting started API key OAuth",
+   "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", \"auto: ConnectError: ConnectError('error sending request for url (https:",
+   "backend": "ddg"
+  },
+  {
+   "query": "Grain API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Grain model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developers.grain.com/",
+   "requested_url": "https://developers.grain.com/",
+   "from": "lead"
+  },
+  {
+   "id": "S2",
+   "url": "https://developers.grain.com/mcp/faq.html",
+   "requested_url": "https://developers.grain.com/mcp/faq.html",
+   "from": "lead"
+  },
+  {
+   "id": "S3",
+   "url": "https://support.grain.com/en/articles/15507288-grain-api",
+   "requested_url": "https://support.grain.com/en/articles/15507288-grain-api",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.grainledger.com/api-reference/organizations/list-authorized-organizations",
+   "requested_url": "https://docs.grainledger.com/api-reference/organizations/list-authorized-organizations",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://integrations.sh/grain.com/grain-public-api/",
+   "requested_url": "https://integrations.sh/grain.com/grain-public-api/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://docs.grainledger.com/mcp-server",
+   "requested_url": "https://docs.grainledger.com/mcp-server",
+   "from": "search"
+  }
+ ]
+}

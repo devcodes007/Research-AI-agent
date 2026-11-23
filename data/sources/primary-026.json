@@ -1,0 +1,83 @@
+{
+ "searches": [
+  {
+   "query": "Discord API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Discord API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Discord MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://discord.com/developers/authentication-code",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://discord.com/developers/home",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://support-dev.discord.com/hc/en-us/articles/23810643331735-Premium-Apps-Required-Support-for-Monetizing-Apps",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://discord.com/invite/model-context-protocol-1312302100125843476",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.discord.com/developers/topics/oauth2",
+   "requested_url": "https://docs.discord.com/developers/topics/oauth2",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.discord.com/developers/reference",
+   "requested_url": "https://docs.discord.com/developers/reference",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://discord.com/servers/model-context-protocol-1312302100125843476",
+   "requested_url": "https://discord.com/servers/model-context-protocol-1312302100125843476",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.discord.food/reference",
+   "requested_url": "https://docs.discord.food/reference",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://discord.me/mcp",
+   "requested_url": "https://discord.me/mcp",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://discordbotlist.com/servers/mcp-official",
+   "requested_url": "https://discordbotlist.com/servers/mcp-official",
+   "from": "search"
+  }
+ ]
+}

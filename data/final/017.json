@@ -1,0 +1,190 @@
+{
+  "id": 17,
+  "name": "Plain",
+  "category": "Support and Helpdesk",
+  "description": "Plain customer support platform with a GraphQL API using machine user API keys.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "Create a machine user and an API key scoped with fine-grained permissions, per Plain's GraphQL authentication docs.",
+  "self_serve": "unknown",
+  "gate_detail": "Docs describe creating a machine user and API key, but sources do not state plan, signup, approval or sandbox requirements.",
+  "api_styles": [
+    "GraphQL"
+  ],
+  "api_scope": "GraphQL API with queries, mutations, types and webhook events, per documentation search tags.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Docs site has a docs MCP toggle, but no product MCP server is established in sources.",
+  "verdict": "conditional",
+  "blocker": "other",
+  "blocker_detail": "Plan or workspace requirements to create machine users are not stated in sources.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Create a machine user and an API key",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/introduction",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "An overview of Plain’s GraphQL API and the data model behind it.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/introduction",
+      "supports": [
+        "api"
+      ],
+      "quote": "{\"language\":\"default\",\"tag\":\"Webhooks\",\"count\":52}",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "supports": [
+        "api"
+      ],
+      "quote": "{\"language\":\"default\",\"tag\":\"Mutations\",\"count\":268}",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/oauth",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Call the API as a user in your workspace after they sign in to your OAuth app.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/oauth",
+      "supports": [
+        "api"
+      ],
+      "quote": "Webhook events",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/oauth",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Call the API as a user in your workspace after they sign in to your OAuth app.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan and signup requirements not stated",
+    "Sources S3 to S6 describe unrelated products (PlainID, Plain framework, Plane) and were ignored",
+    "MCP and sandbox not established",
+    "Unresolved disagreement on verdict: pass A 'conditional' vs pass B 'unclear'",
+    "Composio's toolkit lists auth ['API key']; our research lists ['API key', 'OAuth2']. Review flag only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Plain API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Plain API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Plain MCP server official",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/introduction",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.plainid.io/apidocs/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.plainid.io/apidocs/authentication-mgmt-apis",
+      "from": "search"
+    },
+    {
+      "url": "https://plainframework.com/docs/plain-api/plain/api/README.md",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.plane.com/reference/authentication",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "unknown_access_but_confident_verdict",
+    "composio_catalog_auth_partial"
+  ],
+  "catalog": {
+    "toolkit": "plain",
+    "match": "slug",
+    "schemes": [
+      "API_KEY"
+    ],
+    "tools_count": 119,
+    "auth_agreement": "partial"
+  },
+  "verification": {
+    "blind_model": "Claude Sonnet 5.5 via Claude Code",
+    "status": "adjudicated",
+    "agreed": [
+      "self_serve",
+      "mcp_status"
+    ],
+    "disputed": {
+      "auth": {
+        "pass_A": [
+          "API key"
+        ],
+        "pass_B": [
+          "API key",
+          "OAuth2"
+        ],
+        "final": [
+          "API key",
+          "OAuth2"
+        ],
+        "resolved_by": "adjudication",
+        "resolved": true,
+        "changed_from_pass_A": true,
+        "reason": "S1 documents machine-user API keys; S3 documents an OAuth app flow, so both methods are supported."
+      },
+      "verdict": {
+        "pass_A": "conditional",
+        "pass_B": "unclear",
+        "final": "conditional",
+        "resolved_by": "adjudication",
+        "resolved": false,
+        "changed_from_pass_A": false,
+        "reason": "Sources show auth options but nothing establishing whether building is unconditional or has gating conditions; neither verdict is supported."
+      }
+    },
+    "rule_fixes": []
+  }
+}

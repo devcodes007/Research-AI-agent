@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "systeme.io API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "systeme.io API credentials pricing plan required developer access",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  },
+  {
+   "query": "systeme.io MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://help.systeme.io/article/11229-how-to-connect-your-systemeio-account-with-chatgpt-using-mcp-keys",
+   "requested_url": "https://help.systeme.io/article/11229-how-to-connect-your-systemeio-account-with-chatgpt-using-mcp-keys",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+   "requested_url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "requested_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://help.systeme.io/",
+   "requested_url": "https://help.systeme.io/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://systeme.io/mcp",
+   "requested_url": "https://systeme.io/mcp",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://dreamcustomerwaves.systeme.io/systeme-io-mcp-server",
+   "requested_url": "https://dreamcustomerwaves.systeme.io/systeme-io-mcp-server",
+   "from": "search"
+  }
+ ]
+}

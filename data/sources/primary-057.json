@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Bright Data API documentation authentication",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No resul",
+   "backend": "ddg"
+  },
+  {
+   "query": "Bright Data API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Bright Data MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.brightdata.com/general/account/billing-and-pricing/faqs",
+   "requested_url": "https://docs.brightdata.com/general/account/billing-and-pricing/faqs",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.brightdata.com/api-reference/account-management-api/Get_pricing_plans",
+   "requested_url": "https://docs.brightdata.com/api-reference/account-management-api/Get_pricing_plans",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.brightdata.com/products/mcp-server/overview",
+   "requested_url": "https://docs.brightdata.com/products/mcp-server/overview",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+   "requested_url": "https://docs.brightdata.com/products/mcp-server/faqs",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://brightdata.com/pricing",
+   "requested_url": "https://brightdata.com/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://brightdata.com/pricing/web-scraper",
+   "requested_url": "https://brightdata.com/pricing/web-scraper",
+   "from": "search"
+  }
+ ]
+}

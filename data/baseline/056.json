@@ -1,0 +1,131 @@
+{
+  "id": 56,
+  "name": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "description": "Firecrawl is a hosted web scraping, crawling, search and extraction API for AI agents.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "API key sent as Authorization: Bearer fc-... on https://api.firecrawl.dev; some endpoints work keyless with limits. OAuth for apps lets users connect their own accounts.",
+  "self_serve": "free_tier",
+  "gate_detail": "Key is found in the Firecrawl dashboard; a Free plan exists with lower limits, and paid plans (Hobby to Scale) raise credits and concurrency. Keyless access to some endpoints with limits.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Endpoints for scrape, crawl, map, search, extract, agent, interact browser sessions and Alexandria under api.firecrawl.dev; Python and Node SDK examples shown.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.firecrawl.dev/v2/mcp",
+  "mcp_notes": "Vendor docs document a hosted MCP server with OAuth sign-in, API-key bearer, or keyless access.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment needed to start; heavier usage needs paid credits and higher rate limits.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Requests need an Authorization header with your API key, except on the keyless endpoints described below:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "You can find your API key in the Firecrawl dashboard",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+      "supports": [
+        "access",
+        "api"
+      ],
+      "quote": "A few endpoints, including /v2/scrape , /v2/search and /v2/parse , also work without a key, with limits.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/mcp-server",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "API-key connections use https://mcp.firecrawl.dev/v2/mcp with a bearer token instead",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+      "supports": [
+        "auth"
+      ],
+      "quote": "To let users connect their own Firecrawl account to your app instead, use OAuth for apps .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/mcp-server",
+      "supports": [
+        "api"
+      ],
+      "quote": "\"tag\":\"Webhook Payloads\"",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Free signup steps and free-plan credit amount are not stated in the sources.",
+    "No dedicated API test sandbox is described.",
+    "Webhook support is inferred only from a docs tag named Webhook Payloads."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Firecrawl API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Firecrawl API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Firecrawl MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.firecrawl.dev/rate-limits",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/mcp-server",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/use-cases/developers-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.firecrawl.dev/billing",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

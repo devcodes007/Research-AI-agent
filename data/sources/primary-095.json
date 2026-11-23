@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Reducto API documentation authentication",
+   "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+   "backend": "ddg"
+  },
+  {
+   "query": "Reducto API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Reducto MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.reducto.ai/",
+   "requested_url": "https://docs.reducto.ai/",
+   "from": "lead"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.reducto.ai/mcp-server",
+   "requested_url": "https://docs.reducto.ai/mcp-server",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.reducto.ai/quickstart",
+   "requested_url": "https://docs.reducto.ai/quickstart",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.reducto.ai/reference/credit-usage",
+   "requested_url": "https://docs.reducto.ai/reference/credit-usage",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://reducto.ai/developers",
+   "requested_url": "https://reducto.ai/developers",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://reducto.ai/pricing",
+   "requested_url": "https://reducto.ai/pricing",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": 16,
+  "name": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "description": "LiveAgent helpdesk with API v3 key authentication and a built-in MCP server.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Separate API keys for v1 (deprecated) and v3; v3 keys managed under Configuration > System > API with per-key permissions.",
+  "self_serve": "trial",
+  "gate_detail": "Account holders generate keys in Configuration > System > API. Pricing page shows paid plans with Start free trial and no free plan; MCP server is listed on the Business plan.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "API v3 (current) and deprecated v1 with a Swagger descriptor; permissions per key cover actions such as reading tickets and posting messages.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Built-in LiveAgent MCP server with a tools reference; listed on the Business plan. URL not stated.",
+  "verdict": "conditional",
+  "blocker": "paid_plan",
+  "blocker_detail": "Only a free trial is shown; ongoing use needs a paid per-agent plan, and MCP needs Business.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Generate or manage your API v3 key here.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "Ensure the key has the appropriate permissions assigned for the operations you intend to perform (e.g., reading or posting messages).",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.liveagent.com/pricing/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Request a quote Start free trial",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.liveagent.com/pricing/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "AI MCP server for your own AI tools",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "LiveAgent exposes a built-in MCP server (Model Context Protocol)",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "REST style inferred from Swagger descriptor mention",
+    "Whether API access is available on all plans is not stated",
+    "Webhooks and sandbox not shown",
+    "MCP URL not given"
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "LiveAgent API documentation authentication",
+      "error": "all search engines returned nothing: ['bing: No results found.', 'bing: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    },
+    {
+      "query": "LiveAgent API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "LiveAgent MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+      "from": "search"
+    },
+    {
+      "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+      "from": "search"
+    },
+    {
+      "url": "https://support.liveagent.com/578762-MCP-tools-reference",
+      "from": "search"
+    },
+    {
+      "url": "https://support.liveagent.com/869419-Twitter-application-integration",
+      "from": "search"
+    },
+    {
+      "url": "https://www.liveagent.com/features/api/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.liveagent.com/pricing/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

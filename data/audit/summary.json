@@ -1,0 +1,655 @@
+{
+  "reviewer": "Dev",
+  "reviewed_at": "2026-11-23T16:23:06.424Z",
+  "overall": {
+    "judged": 72,
+    "unsure": 4,
+    "resolved": 68,
+    "baseline_correct": 50,
+    "final_correct": 51,
+    "baseline_accuracy": 0.735,
+    "final_accuracy": 0.75,
+    "baseline_ci95": [
+      0.62,
+      0.826
+    ],
+    "final_ci95": [
+      0.636,
+      0.838
+    ]
+  },
+  "random_sample": {
+    "judged": 40,
+    "unsure": 4,
+    "resolved": 36,
+    "baseline_correct": 28,
+    "final_correct": 27,
+    "baseline_accuracy": 0.778,
+    "final_accuracy": 0.75,
+    "baseline_ci95": [
+      0.619,
+      0.883
+    ],
+    "final_ci95": [
+      0.589,
+      0.862
+    ]
+  },
+  "hard_cases": {
+    "judged": 32,
+    "unsure": 0,
+    "resolved": 32,
+    "baseline_correct": 22,
+    "final_correct": 24,
+    "baseline_accuracy": 0.688,
+    "final_accuracy": 0.75,
+    "baseline_ci95": [
+      0.514,
+      0.82
+    ],
+    "final_ci95": [
+      0.579,
+      0.867
+    ]
+  },
+  "by_field": {
+    "auth": {
+      "judged": 18,
+      "unsure": 0,
+      "resolved": 18,
+      "baseline_correct": 12,
+      "final_correct": 11,
+      "baseline_accuracy": 0.667,
+      "final_accuracy": 0.611,
+      "baseline_ci95": [
+        0.437,
+        0.837
+      ],
+      "final_ci95": [
+        0.386,
+        0.797
+      ]
+    },
+    "self_serve": {
+      "judged": 18,
+      "unsure": 1,
+      "resolved": 17,
+      "baseline_correct": 13,
+      "final_correct": 13,
+      "baseline_accuracy": 0.765,
+      "final_accuracy": 0.765,
+      "baseline_ci95": [
+        0.527,
+        0.904
+      ],
+      "final_ci95": [
+        0.527,
+        0.904
+      ]
+    },
+    "mcp_status": {
+      "judged": 18,
+      "unsure": 2,
+      "resolved": 16,
+      "baseline_correct": 13,
+      "final_correct": 13,
+      "baseline_accuracy": 0.812,
+      "final_accuracy": 0.812,
+      "baseline_ci95": [
+        0.57,
+        0.934
+      ],
+      "final_ci95": [
+        0.57,
+        0.934
+      ]
+    },
+    "verdict": {
+      "judged": 18,
+      "unsure": 1,
+      "resolved": 17,
+      "baseline_correct": 12,
+      "final_correct": 14,
+      "baseline_accuracy": 0.706,
+      "final_accuracy": 0.824,
+      "baseline_ci95": [
+        0.469,
+        0.867
+      ],
+      "final_ci95": [
+        0.59,
+        0.938
+      ]
+    }
+  },
+  "fixed_by_verification": [
+    {
+      "id": 17,
+      "name": "Plain",
+      "field": "auth",
+      "kind": "random",
+      "baseline": [
+        "API key"
+      ],
+      "final": [
+        "API key",
+        "OAuth2"
+      ],
+      "note": "https://www.plain.com/docs/graphql/oauth",
+      "status": "answered",
+      "human": [
+        "API key",
+        "OAuth2"
+      ],
+      "baseline_ok": false,
+      "final_ok": true
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "field": "mcp_status",
+      "kind": "hard",
+      "baseline": "official",
+      "final": "unknown",
+      "note": "",
+      "status": "answered",
+      "human": "unknown",
+      "baseline_ok": false,
+      "final_ok": true
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "field": "verdict",
+      "kind": "hard",
+      "baseline": "build_now",
+      "final": "unclear",
+      "note": "",
+      "status": "answered",
+      "human": "unclear",
+      "baseline_ok": false,
+      "final_ok": true
+    },
+    {
+      "id": 58,
+      "name": "Sherlock",
+      "field": "mcp_status",
+      "kind": "hard",
+      "baseline": "unknown",
+      "final": "community",
+      "note": "",
+      "status": "answered",
+      "human": "community",
+      "baseline_ok": false,
+      "final_ok": true
+    },
+    {
+      "id": 93,
+      "name": "Fathom",
+      "field": "self_serve",
+      "kind": "hard",
+      "baseline": "unknown",
+      "final": "instant",
+      "note": "",
+      "status": "answered",
+      "human": "instant",
+      "baseline_ok": false,
+      "final_ok": true
+    },
+    {
+      "id": 93,
+      "name": "Fathom",
+      "field": "verdict",
+      "kind": "hard",
+      "baseline": "unclear",
+      "final": "build_now",
+      "note": "",
+      "status": "answered",
+      "human": "build_now",
+      "baseline_ok": false,
+      "final_ok": true
+    },
+    {
+      "id": 5,
+      "name": "Twenty",
+      "field": "auth",
+      "kind": "hard",
+      "baseline": [
+        "OAuth2",
+        "API key"
+      ],
+      "final": [
+        "OAuth2",
+        "Bearer token"
+      ],
+      "note": "",
+      "status": "answered",
+      "human": [
+        "OAuth2",
+        "Bearer token"
+      ],
+      "baseline_ok": false,
+      "final_ok": true
+    },
+    {
+      "id": 36,
+      "name": "Klaviyo",
+      "field": "verdict",
+      "kind": "hard",
+      "baseline": "build_now",
+      "final": "unclear",
+      "note": "",
+      "status": "answered",
+      "human": "unclear",
+      "baseline_ok": false,
+      "final_ok": true
+    }
+  ],
+  "broken_by_verification": [
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "field": "self_serve",
+      "kind": "random",
+      "baseline": "unknown",
+      "final": "paid_plan",
+      "note": "",
+      "status": "answered",
+      "human": "unknown",
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "field": "mcp_status",
+      "kind": "random",
+      "baseline": "unknown",
+      "final": "official",
+      "note": "",
+      "status": "answered",
+      "human": "unknown",
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 27,
+      "name": "Telegram",
+      "field": "mcp_status",
+      "kind": "hard",
+      "baseline": "not_found",
+      "final": "community",
+      "note": "",
+      "status": "answered",
+      "human": "not_found",
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "field": "auth",
+      "kind": "hard",
+      "baseline": [
+        "API key",
+        "OAuth2",
+        "Basic",
+        "Bearer token"
+      ],
+      "final": [
+        "OAuth2"
+      ],
+      "note": "",
+      "status": "answered",
+      "human": [
+        "API key",
+        "OAuth2",
+        "Basic",
+        "Bearer token"
+      ],
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 45,
+      "name": "Magento (Adobe Commerce)",
+      "field": "auth",
+      "kind": "hard",
+      "baseline": [
+        "OAuth2",
+        "Bearer token",
+        "Session"
+      ],
+      "final": [
+        "Other"
+      ],
+      "note": "",
+      "status": "answered",
+      "human": [
+        "OAuth2",
+        "Bearer token",
+        "Session"
+      ],
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 5,
+      "name": "Twenty",
+      "field": "verdict",
+      "kind": "hard",
+      "baseline": "conditional",
+      "final": "unclear",
+      "note": "",
+      "status": "answered",
+      "human": "conditional",
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 36,
+      "name": "Klaviyo",
+      "field": "auth",
+      "kind": "hard",
+      "baseline": [
+        "API key",
+        "OAuth2"
+      ],
+      "final": [
+        "API key"
+      ],
+      "note": "",
+      "status": "answered",
+      "human": [
+        "API key",
+        "OAuth2"
+      ],
+      "baseline_ok": true,
+      "final_ok": false
+    }
+  ],
+  "still_wrong": [
+    {
+      "id": 92,
+      "name": "Otter AI",
+      "field": "auth",
+      "kind": "random",
+      "baseline": [
+        "Other"
+      ],
+      "final": [
+        "Other"
+      ],
+      "note": "https://docs.connect.tryotter.com/api-reference/auth/requestToken/",
+      "status": "answered",
+      "human": [
+        "OAuth2"
+      ],
+      "baseline_ok": false,
+      "final_ok": false
+    },
+    {
+      "id": 92,
+      "name": "Otter AI",
+      "field": "self_serve",
+      "kind": "random",
+      "baseline": "sales",
+      "final": "sales",
+      "note": "https://otter.ai/pricing",
+      "status": "answered",
+      "human": "paid_plan",
+      "baseline_ok": false,
+      "final_ok": false
+    },
+    {
+      "id": 6,
+      "name": "Podio",
+      "field": "auth",
+      "kind": "random",
+      "baseline": [
+        "OAuth2",
+        "Other"
+      ],
+      "final": [
+        "OAuth2",
+        "Other"
+      ],
+      "note": "https://developers.podio.com/authentication",
+      "status": "answered",
+      "human": [
+        "OAuth2"
+      ],
+      "baseline_ok": false,
+      "final_ok": false
+    },
+    {
+      "id": 6,
+      "name": "Podio",
+      "field": "verdict",
+      "kind": "random",
+      "baseline": "build_now",
+      "final": "build_now",
+      "note": "",
+      "status": "answered",
+      "human": "conditional",
+      "baseline_ok": false,
+      "final_ok": false
+    },
+    {
+      "id": 29,
+      "name": "Aircall",
+      "field": "verdict",
+      "kind": "random",
+      "baseline": "needs_outreach",
+      "final": "needs_outreach",
+      "note": "https://developer.aircall.io/",
+      "status": "answered",
+      "human": "build_now",
+      "baseline_ok": false,
+      "final_ok": false
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "field": "self_serve",
+      "kind": "random",
+      "baseline": "unknown",
+      "final": "paid_plan",
+      "note": "",
+      "status": "answered",
+      "human": "unknown",
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "field": "mcp_status",
+      "kind": "random",
+      "baseline": "unknown",
+      "final": "official",
+      "note": "",
+      "status": "answered",
+      "human": "unknown",
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 40,
+      "name": "SendGrid",
+      "field": "mcp_status",
+      "kind": "random",
+      "baseline": "not_found",
+      "final": "not_found",
+      "note": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+      "status": "answered",
+      "human": "official",
+      "baseline_ok": false,
+      "final_ok": false
+    },
+    {
+      "id": 79,
+      "name": "Smartsheet",
+      "field": "auth",
+      "kind": "random",
+      "baseline": [
+        "API key",
+        "OAuth2"
+      ],
+      "final": [
+        "API key",
+        "OAuth2"
+      ],
+      "note": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+      "status": "answered",
+      "human": [
+        "Bearer token"
+      ],
+      "baseline_ok": false,
+      "final_ok": false
+    },
+    {
+      "id": 27,
+      "name": "Telegram",
+      "field": "self_serve",
+      "kind": "hard",
+      "baseline": "unknown",
+      "final": "unknown",
+      "note": "https://core.telegram.org",
+      "status": "answered",
+      "human": "free_tier",
+      "baseline_ok": false,
+      "final_ok": false
+    },
+    {
+      "id": 27,
+      "name": "Telegram",
+      "field": "mcp_status",
+      "kind": "hard",
+      "baseline": "not_found",
+      "final": "community",
+      "note": "",
+      "status": "answered",
+      "human": "not_found",
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 1,
+      "name": "Salesforce",
+      "field": "self_serve",
+      "kind": "hard",
+      "baseline": "unknown",
+      "final": "unknown",
+      "note": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+      "status": "answered",
+      "human": "paid_plan",
+      "baseline_ok": false,
+      "final_ok": false
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "field": "auth",
+      "kind": "hard",
+      "baseline": [
+        "API key",
+        "OAuth2",
+        "Basic",
+        "Bearer token"
+      ],
+      "final": [
+        "OAuth2"
+      ],
+      "note": "",
+      "status": "answered",
+      "human": [
+        "API key",
+        "OAuth2",
+        "Basic",
+        "Bearer token"
+      ],
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 45,
+      "name": "Magento (Adobe Commerce)",
+      "field": "auth",
+      "kind": "hard",
+      "baseline": [
+        "OAuth2",
+        "Bearer token",
+        "Session"
+      ],
+      "final": [
+        "Other"
+      ],
+      "note": "",
+      "status": "answered",
+      "human": [
+        "OAuth2",
+        "Bearer token",
+        "Session"
+      ],
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 58,
+      "name": "Sherlock",
+      "field": "auth",
+      "kind": "hard",
+      "baseline": [
+        "Other"
+      ],
+      "final": [
+        "Other"
+      ],
+      "note": "https://sherlock.docs.pyansys.com/",
+      "status": "answered",
+      "human": [
+        "API key"
+      ],
+      "baseline_ok": false,
+      "final_ok": false
+    },
+    {
+      "id": 5,
+      "name": "Twenty",
+      "field": "verdict",
+      "kind": "hard",
+      "baseline": "conditional",
+      "final": "unclear",
+      "note": "",
+      "status": "answered",
+      "human": "conditional",
+      "baseline_ok": true,
+      "final_ok": false
+    },
+    {
+      "id": 36,
+      "name": "Klaviyo",
+      "field": "auth",
+      "kind": "hard",
+      "baseline": [
+        "API key",
+        "OAuth2"
+      ],
+      "final": [
+        "API key"
+      ],
+      "note": "",
+      "status": "answered",
+      "human": [
+        "API key",
+        "OAuth2"
+      ],
+      "baseline_ok": true,
+      "final_ok": false
+    }
+  ],
+  "expected_judgments": 72,
+  "received_judgments": 72,
+  "method": "Reviewer saw unlabelled candidate values and chose the documented one. random_sample is a seeded stratified random draw (1 app per category); hard_cases are the apps with the most pass disagreement. Small sample: see CI."
+}

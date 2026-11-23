@@ -1,0 +1,65 @@
+{
+ "searches": [
+  {
+   "query": "Gumroad API documentation authentication",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  },
+  {
+   "query": "Gumroad API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Gumroad MCP server official",
+   "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://gumroad.com/api",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://gumroad.com/help/article/76-license-keys",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.transmitsecurity.com/guides/automated-workflows/integrations/builtin/credentials/gumroad",
+   "requested_url": "https://developer.transmitsecurity.com/guides/automated-workflows/integrations/builtin/credentials/gumroad",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://gumkit.app/blog/gumroad-api-access-token/",
+   "requested_url": "https://gumkit.app/blog/gumroad-api-access-token/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://apitracker.io/a/gumroad",
+   "requested_url": "https://apitracker.io/a/gumroad",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://rollout.com/integration-guides/gumroad/api-essentials",
+   "requested_url": "https://rollout.com/integration-guides/gumroad/api-essentials",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://apis.io/providers/gumroad/",
+   "requested_url": "https://apis.io/providers/gumroad/",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Front API documentation authentication",
+   "error": "all search engines returned nothing: ['duckduckgo: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No results found.', 'auto: No results found.', 'auto: No results fou",
+   "backend": "ddg"
+  },
+  {
+   "query": "Front API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Front MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+   "requested_url": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://help.front.com/en/categories/326",
+   "requested_url": "https://help.front.com/en/categories/326",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://help.front.com/en/articles/2331",
+   "requested_url": "https://help.front.com/en/articles/2331",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://help.front.com/en/articles/4883136",
+   "requested_url": "https://help.front.com/en/articles/4883136",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://front.com/pricing",
+   "requested_url": "https://front.com/pricing",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://community.front.com/mcp-server-88",
+   "requested_url": "https://community.front.com/mcp-server-88",
+   "from": "search"
+  }
+ ]
+}

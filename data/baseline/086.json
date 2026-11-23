@@ -1,0 +1,131 @@
+{
+  "id": 86,
+  "name": "QuickBooks",
+  "category": "Finance and Fintech",
+  "description": "QuickBooks Online is Intuit's cloud accounting platform with a REST Accounting API.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "OAuth 2.0 authorization code flow; no API keys or basic auth for requests. Client credentials used only to exchange the code.",
+  "self_serve": "free_tier",
+  "gate_detail": "Free Intuit developer account; Builder tier has no platform service fees. Per-developer sandbox companies provided. Paid Silver/Gold/Platinum tiers apply for higher volumes.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "REST Accounting API for customers, invoices, payments, bills, vendors, accounts and journal entries; separate Payments API; Intuit SDKs and OAuth libraries.",
+  "webhooks": "yes",
+  "sandbox": "yes",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Intuit publishes a QuickBooks connector for Claude, also called the QuickBooks app or MCP connection; no server URL given.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Metered API fees apply above Builder-tier limits; some new API access requests go through Intuit support.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+      "supports": [
+        "auth"
+      ],
+      "quote": "The QuickBooks API uses OAuth 2.0 exclusively — there are no API keys or basic authentication options.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+      "supports": [
+        "access"
+      ],
+      "quote": "Sign in at developer.intuit.com (free account).",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://apis.io/plans/quickbooks/quickbooks-plans-pricing/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "If you are a partner in the Builder tier, you won’t be subject to any Platform Service Fees",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+      "supports": [
+        "api"
+      ],
+      "quote": "Intuit automatically provisions a sandbox QuickBooks Online company for each developer account, pre-loaded with sample data.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+      "supports": [
+        "api"
+      ],
+      "quote": "Use webbhooks: Reduce redundant GET requests by implementing webhook events to keep data in sync.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The QuickBooks connector for Claude (also called the QuickBooks app or MCP connection)",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Intuit App Partner Program fees may apply at higher volumes.",
+    "A 'New API access' support request process is mentioned but its scope is partly elided.",
+    "MCP URL not stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "QuickBooks API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "QuickBooks API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "QuickBooks MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
+      "from": "search"
+    },
+    {
+      "url": "https://apis.io/security/quickbooks/quickbooks-authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+      "from": "search"
+    },
+    {
+      "url": "https://apis.io/plans/quickbooks/quickbooks-plans-pricing/",
+      "from": "search"
+    },
+    {
+      "url": "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+      "from": "search"
+    },
+    {
+      "url": "https://satvasolutions.com/blog/quickbooks-online-api-guide.md",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

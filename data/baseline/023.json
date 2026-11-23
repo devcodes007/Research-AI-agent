@@ -1,0 +1,131 @@
+{
+  "id": 23,
+  "name": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "description": "Zoho Cliq team chat with REST API, bots, webhooks and an official MCP server.",
+  "auth": [
+    "OAuth2"
+  ],
+  "auth_notes": "OAuth 2.0 via Zoho accounts (authorization code flow; implicit also declared); client registered in Zoho API Console with scopes like ZohoCliq.Channels.READ.",
+  "self_serve": "free_tier",
+  "gate_detail": "Developer registers a client in the Zoho API Console to get Client ID and secret; Cliq offers free signup and a 15-day trial. Whether the free plan includes API use is not stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "REST API v2/v3 for channels, chats, messages, bots, threads, reminders, scheduled messages, slash commands and more, with OpenAPI documents.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Zoho-published Cliq MCP server; endpoint URL not stated in sources, only documentation pages.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or sales gate stated; OAuth client registration is self-serve.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Zoho Cliq API uses the OAuth 2.0 protocol for authentication.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Once you register your client, you will get a Client ID and Client secret for your application.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/",
+      "supports": [
+        "access"
+      ],
+      "quote": "Try Zoho Cliq for your business Sign up for free",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "Zoho Cliq's REST API is built on RESTful architecture principles",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Any AI model or agent can use our official MCP server to access your Cliq data and do:",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+      "supports": [
+        "api"
+      ],
+      "quote": "Send an incoming webhook message to a bot",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Plan requirements for API use on the free tier are unclear.",
+    "MCP server endpoint URL is not given.",
+    "Sandbox availability not stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Zoho Cliq API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Zoho Cliq API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Zoho Cliq MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.zoho.com/cliq/",
+      "from": "hint"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+      "from": "search"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.zoho.com/cliq/mcp-server.html",
+      "from": "search"
+    },
+    {
+      "url": "https://apis.io/security/zoho-cliq/zoho-cliq-authentication/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Copper API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Copper API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Copper MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.copper.com/introduction/authentication.html",
+   "requested_url": "https://developer.copper.com/introduction/authentication.html",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.copper.com/introduction/oauth/index.html",
+   "requested_url": "https://developer.copper.com/introduction/oauth/index.html",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://usecopper.com/docs/api_basics/authentication",
+   "requested_url": "https://usecopper.com/docs/api_basics/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://usecopper.com/docs",
+   "requested_url": "https://usecopper.com/docs",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developer.copper.com/",
+   "requested_url": "https://developer.copper.com/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://www.copper.com/pricing",
+   "requested_url": "https://www.copper.com/pricing",
+   "from": "search"
+  }
+ ]
+}

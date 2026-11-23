@@ -1,0 +1,143 @@
+{
+  "id": 22,
+  "name": "Twilio",
+  "category": "Communications and Messaging",
+  "description": "Twilio programmable communications REST APIs for voice, messaging and account management.",
+  "auth": [
+    "Basic"
+  ],
+  "auth_notes": "HTTP Basic with API key SID as username and API key secret as password; keys created in Twilio Console or via API.",
+  "self_serve": "instant",
+  "gate_detail": "Developer signs up (Start for free) and creates an API key in the Console. Trial limits and paid-usage requirements for production are not detailed in the sources.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "REST APIs for accounts, phone numbers, Voice calls, Messaging SMS/MMS, usage and credentials; official SDKs available.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.twilio.com/docs",
+  "mcp_notes": "Official docs-search MCP server, no auth needed; execute-ready OAuth tools are only planned.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or sales gate stated for API keys.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://www.twilio.com/docs/iam/api",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Use your API key SID as the username and your API key secret as the password.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.twilio.com/docs/iam/api",
+      "supports": [
+        "access"
+      ],
+      "quote": "You can create an API key in the Twilio Console or using the API",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/pricing",
+      "supports": [
+        "access"
+      ],
+      "quote": "Contact sales Start for free",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.twilio.com/docs/iam/api",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "Twilio's Voice API enables you to make, retrieve, control and monitor calls.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.twilio.com/docs/ai/mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Connect your AI coding agent to the Twilio MCP server. No Twilio account or authentication is required.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Free trial restrictions and production upgrade requirements are not stated.",
+    "Webhook and sandbox support not described in sources.",
+    "Twilio MCP server currently covers documentation search only.",
+    "No independent second pass completed for this app.",
+    "Composio's toolkit lists auth ['API key', 'Basic', 'Other']; our research lists ['Basic']. Review flag only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Twilio API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Twilio API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Twilio MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.twilio.com/docs/iam/credentials/api",
+      "from": "search"
+    },
+    {
+      "url": "https://www.twilio.com/docs/ai/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://www.twilio.com/docs/iam/api",
+      "from": "search"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/user-authentication-identity/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://www.twilio.com/en-us/blog/introducing-twilio-alpha-mcp-server",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "composio_catalog_auth_partial"
+  ],
+  "catalog": {
+    "toolkit": "twilio",
+    "match": "slug",
+    "schemes": [
+      "API_KEY",
+      "BASIC",
+      "S2S_OAUTH2"
+    ],
+    "tools_count": 452,
+    "auth_agreement": "partial"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

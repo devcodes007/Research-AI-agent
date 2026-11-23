@@ -1,0 +1,147 @@
+{
+  "id": 97,
+  "name": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "description": "Higgsfield API generates images and video from code using one API key and a prepaid dollar balance.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "A single API key created in the console opens all models in the catalog; MCP and CLI instead use the Higgsfield account sign-in.",
+  "self_serve": "paid_plan",
+  "gate_detail": "Sign up, register a payment method and fund a prepaid USD balance before requests run; no plan or subscription involved. No free tier or sandbox stated.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Asynchronous image and video generation across the model catalog, with request status polling, webhooks, a cost estimate endpoint and Python and TypeScript SDKs.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.higgsfield.ai/mcp",
+  "mcp_notes": "Official Higgsfield MCP connects agents to a user's higgsfield.ai account and deducts plan credits, separate from the API.",
+  "verdict": "conditional",
+  "blocker": "paid_plan",
+  "blocker_detail": "Requests are paid from a prepaid USD balance that must be funded first; requests wait when the balance is empty.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "one API key opens every model in the API catalog, and each request is paid in US dollars from a prepaid balance.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Register a payment method and fund your balance.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "Generate an API key in the console at open.higgsfield.ai .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+      "supports": [
+        "api"
+      ],
+      "quote": "call the REST API directly from any language with an HTTP client, sending requests to api.higgsfield.ai",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+      "supports": [
+        "api"
+      ],
+      "quote": "receiving a webhook when the result is ready",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://higgsfield.ai/creator-hub/help-center/getting-started/official-higgsfield-platforms",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "the only official connector URL is mcp.higgsfield.ai/mcp",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "No sandbox or free test environment is described.",
+    "Authentication docs page content was truncated in the sources.",
+    "No independent second pass completed for this app."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "higgsfield API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "higgsfield API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "higgsfield MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+      "from": "lead"
+    },
+    {
+      "url": "https://higgsfield.ai/cli",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.higgsfield.ai/docs/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.higgsfield.ai/docs/enterprise/access-control",
+      "from": "search"
+    },
+    {
+      "url": "https://higgsfield.ai/creator-hub/help-center/getting-started/official-higgsfield-platforms",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.higgsfield.ai/docs",
+      "from": "search"
+    }
+  ],
+  "lint": [],
+  "catalog": {
+    "toolkit": "higgsfield",
+    "match": "slug",
+    "schemes": [
+      "API_KEY"
+    ],
+    "tools_count": 13,
+    "auth_agreement": "match"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

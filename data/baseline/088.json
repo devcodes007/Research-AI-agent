@@ -1,0 +1,132 @@
+{
+  "id": 88,
+  "name": "Brex",
+  "category": "Finance and Fintech",
+  "description": "Brex is a spend platform with REST APIs for cards, expenses, payments, teams and travel.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "User token created by an account admin in Settings > Developer, sent in the Authorization header as a Bearer token.",
+  "self_serve": "approval",
+  "gate_detail": "Quickstart assumes a Brex customer with admin access who creates a user token in dashboard Settings > Developer. MCP also needs an admin to accept the Developer API agreement. No sandbox stated.",
+  "api_styles": [
+    "REST"
+  ],
+  "api_scope": "Ten API groups including Accounting, Budgets, Expenses, Fields, Onboarding, Payments, Team, Transactions, Travel and Webhooks, defined with OpenAPI.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Beta Brex MCP server documented on developer.brex.com; OAuth or token access; no endpoint URL given in the sources.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Credentials require being a Brex customer with account admin access; Developer API agreement must be accepted.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://developer.brex.com/guides/quickstart",
+      "supports": [
+        "auth"
+      ],
+      "quote": "add the header `Authorization: Bearer <YOUR_TOKEN_FROM_STEP_1_HERE>`",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.brex.com/guides/quickstart",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "This guide assumes you are a Brex customer with admin access to your dashboard.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.brex.com",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "Brex APIs use the [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer) architecture",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.brex.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "[Webhooks API](/openapi/webhooks_api): Send real-time notifications based on events",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.brex.com/docs/mcp",
+      "supports": [
+        "mcp",
+        "access"
+      ],
+      "quote": "An account admin or card admin must accept the Developer API agreement in **Settings → Developer**.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.brex.com/docs/mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The Brex MCP server lets AI assistants interact directly with your Brex account",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "No sandbox environment is described.",
+    "MCP server URL is not stated.",
+    "Whether a Brex account is free or paid is not stated."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Brex API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: error sending request for url (https://html.duckduckgo.com/html/) > operation ti', 'auto: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    },
+    {
+      "query": "Brex API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Brex MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.brex.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://developer.brex.com/guides/quickstart",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.brex.com/docs/mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.brex.com/docs/mcp.md",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.brex.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.brex.com/product/api",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

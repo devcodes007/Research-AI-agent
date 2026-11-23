@@ -1,0 +1,133 @@
+{
+  "id": 55,
+  "name": "Apify",
+  "category": "Data, SEO and Scraping",
+  "description": "Apify is a web scraping and automation platform with a REST API, official clients and an Actor marketplace.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "Apify API token used for API calls; Actors receive a run-scoped API token that is either full-access or limited-permission.",
+  "self_serve": "free_tier",
+  "gate_detail": "A Free plan with $5 of prepaid usage needs no credit card; when it is used up the platform is blocked until the next cycle. Pay-as-you-go is only on paid plans. Full-permission Actors need one-time Console approval.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Apify API for running Actors, storages and account resources, with official API clients for JavaScript, Python, Java and .NET, plus an SDK for building Actors.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "The provided sources do not mention an MCP server.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Free plan is usable immediately; heavier production usage needs a paid plan, and third-party full-permission Actors need one-time approval in Console.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://docs.apify.com/actors/running/permissions",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "it receives an Apify API token that is valid only for that run.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://apify.com/pricing",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "No credit card required.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.apify.com/account/subscriptions",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "The Free plan lets you use most of the features of the Apify platform.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.apify.com/account/subscriptions",
+      "supports": [
+        "access"
+      ],
+      "quote": "Pay-as-you-go is available only on paid plans.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.apify.com/actors/running/permissions",
+      "supports": [
+        "access",
+        "api"
+      ],
+      "quote": "If you try to run an unapproved full-permission Actor through the API or any other channel, the request fails with a `403` error.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.apify.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "Install with `dotnet add package Apify.Client`.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources do not explicitly name the token header or Bearer scheme.",
+    "No MCP server is mentioned in the provided sources.",
+    "Sandbox availability is not stated.",
+    "Webhook support is inferred from references in the docs index and permissions page."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Apify API documentation authentication",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    },
+    {
+      "query": "Apify API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Apify MCP server official",
+      "error": "all search engines returned nothing: ['auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.', 'auto: No results found.']",
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.apify.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.apify.com/account/subscriptions",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.apify.com/actors/running/permissions",
+      "from": "search"
+    },
+    {
+      "url": "https://apify.com/pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://apify.com/pricing/creator-plan",
+      "from": "search"
+    },
+    {
+      "url": "https://apis.io/plans/apify/apify-plans-pricing/",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

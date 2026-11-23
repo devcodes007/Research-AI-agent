@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Netlify API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Netlify API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Netlify MCP server official",
+   "error": "all search engines returned nothing: [\"auto: ConnectError: ConnectError('error sending request for url (https://www.startpage\", \"auto: RequestError: RequestError('error sending request for url (https:",
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+   "requested_url": "https://docs.netlify.com/api",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/identity/overview/",
+   "requested_url": "https://docs.netlify.com/manage/security/secure-access-to-sites/identity/overview/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/identity/plans-and-pricing/",
+   "requested_url": "https://docs.netlify.com/manage/security/secure-access-to-sites/identity/plans-and-pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/",
+   "requested_url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+   "requested_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://www.netlify.com/blog/api-authentication-methods.md",
+   "requested_url": "https://www.netlify.com/blog/api-authentication-methods.md",
+   "from": "search"
+  }
+ ]
+}

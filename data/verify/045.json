@@ -1,0 +1,124 @@
+{
+  "id": 45,
+  "name": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "description": "Adobe Commerce (Magento) ecommerce platform exposing REST, GraphQL and SOAP web APIs.",
+  "auth": [
+    "Other",
+    "Bearer token",
+    "Session"
+  ],
+  "auth_notes": "Third-party integrations use OAuth 1.0a; mobile apps use tokens sent in the Authorization header; admins and customers use login credentials; widgets use sessions.",
+  "self_serve": "approval",
+  "gate_detail": "A merchant admin must create an integration in the Admin and authorize resources; credentials depend on having an Adobe Commerce or Magento instance. Sandbox not stated.",
+  "api_styles": [
+    "REST",
+    "GraphQL",
+    "SOAP"
+  ],
+  "api_scope": "Web API framework exposing configured services via REST, GraphQL and SOAP, with resource-level authorization through ACL; also integration-style multi-service calls.",
+  "webhooks": "no",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources do not mention an MCP server.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Credentials are issued by a store administrator via Admin integrations; developers need access to a Commerce instance.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Third-party applications authenticate with OAuth 1.0a .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "To prove your identity, specify this token in the Authorization request header on web API calls.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "supports": [
+        "access"
+      ],
+      "quote": "You must register a web service on Admin.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "supports": [
+        "api"
+      ],
+      "quote": "Support for GraphQL , REST (Representational State Transfer) and SOAP (Simple Object Access Protocol).",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "supports": [
+        "api"
+      ],
+      "quote": "The system does not currently support webhooks.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Cost and licensing of Adobe Commerce are not stated; Magento Open Source is mentioned but not detailed.",
+    "Sandbox availability not established; an API playground is only mentioned.",
+    "Cloud Service (SaaS) uses IMS tokens per S3, not detailed."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Magento (Adobe Commerce) developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Magento (Adobe Commerce) API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Magento (Adobe Commerce) model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.adobe.com/commerce/",
+      "from": "hint"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/",
+      "from": "search"
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

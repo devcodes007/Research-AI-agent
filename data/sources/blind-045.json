@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Magento (Adobe Commerce) developer API getting started API key OAuth",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Magento (Adobe Commerce) API access request approval partner program",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Magento (Adobe Commerce) model context protocol MCP server",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.adobe.com/commerce/",
+   "requested_url": "https://developer.adobe.com/commerce",
+   "from": "hint"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+   "requested_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+   "requested_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+   "requested_url": "https://developer.adobe.com/commerce/webapi/get-started/",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://developer.adobe.com/commerce/webapi/",
+   "requested_url": "https://developer.adobe.com/commerce/webapi/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys",
+   "requested_url": "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys",
+   "from": "search"
+  }
+ ]
+}

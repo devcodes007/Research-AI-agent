@@ -1,0 +1,136 @@
+{
+  "id": 53,
+  "name": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "description": "Ahrefs offers a REST API, remote MCP server and connectors for its SEO and AI-visibility data.",
+  "auth": [
+    "API key",
+    "Bearer token",
+    "OAuth2"
+  ],
+  "auth_notes": "REST API uses account-created API keys; the MCP server needs a separate MCP key sent as a Bearer token. OAuth 2.0 applies to the Ahrefs Connect integration program.",
+  "self_serve": "paid_plan",
+  "gate_detail": "API keys are created in the account's API keys report. Docs offer free test queries for trying endpoints without an Enterprise plan, implying production API access needs one. MCP use consumes subscription API units.",
+  "api_styles": [
+    "REST",
+    "Other"
+  ],
+  "api_scope": "REST API for keyword research, backlinks, rank tracking and AI-search brand visibility, with an OpenAPI spec, plus MCP, Data Studio connectors and a partner integration program.",
+  "webhooks": "unknown",
+  "sandbox": "yes",
+  "mcp_status": "official",
+  "mcp_url": "https://api.ahrefs.com/mcp/mcp",
+  "mcp_notes": "Remote MCP server hosted by Ahrefs; authenticated with a dedicated MCP key, not interchangeable with API keys. Local setup unsupported.",
+  "verdict": "conditional",
+  "blocker": "admin_or_enterprise_only",
+  "blocker_detail": "Docs imply full API access requires an Enterprise plan; free test queries are the alternative. Ahrefs Connect OAuth integrations require applying to the program.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://docs.ahrefs.com",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Try API endpoints without an Enterprise plan",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ahrefs.com",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Create and manage your API keys",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ahrefs.com/mcp/docs/openclaw.md",
+      "supports": [
+        "auth",
+        "mcp"
+      ],
+      "quote": "Add your MCP token as a Bearer token in the `Authorization` header",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ahrefs.com/mcp/docs/openclaw.md",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "mcporter config add ahrefs https://api.ahrefs.com/mcp/mcp",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+      "supports": [
+        "access",
+        "mcp"
+      ],
+      "quote": "it does consume the Integration API units included in your Ahrefs subscription plan.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.ahrefs.com",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Implement OAuth 2.0 authorization",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Enterprise-plan requirement for the REST API is implied, not stated outright.",
+    "REST API auth scheme (header format) is not shown in the sources.",
+    "Webhook support is not mentioned.",
+    "Ahrefs Connect program approval requirements are not detailed."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Ahrefs API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Ahrefs API credentials pricing plan required developer access",
+      "error": "all search engines returned nothing: ['duckduckgo: No results found.', 'duckduckgo: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No results found.', 'bing: No resul",
+      "backend": "ddg"
+    },
+    {
+      "query": "Ahrefs MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.ahrefs.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ahrefs.com/mcp/docs/openclaw.md",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.ahrefs.com/",
+      "from": "search"
+    },
+    {
+      "url": "https://ahrefs.com/seo-api",
+      "from": "search"
+    },
+    {
+      "url": "https://ahrefs.com/academy/api-course/lesson-1",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

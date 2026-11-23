@@ -1,0 +1,156 @@
+{
+  "id": 66,
+  "name": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Neo4j Aura management API plus database drivers for querying and managing graph databases.",
+  "auth": [
+    "OAuth2",
+    "Basic"
+  ],
+  "auth_notes": "Aura API uses OAuth 2.0 client credentials created in the Aura console; database drivers take auth tokens such as basic username/password, or kerberos.",
+  "self_serve": "free_tier",
+  "gate_detail": "All Aura tiers can create API credentials. AuraDB Free costs $0 with no payment method required, so a free account suffices; paid tiers are for production scale.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Aura API for managing cloud instances authenticated with OAuth 2.0, and language drivers (e.g. Python) for running queries against a database.",
+  "webhooks": "unknown",
+  "sandbox": "yes",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Official Neo4j MCP server is a local binary that connects to Aura, self-managed or other deployments; not a hosted endpoint.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No approval or payment gate for credentials; hosted MCP is not offered, only a local server.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://neo4j.com/docs/aura/api/authentication/",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "The Aura API uses OAuth 2.0 for API authentication.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://neo4j.com/docs/aura/api/authentication/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "All tiers can create Aura API credentials.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://neo4j.com/pricing/",
+      "supports": [
+        "access"
+      ],
+      "quote": "No credit card or other payment method required",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://neo4j.com/docs/api/python-driver/current/api.html",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "To authenticate with Neo4j the authentication details are supplied at driver creation.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The official MCP Server for Neo4j, is a local MCP server that is downloadable as a binary",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+      "supports": [
+        "description"
+      ],
+      "quote": "Neo4j Sandbox.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Aura API REST style and endpoints are not detailed in the sources.",
+    "Webhooks are not covered by the sources.",
+    "Sandbox is mentioned only as a deployment type for the MCP server.",
+    "No independent second pass completed for this app.",
+    "Composio's toolkit lists auth ['API key', 'Basic', 'OAuth2', 'Other']; our research lists ['OAuth2', 'Basic']. Review flag only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Neo4j API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Neo4j API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Neo4j MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://neo4j.com/docs/aura/api/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://neo4j.com/docs/mcp/current/",
+      "from": "search"
+    },
+    {
+      "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+      "from": "search"
+    },
+    {
+      "url": "https://neo4j.com/docs/api/python-driver/current/api.html",
+      "from": "search"
+    },
+    {
+      "url": "https://neo4j.com/pricing/",
+      "from": "search"
+    },
+    {
+      "url": "https://neo4j.com/licensing/?ref=web-open-core",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "composio_catalog_auth_partial"
+  ],
+  "catalog": {
+    "toolkit": "neo4j",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2",
+      "BASIC",
+      "API_KEY",
+      "S2S_OAUTH2"
+    ],
+    "tools_count": 21,
+    "auth_agreement": "partial"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

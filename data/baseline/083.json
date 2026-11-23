@@ -1,0 +1,107 @@
+{
+  "id": 83,
+  "name": "Binance",
+  "category": "Finance and Fintech",
+  "description": "Binance cryptocurrency exchange API for market data, trading and account management using API keys.",
+  "auth": [
+    "API key"
+  ],
+  "auth_notes": "API key and secret created under API Management in a Binance account; signing scheme not described in sources.",
+  "self_serve": "instant",
+  "gate_detail": "Per a third-party catalog, API access is free to authenticated users. Keys are created in account API Management; a testnet is mentioned for development. Higher VIP tiers raise request limits.",
+  "api_styles": [
+    "Other"
+  ],
+  "api_scope": "Market data, WebSocket streams, and trading and account operations via the exchange API, per third-party descriptions; first-party docs not included.",
+  "webhooks": "unknown",
+  "sandbox": "yes",
+  "mcp_status": "community",
+  "mcp_url": null,
+  "mcp_notes": "Only a third-party PyPI package (binance-mcp-server by AnalyticAce) appears; no vendor-published server shown.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No blocker shown, but evidence comes from third-party sources rather than Binance's own documentation.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://apis.io/plans/binance/binance-plans-pricing/",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "Binance does not charge for API access itself",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://pypi.org/project/binance-mcp-server/",
+      "supports": [
+        "access",
+        "auth"
+      ],
+      "quote": "Log in to your Binance account and go to API Management .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://pypi.org/project/binance-mcp-server/",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Create a new API Key.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://pypi.org/project/binance-mcp-server/",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Binance's Model Context Protocol (MCP). Designed to support developers building crypto trading AI Agents.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://pypi.org/project/binance-mcp-server/",
+      "supports": [
+        "api"
+      ],
+      "quote": "Recommended: Use testnet for development and safe testing",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "No first-party Binance documentation among sources.",
+    "REST/WebSocket styles and request signing not directly confirmed.",
+    "Webhook support not established."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Binance API documentation authentication",
+      "error": "all search engines returned nothing: [\"bing: ConnectError: ConnectError('error sending request for url (https://www.startpage\", 'bing: error sending request for url (https://html.duckduckgo.com/html/)",
+      "backend": "ddg"
+    },
+    {
+      "query": "Binance API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Binance MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://apis.io/plans/binance/binance-plans-pricing/",
+      "from": "search"
+    },
+    {
+      "url": "https://pypi.org/project/binance-mcp-server/",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

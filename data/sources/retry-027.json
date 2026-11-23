@@ -1,0 +1,58 @@
+{
+ "searches": [
+  {
+   "query": "Telegram API pricing which plan includes API access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Telegram API authentication generate access token developer settings",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Telegram API access approval review partner requirements",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://core.telegram.org/api/auth",
+   "requested_url": "https://core.telegram.org/api/auth",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://core.telegram.org/gateway/api",
+   "requested_url": "https://core.telegram.org/gateway/api",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://core.telegram.org/gateway/verification-tutorial",
+   "requested_url": "https://core.telegram.org/gateway/verification-tutorial",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.telegram-mini-apps.com/platform/authorizing-user",
+   "requested_url": "https://docs.telegram-mini-apps.com/platform/authorizing-user",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://apis.io/plans/telegram/telegram-plans-pricing/",
+   "requested_url": "https://apis.io/plans/telegram/telegram-plans-pricing/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://aziqdev.com/blog/telegram-bot-api-pricing",
+   "requested_url": "https://aziqdev.com/blog/telegram-bot-api-pricing",
+   "from": "search"
+  }
+ ]
+}

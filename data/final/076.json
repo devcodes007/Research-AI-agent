@@ -1,0 +1,140 @@
+{
+  "id": 76,
+  "name": "Monday.com",
+  "category": "Productivity and Project Management",
+  "description": "monday.com's developer platform offers a GraphQL platform API, apps framework, webhooks and a hosted MCP server.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "Personal V2 API tokens sent in the Authorization header; app tokens with scopes via OAuth2.",
+  "self_serve": "instant",
+  "gate_detail": "A free developer account gives an API token for testing; personal tokens mirror the user's UI permissions. Dynamic MCP connectors need admin approval.",
+  "api_styles": [
+    "GraphQL"
+  ],
+  "api_scope": "GraphQL platform API for workflows and data, plus apps with UI extensions, hosting, webhooks and agents.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.monday.com/mcp",
+  "mcp_notes": "Hosted Platform MCP server maintained by the monday.com AI team; separate Apps MCP exists for building apps.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "Token access mirrors user permissions; only extra MCP connectors require admin approval.",
+  "confidence": "medium",
+  "evidence": [
+    {
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "supports": [
+        "auth"
+      ],
+      "quote": "The monday.com platform API utilizes personal V2 API tokens to authenticate requests and identify the user making the call.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "supports": [
+        "access",
+        "verdict"
+      ],
+      "quote": "create a free developer account to get an API token and start testing.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.monday.com",
+      "supports": [
+        "api"
+      ],
+      "quote": "An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.monday.com",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Request granular scopes like boards:read .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/mondaycom-mcp",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "The Platform MCP is monday.com's hosted MCP (Model Context Protocol) server, maintained by the monday.com AI team.",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sandbox environment for the API not explicitly described.",
+    "Rate limits not detailed.",
+    "No independent second pass completed for this app.",
+    "Composio's toolkit lists auth ['OAuth2']; our research lists ['API key', 'OAuth2']. Review flag only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Monday.com API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Monday.com API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Monday.com MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://developer.monday.com",
+      "from": "hint"
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/integration-authorization",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/plans-and-pricing",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/mondaycom-mcp",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "composio_catalog_auth_partial"
+  ],
+  "catalog": {
+    "toolkit": "monday",
+    "match": "slug",
+    "schemes": [
+      "OAUTH2"
+    ],
+    "tools_count": 122,
+    "auth_agreement": "partial"
+  },
+  "verification": {
+    "blind_model": null,
+    "status": "not_independently_verified",
+    "agreed": [],
+    "disputed": {},
+    "rule_fixes": []
+  }
+}

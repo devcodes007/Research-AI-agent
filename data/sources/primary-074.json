@@ -1,0 +1,83 @@
+{
+ "searches": [
+  {
+   "query": "Jira API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Jira API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Jira MCP server official",
+   "results": 7,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://developer.atlassian.com",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-plans/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://jirapricing.com/guides/jira-api-pricing-2026-costs-plans-limits-and-usage-fees/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://jirapricing.com/guides/jira-api-access-tokens-a-step-by-step-setup-guide-2026/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+   "requested_url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+   "requested_url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://developer.atlassian.com/cloud/rovo-mcp/guides/getting-started/",
+   "requested_url": "https://developer.atlassian.com/cloud/rovo-mcp/guides/getting-started/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://community.developer.atlassian.com/t/jira-all-apis-are-free-or-paid-if-paid-what-are-the-paiment-plans/87575",
+   "requested_url": "https://community.developer.atlassian.com/t/jira-all-apis-are-free-or-paid-if-paid-what-are-the-paiment-plans/87575",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+   "requested_url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://confluence.atlassian.com/adminjiraserver/jira-oauth-2-0-provider-api-1115659070.html",
+   "requested_url": "https://confluence.atlassian.com/adminjiraserver/jira-oauth-2-0-provider-api-1115659070.html",
+   "from": "search"
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": 62,
+  "name": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Vercel is a deployment and hosting platform with a REST API for managing projects, deployments and domains.",
+  "auth": [
+    "Bearer token",
+    "OAuth2"
+  ],
+  "auth_notes": "Vercel Access Tokens are sent in the Authorization header. OAuth2 (Sign in with Vercel) is available for apps, including JWT client assertions.",
+  "self_serve": "instant",
+  "gate_detail": "Access Tokens are created in account settings. Sources do not state plan requirements. Sign in with Vercel API Permissions appears to be a private beta needing access request.",
+  "api_styles": [
+    "REST",
+    "SDK"
+  ],
+  "api_scope": "Programmatic control of deployments, domains, projects, environment variables, teams, webhooks, storage and more via HTTPS endpoints under api.vercel.com.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Vercel docs list a Vercel MCP page under agent resources; the URL is not stated in the sources.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_detail": "No payment or approval gate stated for Access Tokens; only the Sign in with Vercel API Permissions private beta requires access.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header: Authorization: Bearer <TOKEN>",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "access"
+      ],
+      "quote": "Create and manage Access Tokens in your account settings .",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "api",
+        "description"
+      ],
+      "quote": "All endpoints live under the URL https://api.vercel.com and follow the REST architecture.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "supports": [
+        "api"
+      ],
+      "quote": "Webhooks 4 endpoint s",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+      "supports": [
+        "auth"
+      ],
+      "quote": "A JWT that proves the client's identity, either a JWT assertion you sign or an OIDC token from a trusted issuer.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://community.vercel.com/t/request-access-to-sign-in-with-vercel-api-permissions-read-only-logs-observability/49936",
+      "supports": [
+        "verdict"
+      ],
+      "quote": "How can we get access to the private beta?",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources do not state whether a free plan suffices for tokens.",
+    "No sandbox environment is described; Sandbox is a separate compute product.",
+    "The MCP URL and official status rest on a navigation listing."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Vercel developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Vercel API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Vercel model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "from": "hint"
+    },
+    {
+      "url": "https://vercel.com/docs/accounts/access-tokens#use-a-scoped-token-with-the-api",
+      "from": "search"
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api/getting-started",
+      "from": "search"
+    },
+    {
+      "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+      "from": "search"
+    },
+    {
+      "url": "https://community.vercel.com/t/request-access-to-sign-in-with-vercel-api-permissions-read-only-logs-observability/49936",
+      "from": "search"
+    },
+    {
+      "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}

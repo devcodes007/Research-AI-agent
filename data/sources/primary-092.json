@@ -1,0 +1,89 @@
+{
+ "searches": [
+  {
+   "query": "Otter AI API documentation authentication",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Otter AI API credentials pricing plan required developer access",
+   "results": 7,
+   "backend": "ddg"
+  },
+  {
+   "query": "Otter AI MCP server official",
+   "results": 8,
+   "backend": "ddg"
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.otter.ai/hc/en-us/sections/16090015274903-Plans-Pricing",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "status": 403,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://getotter.io/api-access/",
+   "status": 200,
+   "thin": true,
+   "error": null
+  },
+  {
+   "url": "https://helpdesk.tryotter.com/hc/en-us/articles/22694653065107-API-Documentation",
+   "status": 403,
+   "thin": true,
+   "error": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://docs.connect.tryotter.com/guides/core-concepts/authentication/",
+   "requested_url": "https://connect.tryotter.com/docs/guides-authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S2",
+   "url": "https://docs.connect.tryotter.com/guides/core-concepts/authentication/",
+   "requested_url": "https://docs.connect.tryotter.com/guides/core-concepts/authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S3",
+   "url": "https://api.otterwaiver.com/docs/authentication/",
+   "requested_url": "https://api.otterwaiver.com/docs/authentication/",
+   "from": "search"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.otterly.ai/authentication",
+   "requested_url": "https://docs.otterly.ai/authentication",
+   "from": "search"
+  },
+  {
+   "id": "S5",
+   "url": "https://docs.connect.tryotter.com/",
+   "requested_url": "https://docs.connect.tryotter.com/",
+   "from": "search"
+  },
+  {
+   "id": "S6",
+   "url": "https://otter.ai/pricing",
+   "requested_url": "https://otter.ai/pricing",
+   "from": "search"
+  }
+ ]
+}

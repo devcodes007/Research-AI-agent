@@ -1,0 +1,107 @@
+{
+  "id": 17,
+  "name": "Plain",
+  "category": "Support and Helpdesk",
+  "description": "Plain is a customer support platform with a GraphQL API for workspaces.",
+  "auth": [
+    "API key",
+    "OAuth2"
+  ],
+  "auth_notes": "Machine user with an API key scoped by fine-grained permissions; OAuth apps can call the API as a signed-in workspace user.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources show a machine user and API key are created in a workspace, but do not state plan, pricing or approval requirements, or a sandbox.",
+  "api_styles": [
+    "GraphQL"
+  ],
+  "api_scope": "GraphQL API with queries, mutations and types, plus webhooks and webhook events documented in the developer docs.",
+  "webhooks": "yes",
+  "sandbox": "unknown",
+  "mcp_status": "unknown",
+  "mcp_url": null,
+  "mcp_notes": "Sources do not state whether an MCP server exists.",
+  "verdict": "unclear",
+  "blocker": "none",
+  "blocker_detail": "No blocker stated, but plan or access requirements for API keys are not shown in the truncated sources.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "supports": [
+        "auth",
+        "access",
+        "api"
+      ],
+      "quote": "Create a machine user and an API key",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/oauth",
+      "supports": [
+        "auth",
+        "api"
+      ],
+      "quote": "Call the API as a user in your workspace after they sign in to your OAuth app.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/oauth",
+      "supports": [
+        "api"
+      ],
+      "quote": "Webhook events",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Sources are truncated; plan or payment requirements for API keys are not shown.",
+    "Sandbox and MCP status not established.",
+    "Webhook support inferred from documentation tag names only."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Plain developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Plain API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Plain model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://www.plain.com/docs/graphql/oauth",
+      "from": "search"
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.plainid.io/apidocs/v5-endpoint-for-api-access",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.plainid.io/docs/developer-portal",
+      "from": "search"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/plugins/plugin-authentication-api-key",
+      "from": "search"
+    },
+    {
+      "url": "https://developers.google.com/knowledge/quickstart",
+      "from": "search"
+    }
+  ],
+  "lint": []
+}

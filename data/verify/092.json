@@ -1,0 +1,109 @@
+{
+  "id": 92,
+  "name": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "description": "Otter.ai meeting transcription and AI notetaker with an MCP integration for AI assistants.",
+  "auth": [
+    "Other"
+  ],
+  "auth_notes": "No source states how credentials are sent for Otter.ai's MCP or any API. Docs for tryotter (delivery) and otterab (A/B testing) are different products.",
+  "self_serve": "unknown",
+  "gate_detail": "Sources do not say how a developer obtains credentials or whether a plan is required. The MCP posts are marketed around enterprise use, but no gate is stated.",
+  "api_styles": [
+    "Other"
+  ],
+  "api_scope": "Otter.ai is described as offering an MCP integration so AI assistants can read meeting transcripts; no public REST API is documented in the sources.",
+  "webhooks": "unknown",
+  "sandbox": "unknown",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Otter's own blog posts describe an Otter MCP for pulling meeting intelligence into ChatGPT, Claude and other clients; no URL given.",
+  "verdict": "unclear",
+  "blocker": "other",
+  "blocker_detail": "Auth method, plan requirements and any developer API for Otter.ai are not stated; only blog marketing about MCP is available.",
+  "confidence": "low",
+  "evidence": [
+    {
+      "url": "https://otter.ai/blog/otter-mcp-your-meetings-now-power-every-tool-you-use",
+      "supports": [
+        "description",
+        "mcp"
+      ],
+      "quote": "If your team lives in ChatGPT, Claude, or any other MCP-compatible chat app, they can pull Otter meeting intelligence directly into those tools.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://otter.ai/blog/otter-mcp-your-meetings-now-power-every-tool-you-use",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Otter's own AI Chat connects outward to your enterprise apps via MCP: Notion, Jira, Salesforce, Google Docs, Gmail, Slack, and more.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+      "supports": [
+        "mcp",
+        "verdict"
+      ],
+      "quote": "Otter for Enterprise: Connect AI-to-AI with Otter’s MCP",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "S1-S3 (tryotter delivery platform) and S4 (otterab A/B testing) are different products and were not used.",
+    "No source states auth or access requirements for Otter.ai MCP/API, so no quote is tagged auth or access.",
+    "MCP is described by the vendor blog but no endpoint or setup docs are shown."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "blind",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "Otter AI developer API getting started API key OAuth",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Otter AI API access request approval partner program",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "Otter AI model context protocol MCP server",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.connect.tryotter.com/guides/getting-started/quickstart/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.connect.tryotter.com/guides/getting-started/quickstart/",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.connect.tryotter.com/guides/core-concepts/authentication/",
+      "from": "search"
+    },
+    {
+      "url": "https://www.otterab.com/mcp-docs",
+      "from": "search"
+    },
+    {
+      "url": "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+      "from": "search"
+    },
+    {
+      "url": "https://otter.ai/blog/otter-mcp-your-meetings-now-power-every-tool-you-use",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url",
+    "ungrounded:auth",
+    "ungrounded:access"
+  ]
+}

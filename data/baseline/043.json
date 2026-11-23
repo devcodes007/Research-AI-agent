@@ -1,0 +1,132 @@
+{
+  "id": 43,
+  "name": "BigCommerce",
+  "category": "Ecommerce",
+  "description": "BigCommerce is an ecommerce platform with REST and GraphQL APIs for storefronts, apps and store data.",
+  "auth": [
+    "OAuth2",
+    "Other"
+  ],
+  "auth_notes": "Store-level API accounts give an access token sent in X-Auth-Token; app-level accounts use an OAuth grant code flow.",
+  "self_serve": "trial",
+  "gate_detail": "Developers sign up for a free trial sandbox store, then create API credentials in Settings > API Accounts. A live production store presumably needs a paid plan; sources do not state this.",
+  "api_styles": [
+    "REST",
+    "GraphQL"
+  ],
+  "api_scope": "REST Management API, REST and GraphQL Storefront APIs, GraphQL Account and Admin APIs, Payments, Customer Login and Current Customer APIs.",
+  "webhooks": "yes",
+  "sandbox": "yes",
+  "mcp_status": "official",
+  "mcp_url": null,
+  "mcp_notes": "Official docs list Storefront MCP, WebMCP and Store Management MCP, with enablement and permissions; URL not stated.",
+  "verdict": "conditional",
+  "blocker": "paid_plan",
+  "blocker_detail": "Only a free trial store is described for testing; production store plan requirements are not stated.",
+  "confidence": "high",
+  "evidence": [
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "supports": [
+        "access"
+      ],
+      "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "supports": [
+        "auth",
+        "access"
+      ],
+      "quote": "Navigate to Settings > API Accounts in your store control panel.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+      "supports": [
+        "auth"
+      ],
+      "quote": "Generate access tokens with the BigCommerce-initiated grant code authorization flow.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "supports": [
+        "api"
+      ],
+      "quote": "Use REST and GraphQL APIs to manage products, orders, customers, and store settings programmatically.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+      "supports": [
+        "api"
+      ],
+      "quote": "Webhooks do not persist upon account deletion.",
+      "quote_match": "exact"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+      "supports": [
+        "mcp"
+      ],
+      "quote": "Store Management MCP",
+      "quote_match": "exact"
+    }
+  ],
+  "issues": [
+    "Paid-plan requirement for production inferred, not stated.",
+    "MCP URL and exact availability not in sources.",
+    "Quoted MCP evidence is only a heading."
+  ],
+  "model": "Claude Sonnet 5.5 via Claude Code",
+  "variant": "primary",
+  "checked_at": "2026-11-23",
+  "searches": [
+    {
+      "query": "BigCommerce API documentation authentication",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "BigCommerce API credentials pricing plan required developer access",
+      "results": 7,
+      "backend": "ddg"
+    },
+    {
+      "query": "BigCommerce MCP server official",
+      "results": 7,
+      "backend": "ddg"
+    }
+  ],
+  "sources_seen": [
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "from": "hint"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "from": "search"
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/ai-agent-setup",
+      "from": "search"
+    }
+  ],
+  "lint": [
+    "mcp_claimed_without_url"
+  ]
+}
